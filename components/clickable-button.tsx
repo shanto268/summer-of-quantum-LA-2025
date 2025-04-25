@@ -1,30 +1,38 @@
-"use client"
+'use client'
 
-import type React from "react"
+import type React from 'react'
 
 interface ClickableButtonProps {
   href?: string
   className?: string
   children: React.ReactNode
+  onClick?: (e: React.MouseEvent) => void
 }
 
-const ClickableButton: React.FC<ClickableButtonProps> = ({ href, className = "", children }) => {
+const ClickableButton: React.FC<ClickableButtonProps> = ({
+  href,
+  className = '',
+  children,
+  onClick,
+}) => {
   const handleClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
+    if (onClick) {
+      onClick(e)
+      return
+    }
+
     if (href) {
-      window.open(href, "_blank", "noopener,noreferrer")
+      window.open(href, '_blank', 'noopener,noreferrer')
     }
   }
 
   return (
-    <div className="relative">
-      <button onClick={handleClick} className={`${className} cursor-pointer relative z-10`}>
-        {children}
-      </button>
-      {/* Invisible overlay to increase clickable area */}
-      <div onClick={handleClick} className="absolute inset-0 z-20 cursor-pointer" aria-hidden="true"></div>
-    </div>
+    <button
+      onClick={handleClick}
+      className={`${className} cursor-pointer`}
+    >
+      {children}
+    </button>
   )
 }
 
