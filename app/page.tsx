@@ -1,6 +1,5 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
 import {
   Atom,
   Beer,
@@ -13,6 +12,7 @@ import {
   Theater,
   Users,
 } from 'lucide-react'
+import ClickableButton from '../components/ClickableButton'
 import EventCard from '../components/event-card'
 import Navbar from '../components/navbar'
 import SectionHeading from '../components/section-heading'
@@ -176,18 +176,18 @@ export default function Home() {
                 vibrant setting of Los Angeles!
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black hover:opacity-90 transition-opacity font-medium">
+                <ClickableButton
+                  href="https://forms.gle/LxiJ77QGkAx8JBog8"
+                  className="inline-block bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black hover:opacity-90 transition-opacity font-medium px-3 py-1.5 rounded-md text-sm"
+                >
                   Join Mailing List
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-orange-500 text-orange-400 hover:bg-orange-950/30"
-                  onClick={() =>
-                    window.open('https://quantum2025.org/', '_blank')
-                  }
+                </ClickableButton>
+                <ClickableButton
+                  href="https://quantum2025.org/"
+                  className="inline-block border border-orange-500 text-orange-400 hover:bg-orange-950/30 px-3 py-1.5 rounded-md transition-colors text-sm"
                 >
                   Learn More
-                </Button>
+                </ClickableButton>
               </div>
             </div>
           </div>
@@ -215,9 +215,12 @@ export default function Home() {
             </div>
 
             <div className="mt-12 text-center">
-              <Button className="bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black hover:opacity-90 transition-opacity font-medium px-8 py-6 text-lg">
+              <ClickableButton
+                href="#"
+                className="inline-block bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black hover:opacity-90 transition-opacity font-medium px-6 py-3 text-base rounded-md"
+              >
                 View All Events
-              </Button>
+              </ClickableButton>
             </div>
           </div>
         </section>
@@ -583,17 +586,12 @@ export default function Home() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button
-                    className="w-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-black hover:opacity-90 transition-opacity font-medium py-6"
-                    onClick={() =>
-                      window.open(
-                        'https://forms.gle/mnxyQvK3tUGaWxQb8',
-                        '_blank',
-                      )
-                    }
+                  <ClickableButton
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfodXNeKVG5fIC1mkqorKicN3xoBvnRBZWW5fDti69qX1H_4A/viewform?usp=send_form"
+                    className="block w-full py-3 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 text-black hover:opacity-90 transition-opacity font-medium text-center rounded-md text-base"
                   >
                     Apply to Volunteer
-                  </Button>
+                  </ClickableButton>
                 </div>
               </div>
             </div>
@@ -811,9 +809,12 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <Button className="w-full bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black hover:opacity-90 transition-opacity font-medium">
+                  <ClickableButton
+                    href="https://forms.gle/uJRpnpN7FGaUHSvy6"
+                    className="block w-full py-3 bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black hover:opacity-90 transition-opacity font-medium text-center rounded-md text-base"
+                  >
                     Become a Partner
-                  </Button>
+                  </ClickableButton>
                 </div>
               </div>
             </div>
@@ -835,25 +836,6 @@ export default function Home() {
                   partners.
                 </p>
                 <div className="flex space-x-4">
-                  <a
-                    href="#"
-                    aria-label="Twitter"
-                    className="text-white/70 hover:text-orange-400 transition-colors"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                    </svg>
-                  </a>
                   <a
                     href="#"
                     aria-label="Instagram"
