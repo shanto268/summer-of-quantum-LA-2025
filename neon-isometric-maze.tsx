@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useEffect, useRef } from "react"
+import ClickableButton from "./components/clickable-button"
 
 interface NeonIsometricMazeProps {
   title?: string
@@ -63,14 +64,14 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
           x.lineTo(p, q)
           x.closePath()
 
-          // LA sunset gradient colors
+          // LA sunset gradient colors - lighter for better contrast
           const l = x.createLinearGradient(p, q - f, p + s, q)
-          l.addColorStop(0, "rgba(255,140,0,.8)") // Orange
-          l.addColorStop(0.5, "rgba(255,105,180,.8)") // Hot pink
-          l.addColorStop(1, "rgba(138,43,226,.8)") // Purple
+          l.addColorStop(0, "rgba(255,179,71,.6)") // LA Sunset
+          l.addColorStop(0.5, "rgba(255,227,236,.6)") // LA Blush
+          l.addColorStop(1, "rgba(227,141,234,.6)") // LA Dusk
           x.fillStyle = l
           x.fill()
-          x.strokeStyle = "rgba(255,223,0,.5)" // Gold
+          x.strokeStyle = "rgba(255,223,0,.3)" // Gold
           x.stroke()
 
           x.beginPath()
@@ -80,7 +81,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
           x.lineTo(p + s, q - f)
           x.moveTo(p + s / 2, q + s / 2)
           x.lineTo(p + s / 2, q - s / 2 - f)
-          x.strokeStyle = "rgba(255,255,255,.3)"
+          x.strokeStyle = "rgba(255,255,255,.2)"
           x.stroke()
         }
       }
@@ -97,7 +98,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
         const size = height * 0.15
 
         // Trunk
-        ctx.fillStyle = "rgba(30,30,30,0.7)"
+        ctx.fillStyle = "rgba(30,30,30,0.5)"
         ctx.beginPath()
         ctx.moveTo(x - size / 20, y)
         ctx.lineTo(x + size / 20, y)
@@ -107,7 +108,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
         ctx.fill()
 
         // Leaves
-        ctx.fillStyle = "rgba(30,30,30,0.7)"
+        ctx.fillStyle = "rgba(30,30,30,0.5)"
         for (let j = 0; j < 7; j++) {
           const angle = (j / 7) * Math.PI * 2
           ctx.beginPath()
@@ -134,7 +135,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
 
     const drawGriffithSilhouette = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
       ctx.save()
-      ctx.globalAlpha = 0.15
+      ctx.globalAlpha = 0.1
 
       // Draw Griffith Observatory silhouette
       const baseY = height * 0.75
@@ -143,7 +144,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
       const domeRadius = baseHeight * 0.8
       const x = width * 0.7
 
-      ctx.fillStyle = "rgba(30,30,30,0.7)"
+      ctx.fillStyle = "rgba(30,30,30,0.5)"
 
       // Main building
       ctx.beginPath()
@@ -169,7 +170,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
 
     const a = () => {
       if (!canvas || !x) return
-      x.fillStyle = "rgba(0,0,0,.1)"
+      x.fillStyle = "rgba(255,255,255,.2)"
       x.fillRect(0, 0, canvas.width, canvas.height)
       d()
       t += 0.05
@@ -187,22 +188,26 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
   }, [])
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen bg-la-sky/30">
       <canvas ref={canvasRef} className="block absolute inset-0" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 font-display drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+        {/* Clean, flat title text directly on the background */}
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk font-heading">
           {title}
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 max-w-2xl font-body drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] flex items-center justify-center gap-2">
+
+        {/* Clean, flat subtitle text directly on the background */}
+        <p className="text-xl md:text-2xl text-white max-w-2xl font-body flex items-center justify-center gap-2 mt-4">
           <span className="text-2xl">🎬</span> {subtitle} <span className="font-mono text-2xl">ℋ</span>
         </p>
+
         <div className="mt-8">
-          <button
-            onClick={() => document.getElementById("event-overview")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-400 text-black font-bold hover:opacity-90 transition-opacity"
+          <ClickableButton
+            className="px-6 py-2 text-sm rounded-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm hover:scale-105 transition-transform"
+            href="#event-overview"
           >
-            Explore Events
-          </button>
+            Explore Events <span className="ml-2">✨</span>
+          </ClickableButton>
         </div>
       </div>
       <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">

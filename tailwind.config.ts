@@ -70,10 +70,21 @@ const config = {
           purple: "#9370DB",
           pink: "#DB7093",
         },
+        // New LA color palette
+        la: {
+          sky: "#E0F7FA",
+          blush: "#FFE3EC",
+          sunset: "#FFB347",
+          dusk: "#E38DEA",
+          aqua: "#A0E9E5",
+          coral: "#FF7F50",
+          sand: "#FDF6E3",
+        },
       },
       fontFamily: {
         display: ["var(--font-display)", "system-ui", "sans-serif"],
         body: ["var(--font-body)", "system-ui", "sans-serif"],
+        heading: ['"Outfit"', "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

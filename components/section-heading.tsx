@@ -13,10 +13,10 @@ export default function SectionHeading({ title, subtitle, align = "center" }: Se
 
   return (
     <div className={`mb-12 max-w-3xl ${alignmentClasses[align]}`}>
-      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 font-display">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk font-heading">
         {title}
       </h2>
-      {subtitle && <p className="text-lg text-white/70 font-body">{subtitle}</p>}
+      {subtitle && <p className="text-lg text-gray-600 font-body">{subtitle}</p>}
     </div>
   )
 }
