@@ -74,6 +74,12 @@ export default function Navbar({ navLinks: propNavLinks }: NavbarProps) {
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
               className="text-gray-700 hover:text-la-coral transition-colors font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-la-coral after:via-la-sunset after:to-la-dusk hover:after:w-full after:transition-all"
+              onClick={(e) => {
+                if (link.external) {
+                  e.preventDefault()
+                  window.open(link.href, '_blank')
+                }
+              }}
             >
               {link.name}
             </a>
@@ -106,6 +112,12 @@ export default function Navbar({ navLinks: propNavLinks }: NavbarProps) {
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noopener noreferrer' : undefined}
                   className="text-gray-700 hover:text-la-coral transition-colors text-lg font-heading"
+                  onClick={(e) => {
+                    if (link.external) {
+                      e.preventDefault()
+                      window.open(link.href, '_blank')
+                    }
+                  }}
                 >
                   {link.name}
                 </a>

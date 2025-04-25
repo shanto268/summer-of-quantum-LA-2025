@@ -230,7 +230,7 @@ export default function Home() {
                   href="https://forms.gle/2PLx9D6uXgCmodDbA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full px-6 py-2 text-sm hover:scale-105"
+                  className="bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full px-6 py-3 text-sm hover:scale-105"
                 >
                   Join Mailing List
                 </a>
@@ -737,12 +737,12 @@ export default function Home() {
                   </li>
                 </ul>
 
-                <div className="mt-8">
+                <div className="mt-8 relative z-50">
                   <a
                     href="https://forms.gle/ZSaeCCjfn7HQjELy5"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium py-2 text-sm shadow-sm rounded-full hover:scale-105 text-center"
+                    className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center relative z-50"
                   >
                     Apply to Volunteer{' '}
                     <PalmTree className="inline-block ml-2 h-4 w-4" />
@@ -971,12 +971,12 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-8 relative z-50">
                   <a
                     href="https://forms.gle/DyUdErt8nMdxNmai8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-2 text-sm hover:scale-105 text-center"
+                    className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center relative z-50"
                   >
                     Become a Partner{' '}
                     <Sun className="inline-block ml-2 h-4 w-4" />
@@ -1046,7 +1046,7 @@ export default function Home() {
                   <li>
                     <a
                       href="#event-overview"
-                      className="text-gray-600 hover:text-la-coral transition-colors"
+                      className="text-gray-600 hover:text-la-coral transition-colors inline-block"
                     >
                       Event Overview
                     </a>
