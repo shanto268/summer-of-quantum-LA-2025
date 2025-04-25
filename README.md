@@ -113,6 +113,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Project Coordinator - [shanto@usc.edu](mailto:shanto@usc.edu)
+Program Director - [shanto@usc.edu](mailto:shanto@usc.edu)
 
 Project Link: [https://github.com/shanto268/summer-of-quantum-LA-2025](https://github.com/shanto268/summer-of-quantum-LA-2025)
+
+---
+
+## To Do List:
+
+- [ ] Add eventbrite registration links to the event cards
+- [ ] Add leadership/people/volunteers page
+- [ ] Create pages for each event with FAQs

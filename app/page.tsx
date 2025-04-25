@@ -27,7 +27,7 @@ export default function Home() {
       location: 'USC, Caltech, UCLA, Chapman, and more',
       description:
         'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics — no technical background required.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/public-talk.png?height=300&width=600',
       icon: <GraduationCap className="w-6 h-6" />,
     },
     {
@@ -37,7 +37,7 @@ export default function Home() {
       location: 'Various Locations',
       description:
         'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science — drinks encouraged, physics demystified.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/h-bar.png?height=300&width=600',
       icon: <Beer className="w-6 h-6" />,
     },
     {
@@ -47,7 +47,7 @@ export default function Home() {
       location: 'Various Locations',
       description:
         'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics — from strategy games to mind-bending simulations.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/games.png?height=300&width=600',
       icon: <Gamepad2 className="w-6 h-6" />,
     },
     {
@@ -57,7 +57,7 @@ export default function Home() {
       location: 'Griffith Observatory',
       description:
         'An unforgettable night at Griffith Observatory connecting quantum mechanics with the cosmos — stargazing meets the subatomic world.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/stars.png?height=300&width=600',
       icon: <Telescope className="w-6 h-6" />,
     },
     {
@@ -67,7 +67,7 @@ export default function Home() {
       location: 'TBD',
       description:
         'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/kids.png?height=300&width=600',
       icon: <Atom className="w-6 h-6" />,
     },
     {
@@ -77,17 +77,17 @@ export default function Home() {
       location: 'TBD',
       description:
         'Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/labs.png?height=300&width=600',
       icon: <Building2 className="w-6 h-6" />,
     },
     {
-      title: 'Retirement Home Event',
+      title: 'Quantum for Seniors',
       date: 'TBD',
       time: 'TBD',
       location: 'TBD',
       description:
         'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/seniors.png?height=300&width=600',
       icon: <Users className="w-6 h-6" />,
     },
     {
@@ -97,7 +97,7 @@ export default function Home() {
       location: 'TBD',
       description:
         'Workshops and resources for educators to integrate quantum concepts into their classrooms, empowering the next generation of science learners.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/teachers.png?height=300&width=600',
       icon: <GraduationCap className="w-6 h-6" />,
     },
     {
@@ -107,7 +107,7 @@ export default function Home() {
       location: 'TBD',
       description:
         'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
-      image: '/placeholder.svg?height=300&width=600',
+      image: '/images/companies.png?height=300&width=600',
       icon: <Sparkles className="w-6 h-6" />,
     },
   ]

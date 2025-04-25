@@ -55,7 +55,7 @@ export default function EventCard({
       </CardContent>
       <CardFooter>
         <ClickableButton className="w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-opacity font-medium shadow-sm rounded-full py-2 text-xs px-8">
-          Register Now
+          Coming Soon
         </ClickableButton>
       </CardFooter>
     </Card>
