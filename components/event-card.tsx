@@ -1,7 +1,7 @@
-import type React from "react"
-import { CalendarDays, MapPin, Clock } from "lucide-react"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import ClickableButton from "./clickable-button"
+import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { CalendarDays, Clock, MapPin } from 'lucide-react'
+import type React from 'react'
+import ClickableButton from './clickable-button'
 
 interface EventCardProps {
   title: string
@@ -13,12 +13,20 @@ interface EventCardProps {
   icon: React.ReactNode
 }
 
-export default function EventCard({ title, date, time, location, description, image, icon }: EventCardProps) {
+export default function EventCard({
+  title,
+  date,
+  time,
+  location,
+  description,
+  image,
+  icon,
+}: EventCardProps) {
   return (
     <Card className="overflow-hidden bg-white border border-gray-200 shadow-md rounded-2xl hover:border-la-coral/70 transition-all duration-300 h-full flex flex-col group transform transition-transform hover:scale-[1.02]">
       <div className="aspect-video overflow-hidden relative">
         <img
-          src={image || "/placeholder.svg"}
+          src={image || '/placeholder.svg'}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
@@ -28,7 +36,7 @@ export default function EventCard({ title, date, time, location, description, im
         </div>
       </div>
       <CardContent className="pt-6 flex-grow">
-        <div className="flex items-center gap-2 text-la-sunset mb-2">
+        <div className="flex flex-wrap items-center gap-2 text-la-sunset mb-2">
           <CalendarDays className="h-4 w-4" />
           <span className="text-sm">{date}</span>
           <Clock className="h-4 w-4 ml-2" />
@@ -36,10 +44,14 @@ export default function EventCard({ title, date, time, location, description, im
         </div>
         <div className="flex items-center gap-2 text-la-dusk mb-4">
           <MapPin className="h-4 w-4" />
-          <span className="text-sm">{location}</span>
+          <span className="text-sm truncate">{location}</span>
         </div>
-        <h3 className="text-xl font-bold mb-2 text-gray-900 font-heading">{title}</h3>
-        <p className="text-gray-600 mb-4 font-body">{description}</p>
+        <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 font-heading">
+          {title}
+        </h3>
+        <p className="text-sm sm:text-base text-gray-600 mb-4 font-body line-clamp-3 sm:line-clamp-none">
+          {description}
+        </p>
       </CardContent>
       <CardFooter>
         <ClickableButton className="w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-opacity font-medium shadow-sm rounded-full py-2 text-xs px-8">

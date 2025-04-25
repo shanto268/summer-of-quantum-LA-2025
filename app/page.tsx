@@ -138,14 +138,14 @@ export default function Home() {
         {/* Event Overview Section */}
         <section
           id="event-overview"
-          className="py-20 px-4 relative overflow-hidden bg-white"
+          className="py-12 sm:py-20 px-4 relative overflow-hidden bg-white"
         >
           <div className="absolute inset-0 bg-white/50 backdrop-blur-sm -z-10"></div>
           <div className="container mx-auto">
             <SectionHeading
               title="Event Overview"
               subtitle={
-                <span className="whitespace-nowrap">
+                <span className="sm:whitespace-nowrap md:whitespace-normal">
                   A 10-week celebration of quantum science across LA, part of
                   the{' '}
                   <a
@@ -161,76 +161,76 @@ export default function Home() {
               }
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-white to-la-sky p-6 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 group hover:border-la-sunset/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Lightbulb className="w-8 h-8 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12">
+              <div className="bg-gradient-to-br from-white to-la-sky p-5 sm:p-6 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 group hover:border-la-sunset/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 font-heading">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900 font-heading">
                   Increase awareness of quantum science
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Bringing quantum concepts to the public through engaging
                   events and accessible explanations.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-white to-la-blush p-6 rounded-2xl border border-la-dusk/20 shadow-md shadow-la-sand/40 group hover:border-la-dusk/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-la-dusk to-la-coral flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="w-8 h-8 text-white" />
+              <div className="bg-gradient-to-br from-white to-la-blush p-5 sm:p-6 rounded-2xl border border-la-dusk/20 shadow-md shadow-la-sand/40 group hover:border-la-dusk/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-la-dusk to-la-coral flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 font-heading">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900 font-heading">
                   Engage families, students, and professionals
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Creating inclusive events for all ages and expertise levels
                   throughout Los Angeles.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-white to-la-aqua p-6 rounded-2xl border border-la-aqua/20 shadow-md shadow-la-sand/40 group hover:border-la-aqua/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-la-aqua to-la-dusk flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Building2 className="w-8 h-8 text-white" />
+              <div className="bg-gradient-to-br from-white to-la-aqua p-5 sm:p-6 rounded-2xl border border-la-aqua/20 shadow-md shadow-la-sand/40 group hover:border-la-aqua/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-la-aqua to-la-dusk flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 font-heading">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900 font-heading">
                   Collaborate with academia and industry
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Partnering with USC, Caltech, UCLA, Chapman, industry leaders
                   to bring expert knowledge to the public.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-white to-la-sunset p-6 rounded-2xl border border-la-coral/20 shadow-md shadow-la-sand/40 group hover:border-la-coral/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-la-sunset to-la-coral flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Sparkles className="w-8 h-8 text-white" />
+              <div className="bg-gradient-to-br from-white to-la-sunset p-5 sm:p-6 rounded-2xl border border-la-coral/20 shadow-md shadow-la-sand/40 group hover:border-la-coral/40 transition-all duration-300 transform transition-transform hover:scale-[1.02]">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-la-sunset to-la-coral flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 font-heading">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900 font-heading">
                   Make quantum science fun and accessible
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Transforming complex concepts into enjoyable, interactive
                   experiences for everyone.
                 </p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-la-sky to-la-blush p-8 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 font-heading">
+            <div className="bg-gradient-to-r from-la-sky to-la-blush p-5 sm:p-8 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-900 font-heading">
                 Join us for a summer of quantum discovery!
               </h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
                 From public lectures and quantum lab tours to quantum games and
                 "Quantum at the Bar" events, our free 10-week program offers
                 something for everyone. Join our mailing list to stay updated on
                 all the exciting quantum events happening across Los Angeles!
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 <a
                   href="https://forms.gle/2PLx9D6uXgCmodDbA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full px-6 py-3 text-sm hover:scale-105"
+                  className="bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 text-sm hover:scale-105"
                 >
                   Join Mailing List
                 </a>
@@ -238,7 +238,7 @@ export default function Home() {
                   href="https://quantum2025.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-2 border-la-sunset text-la-coral hover:bg-la-sand transition-all shadow-sm rounded-full px-6 py-2 text-sm hover:scale-105"
+                  className="border-2 border-la-sunset text-la-coral hover:bg-la-sand transition-all shadow-sm rounded-full px-4 sm:px-6 py-2 text-sm hover:scale-105"
                 >
                   Learn More About IYQ 2025
                 </a>
@@ -250,16 +250,16 @@ export default function Home() {
         {/* Upcoming Events Section */}
         <section
           id="upcoming-events"
-          className="py-20 px-4 bg-la-sky relative"
+          className="py-12 sm:py-20 px-4 bg-la-sky relative"
         >
-          <div className="absolute inset-0 opacity-5 bg-venice-texture mix-blend-overlay"></div>
+          <div className="absolute inset-0 opacity-40 bg-venice-texture mix-blend-overlay"></div>
           <div className="container mx-auto">
             <SectionHeading
               title="Upcoming Events"
               subtitle="Join us for these exciting quantum events happening across Los Angeles"
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 snap-x overflow-x-auto pb-4 sm:overflow-visible sm:pb-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-4">
               {upcomingEvents.map((event, index) => (
                 <EventCard
                   key={index}
@@ -273,7 +273,7 @@ export default function Home() {
         {/* Volunteer with Us Section */}
         <section
           id="volunteer"
-          className="py-20 px-4 bg-la-blush relative"
+          className="py-12 sm:py-20 px-4 bg-la-blush relative"
         >
           <div className="absolute inset-0 opacity-5 bg-venice-texture mix-blend-overlay"></div>
           <div className="container mx-auto">
@@ -756,7 +756,7 @@ export default function Home() {
         {/* Partner with Us Section */}
         <section
           id="partner"
-          className="py-20 px-4 relative bg-la-sand"
+          className="py-12 sm:py-20 px-4 relative bg-la-sand"
         >
           <div className="absolute inset-0 bg-la-skyline bg-no-repeat bg-bottom opacity-10"></div>
           <div className="container mx-auto">
