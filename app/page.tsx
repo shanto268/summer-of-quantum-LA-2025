@@ -11,7 +11,6 @@ import {
   Sparkles,
   Sun,
   Telescope,
-  Theater,
   Users,
 } from 'lucide-react'
 import EventCard from '../components/event-card'
@@ -22,64 +21,94 @@ import NeonIsometricMaze from '../neon-isometric-maze'
 export default function Home() {
   const upcomingEvents = [
     {
-      title: 'Professor Talks',
-      date: 'June 15, 2025',
-      time: '2:00 PM - 5:00 PM',
-      location: 'UCLA Physics Department',
+      title: 'Public Talks',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'USC, Caltech, UCLA, Chapman, and more',
       description:
-        'Lectures by experts at local universities exploring the frontiers of quantum mechanics and its applications.',
+        'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics — no technical background required.',
       image: '/placeholder.svg?height=300&width=600',
       icon: <GraduationCap className="w-6 h-6" />,
     },
     {
-      title: 'Quantum at the Bar',
-      date: 'June 22, 2025',
-      time: '6:00 PM - 9:00 PM',
-      location: 'Arts District Brewing Co.',
+      title: 'Quantum at the Bar (ħ)',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'Various Locations',
       description:
-        'Informal science discussions in LA bars where experts and novices mingle to discuss quantum concepts over drinks.',
+        'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science — drinks encouraged, physics demystified.',
       image: '/placeholder.svg?height=300&width=600',
       icon: <Beer className="w-6 h-6" />,
     },
     {
-      title: 'Quantum Realm Games',
-      date: 'July 5, 2025',
-      time: '7:00 PM - 10:00 PM',
-      location: 'Two Bit Circus, Downtown LA',
+      title: 'Quantum Games',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'Various Locations',
       description:
-        'Play night to explore quantum concepts through interactive games, VR experiences, and puzzle challenges.',
+        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics — from strategy games to mind-bending simulations.',
       image: '/placeholder.svg?height=300&width=600',
       icon: <Gamepad2 className="w-6 h-6" />,
     },
     {
-      title: 'Griffith Observatory Event',
-      date: 'July 12, 2025',
-      time: '8:00 PM - 11:00 PM',
+      title: 'Quarks to Quasars',
+      date: 'TBD',
+      time: 'TBD',
       location: 'Griffith Observatory',
       description:
-        'Quantum meets stargazing in this special evening event connecting quantum physics with astronomy and cosmology.',
+        'An unforgettable night at Griffith Observatory connecting quantum mechanics with the cosmos — stargazing meets the subatomic world.',
       image: '/placeholder.svg?height=300&width=600',
       icon: <Telescope className="w-6 h-6" />,
     },
     {
-      title: 'Shakespeare in the Park + AMA',
-      date: 'July 19, 2025',
-      time: '6:30 PM - 9:30 PM',
-      location: 'Grand Park, Downtown LA',
-      description:
-        'Live outdoor Q&A with quantum experts before a special Shakespeare performance with quantum themes.',
-      image: '/placeholder.svg?height=300&width=600',
-      icon: <Theater className="w-6 h-6" />,
-    },
-    {
       title: 'Quantum for Kids',
-      date: 'July 26, 2025',
-      time: '10:00 AM - 1:00 PM',
-      location: 'California Science Center',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'TBD',
       description:
-        'Interactive science demos for young learners making quantum concepts accessible and fun for children.',
+        'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
       image: '/placeholder.svg?height=300&width=600',
       icon: <Atom className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum Lab Tours',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'TBD',
+      description:
+        'Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists.',
+      image: '/placeholder.svg?height=300&width=600',
+      icon: <Building2 className="w-6 h-6" />,
+    },
+    {
+      title: 'Retirement Home Event',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'TBD',
+      description:
+        'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
+      image: '/placeholder.svg?height=300&width=600',
+      icon: <Users className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum for Teachers',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'TBD',
+      description:
+        'Workshops and resources for educators to integrate quantum concepts into their classrooms, empowering the next generation of science learners.',
+      image: '/placeholder.svg?height=300&width=600',
+      icon: <GraduationCap className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum Tech Company Events',
+      date: 'TBD',
+      time: 'TBD',
+      location: 'TBD',
+      description:
+        'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
+      image: '/placeholder.svg?height=300&width=600',
+      icon: <Sparkles className="w-6 h-6" />,
     },
   ]
 
@@ -115,7 +144,21 @@ export default function Home() {
           <div className="container mx-auto">
             <SectionHeading
               title="Event Overview"
-              subtitle="A 10-week summer event series to make quantum mechanics engaging, accessible, and impactful for a diverse audience across LA."
+              subtitle={
+                <span className="whitespace-nowrap">
+                  A 10-week celebration of quantum science across LA, part of
+                  the{' '}
+                  <a
+                    href="https://quantum2025.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-la-coral to-la-sunset hover:from-la-sunset hover:to-la-coral underline underline-offset-4 decoration-la-coral/70 hover:decoration-la-sunset/70 transition-all duration-300"
+                  >
+                    International Year of Quantum
+                  </a>{' '}
+                  initiative.
+                </span>
+              }
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -124,7 +167,7 @@ export default function Home() {
                   <Lightbulb className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900 font-heading">
-                  Increase awareness of quantum mechanics
+                  Increase awareness of quantum science
                 </h3>
                 <p className="text-gray-600">
                   Bringing quantum concepts to the public through engaging
@@ -163,7 +206,7 @@ export default function Home() {
                   <Sparkles className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900 font-heading">
-                  Make quantum mechanics fun and accessible
+                  Make quantum science fun and accessible
                 </h3>
                 <p className="text-gray-600">
                   Transforming complex concepts into enjoyable, interactive
@@ -177,12 +220,10 @@ export default function Home() {
                 Join us for a summer of quantum discovery!
               </h3>
               <p className="text-gray-700 mb-6">
-                From interactive workshops and public lectures to art
-                exhibitions and family-friendly activities, our 10-week program
-                offers something for everyone. Stay updated with our latest
-                events and announcements by joining our mailing list. Don't miss
-                out on the opportunity to experience quantum mechanics in the
-                vibrant setting of Los Angeles!
+                From public lectures and quantum lab tours to quantum games and
+                "Quantum at the Bar" events, our free 10-week program offers
+                something for everyone. Join our mailing list to stay updated on
+                all the exciting quantum events happening across Los Angeles!
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -225,15 +266,6 @@ export default function Home() {
                   {...event}
                 />
               ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <a
-                href="#"
-                className="bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium px-6 py-2 text-sm shadow-sm rounded-full hover:scale-105 w-full sm:w-auto inline-block"
-              >
-                View All Events <Sun className="inline-block ml-2 h-4 w-4" />
-              </a>
             </div>
           </div>
         </section>
@@ -371,7 +403,7 @@ export default function Home() {
                         Promotions
                       </h4>
                       <p className="text-gray-600">
-                        Distribute flyers and promote our events throughout LA.
+                        Promote our events to all communities in LA.
                       </p>
                     </div>
                   </div>
@@ -405,8 +437,7 @@ export default function Home() {
                         Contacting Partners
                       </h4>
                       <p className="text-gray-600">
-                        Reach out to potential partners and sponsors in the LA
-                        area.
+                        Reach out to potential partners and sponsors.
                       </p>
                     </div>
                   </div>
@@ -532,8 +563,37 @@ export default function Home() {
                         Photography
                       </h4>
                       <p className="text-gray-600">
-                        Capture memorable moments from our events to share with
-                        the community.
+                        Document our events to share them with the community.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-la-coral to-la-aqua flex items-center justify-center flex-shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-white"
+                      >
+                        <path d="M12 19c1-1 4-3 4-6.5a3.5 3.5 0 0 0-7 0c0 3.5 3 5.5 4 6.5Z" />
+                        <path d="M8 19c-1-1.5-2-3-2-5.5 0-2 .5-4 2-6" />
+                        <path d="M16 19c1-1.5 2-3 2-5.5 0-2-.5-4-2-6" />
+                        <path d="M12 19v3" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 font-heading">
+                        Graphic Design
+                      </h4>
+                      <p className="text-gray-600">
+                        Create promotional materials for events, social media,
+                        and website graphics.
                       </p>
                     </div>
                   </div>
@@ -545,6 +605,41 @@ export default function Home() {
                   Why Volunteer With Us?
                 </h3>
                 <ul className="space-y-6">
+                  <li className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-la-sunset to-la-dusk flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-white"
+                      >
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle
+                          cx="8.5"
+                          cy="7"
+                          r="4"
+                        ></circle>
+                        <polyline points="17 11 19 13 23 9"></polyline>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 font-heading">
+                        We Need You!
+                      </h4>
+                      <p className="text-gray-700">
+                        Summer of Quantum is entirely volunteer-led. We need
+                        enthusiastic people from all backgrounds to make these
+                        free quantum science events possible across LA.
+                      </p>
+                    </div>
+                  </li>
+
                   <li className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0 mt-1">
                       <svg
@@ -605,8 +700,8 @@ export default function Home() {
                       </h4>
                       <p className="text-gray-700">
                         Connect with leading scientists, educators, and
-                        professionals from UCLA, Caltech, USC, and industry
-                        partners.
+                        professionals from USC, Caltech, UCLA, our industry
+                        partners and our great volunteers.
                       </p>
                     </div>
                   </li>
@@ -722,7 +817,7 @@ export default function Home() {
                       <span className="font-bold text-gray-900 font-heading">
                         Networking:
                       </span>{' '}
-                      Connect with leading institutions like UCLA, Caltech, USC,
+                      Connect with leading institutions like USC, Caltech, UCLA,
                       and industry innovators.
                     </p>
                   </li>
@@ -901,10 +996,10 @@ export default function Home() {
                   Summer of Quantum in LA
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  A 10-week summer event series to make quantum mechanics
+                  A 10-week summer event series to make quantum science
                   engaging, accessible, and impactful for a diverse audience
-                  across LA, in collaboration with UCLA, Caltech, USC, and other
-                  partners.
+                  across LA, in collaboration with USC, Caltech, UCLA, and
+                  industry partners.
                 </p>
                 <div className="flex space-x-4">
                   <a
