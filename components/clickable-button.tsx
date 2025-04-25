@@ -7,6 +7,7 @@ interface ClickableButtonProps {
   className?: string
   children: React.ReactNode
   onClick?: (e: React.MouseEvent) => void
+  external?: boolean
 }
 
 const ClickableButton: React.FC<ClickableButtonProps> = ({
@@ -14,6 +15,7 @@ const ClickableButton: React.FC<ClickableButtonProps> = ({
   className = '',
   children,
   onClick,
+  external = false,
 }) => {
   const handleClick = (e: React.MouseEvent) => {
     if (onClick) {
@@ -22,7 +24,11 @@ const ClickableButton: React.FC<ClickableButtonProps> = ({
     }
 
     if (href) {
-      window.open(href, '_blank', 'noopener,noreferrer')
+      if (external) {
+        window.open(href, '_blank', 'noopener,noreferrer')
+      } else {
+        window.location.href = href
+      }
     }
   }
 

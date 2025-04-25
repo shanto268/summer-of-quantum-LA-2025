@@ -1,8 +1,7 @@
-"use client"
+'use client'
 
-import type React from "react"
-import { useEffect, useRef } from "react"
-import ClickableButton from "./components/clickable-button"
+import type React from 'react'
+import { useEffect, useRef } from 'react'
 
 interface NeonIsometricMazeProps {
   title?: string
@@ -10,8 +9,8 @@ interface NeonIsometricMazeProps {
 }
 
 const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
-  title = "Summer of Quantum in LA 🌴",
-  subtitle = "From Hollywood to Hilbert Space",
+  title = 'Summer of Quantum in LA 🌴',
+  subtitle = 'From Hollywood to Hilbert Space',
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -19,7 +18,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const x = canvas.getContext("2d")
+    const x = canvas.getContext('2d')
     if (!x) return
 
     let t = 0
@@ -66,12 +65,12 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
 
           // LA sunset gradient colors - lighter for better contrast
           const l = x.createLinearGradient(p, q - f, p + s, q)
-          l.addColorStop(0, "rgba(255,179,71,.6)") // LA Sunset
-          l.addColorStop(0.5, "rgba(255,227,236,.6)") // LA Blush
-          l.addColorStop(1, "rgba(227,141,234,.6)") // LA Dusk
+          l.addColorStop(0, 'rgba(255,179,71,.6)') // LA Sunset
+          l.addColorStop(0.5, 'rgba(255,227,236,.6)') // LA Blush
+          l.addColorStop(1, 'rgba(227,141,234,.6)') // LA Dusk
           x.fillStyle = l
           x.fill()
-          x.strokeStyle = "rgba(255,223,0,.3)" // Gold
+          x.strokeStyle = 'rgba(255,223,0,.3)' // Gold
           x.stroke()
 
           x.beginPath()
@@ -81,13 +80,17 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
           x.lineTo(p + s, q - f)
           x.moveTo(p + s / 2, q + s / 2)
           x.lineTo(p + s / 2, q - s / 2 - f)
-          x.strokeStyle = "rgba(255,255,255,.2)"
+          x.strokeStyle = 'rgba(255,255,255,.2)'
           x.stroke()
         }
       }
     }
 
-    const drawPalmTrees = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
+    const drawPalmTrees = (
+      ctx: CanvasRenderingContext2D,
+      width: number,
+      height: number,
+    ) => {
       ctx.save()
       ctx.globalAlpha = 0.1
 
@@ -98,7 +101,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
         const size = height * 0.15
 
         // Trunk
-        ctx.fillStyle = "rgba(30,30,30,0.5)"
+        ctx.fillStyle = 'rgba(30,30,30,0.5)'
         ctx.beginPath()
         ctx.moveTo(x - size / 20, y)
         ctx.lineTo(x + size / 20, y)
@@ -108,7 +111,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
         ctx.fill()
 
         // Leaves
-        ctx.fillStyle = "rgba(30,30,30,0.5)"
+        ctx.fillStyle = 'rgba(30,30,30,0.5)'
         for (let j = 0; j < 7; j++) {
           const angle = (j / 7) * Math.PI * 2
           ctx.beginPath()
@@ -133,7 +136,11 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
       ctx.restore()
     }
 
-    const drawGriffithSilhouette = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
+    const drawGriffithSilhouette = (
+      ctx: CanvasRenderingContext2D,
+      width: number,
+      height: number,
+    ) => {
       ctx.save()
       ctx.globalAlpha = 0.1
 
@@ -144,7 +151,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
       const domeRadius = baseHeight * 0.8
       const x = width * 0.7
 
-      ctx.fillStyle = "rgba(30,30,30,0.5)"
+      ctx.fillStyle = 'rgba(30,30,30,0.5)'
 
       // Main building
       ctx.beginPath()
@@ -158,11 +165,25 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
 
       // Side domes
       ctx.beginPath()
-      ctx.arc(x - baseWidth / 3, baseY - baseHeight, domeRadius / 2, Math.PI, 0, false)
+      ctx.arc(
+        x - baseWidth / 3,
+        baseY - baseHeight,
+        domeRadius / 2,
+        Math.PI,
+        0,
+        false,
+      )
       ctx.fill()
 
       ctx.beginPath()
-      ctx.arc(x + baseWidth / 3, baseY - baseHeight, domeRadius / 2, Math.PI, 0, false)
+      ctx.arc(
+        x + baseWidth / 3,
+        baseY - baseHeight,
+        domeRadius / 2,
+        Math.PI,
+        0,
+        false,
+      )
       ctx.fill()
 
       ctx.restore()
@@ -170,26 +191,29 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
 
     const a = () => {
       if (!canvas || !x) return
-      x.fillStyle = "rgba(255,255,255,.2)"
+      x.fillStyle = 'rgba(255,255,255,.2)'
       x.fillRect(0, 0, canvas.width, canvas.height)
       d()
       t += 0.05
       animationFrameId = requestAnimationFrame(a)
     }
 
-    window.addEventListener("resize", r)
+    window.addEventListener('resize', r)
     r()
     a()
 
     return () => {
-      window.removeEventListener("resize", r)
+      window.removeEventListener('resize', r)
       cancelAnimationFrame(animationFrameId)
     }
   }, [])
 
   return (
     <div className="relative w-full h-screen bg-la-sky/30">
-      <canvas ref={canvasRef} className="block absolute inset-0" />
+      <canvas
+        ref={canvasRef}
+        className="block absolute inset-0"
+      />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         {/* Clean, flat title text directly on the background */}
         <h1 className="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk font-heading">
@@ -198,16 +222,17 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
 
         {/* Clean, flat subtitle text directly on the background */}
         <p className="text-xl md:text-2xl text-white max-w-2xl font-body flex items-center justify-center gap-2 mt-4">
-          <span className="text-2xl">🎬</span> {subtitle} <span className="font-mono text-2xl">ℋ</span>
+          <span className="text-2xl">🎬</span> {subtitle}{' '}
+          <span className="font-mono text-2xl">ℋ</span>
         </p>
 
         <div className="mt-8">
-          <ClickableButton
-            className="px-6 py-2 text-sm rounded-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm hover:scale-105 transition-transform"
+          <a
             href="#event-overview"
+            className="px-6 py-2 text-sm rounded-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm hover:scale-105 transition-transform inline-block"
           >
             Explore Events <span className="ml-2">✨</span>
-          </ClickableButton>
+          </a>
         </div>
       </div>
       <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">

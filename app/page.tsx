@@ -196,8 +196,8 @@ export default function Home() {
                   Collaborate with academia and industry
                 </h3>
                 <p className="text-gray-600">
-                  Partnering with UCLA, Caltech, USC and industry leaders to
-                  bring expert knowledge to the public.
+                  Partnering with USC, Caltech, UCLA, Chapman, industry leaders
+                  to bring expert knowledge to the public.
                 </p>
               </div>
 
@@ -240,7 +240,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="border-2 border-la-sunset text-la-coral hover:bg-la-sand transition-all shadow-sm rounded-full px-6 py-2 text-sm hover:scale-105"
                 >
-                  Learn More
+                  Learn More About IYQ 2025
                 </a>
               </div>
             </div>
@@ -700,8 +700,8 @@ export default function Home() {
                       </h4>
                       <p className="text-gray-700">
                         Connect with leading scientists, educators, and
-                        professionals from USC, Caltech, UCLA, our industry
-                        partners and our great volunteers.
+                        professionals from USC, Caltech, UCLA, Chapman, our
+                        industry partners and our great volunteers.
                       </p>
                     </div>
                   </li>
@@ -818,7 +818,7 @@ export default function Home() {
                         Networking:
                       </span>{' '}
                       Connect with leading institutions like USC, Caltech, UCLA,
-                      and industry innovators.
+                      Chapman and industry innovators.
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
@@ -998,8 +998,8 @@ export default function Home() {
                 <p className="text-gray-600 mb-6">
                   A 10-week summer event series to make quantum science
                   engaging, accessible, and impactful for a diverse audience
-                  across LA, in collaboration with USC, Caltech, UCLA, and
-                  industry partners.
+                  across LA, in collaboration with USC, Caltech, UCLA, Chapman
+                  and industry partners.
                 </p>
                 <div className="flex space-x-4">
                   <a
