@@ -768,7 +768,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 font-heading">
-                  Why Partner with Summer of Quantum?
+                  Why Partner With Us?
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
