@@ -46,7 +46,7 @@ export default function Home() {
       time: 'TBD',
       location: 'Various Locations',
       description:
-        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics',
+        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
       image: '/images/games.png?height=300&width=600',
       icon: <Gamepad2 className="w-6 h-6" />,
     },
@@ -56,7 +56,7 @@ export default function Home() {
       time: 'TBD',
       location: 'Griffith Observatory',
       description:
-        'An unforgettable night at Griffith Observatory learning about the quantum physics at the heart of creation',
+        'An unforgettable night at Griffith Observatory learning about the quantum physics relevant to the existence of the universe.',
       image: '/images/stars.png?height=300&width=600',
       icon: <Telescope className="w-6 h-6" />,
     },
