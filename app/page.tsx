@@ -1,5 +1,6 @@
 'use client'
 
+import { Analytics } from '@vercel/analytics/react'
 import {
   Atom,
   Beer,
@@ -51,7 +52,7 @@ export default function Home() {
       icon: <Gamepad2 className="w-6 h-6" />,
     },
     {
-      title: 'Quarks to Quasars',
+      title: 'Quantum in the Stars',
       date: 'TBD',
       time: 'TBD',
       location: 'Griffith Observatory',
@@ -1119,6 +1120,7 @@ export default function Home() {
           </div>
         </footer>
       </main>
+      <Analytics />
     </>
   )
 }
