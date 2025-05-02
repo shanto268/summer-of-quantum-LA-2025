@@ -221,7 +221,7 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
         </h1>
 
         {/* Clean, flat subtitle text directly on the background */}
-        <p className="text-xl md:text-2xl text-white max-w-2xl font-body flex items-center justify-center gap-2 mt-4">
+        <p className="text-xl md:text-2xl text-[#FF8C00] max-w-2xl font-body flex items-center justify-center gap-2 mt-4">
           <span className="text-2xl">🎬</span> {subtitle}{' '}
           <span className="font-mono text-2xl">ℋ</span>
         </p>
