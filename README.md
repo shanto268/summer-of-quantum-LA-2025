@@ -123,4 +123,5 @@ Project Link: [https://github.com/shanto268/summer-of-quantum-LA-2025](https://g
 
 - [ ] Add eventbrite registration links to the event cards
 - [ ] Add leadership/people/volunteers page
+- [ ] Add campus partners logos
 - [ ] Create pages for each event with FAQs
