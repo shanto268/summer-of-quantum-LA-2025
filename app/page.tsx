@@ -23,7 +23,7 @@ export default function Home() {
   const upcomingEvents = [
     {
       title: 'Public Talks',
-      date: 'TBD',
+      date: 'June 10-15, 2024',
       time: 'TBD',
       location: 'USC, Caltech, UCLA, Chapman, and more',
       description:
@@ -33,7 +33,7 @@ export default function Home() {
     },
     {
       title: 'Quantum at the Bar (ħ)',
-      date: 'TBD',
+      date: 'July 22-27, 2024',
       time: 'TBD',
       location: 'Various Locations',
       description:
@@ -43,7 +43,7 @@ export default function Home() {
     },
     {
       title: 'Quantum Games',
-      date: 'TBD',
+      date: 'July 15-20, 2024',
       time: 'TBD',
       location: 'Various Locations',
       description:
@@ -53,7 +53,7 @@ export default function Home() {
     },
     {
       title: 'Quantum in the Stars',
-      date: 'TBD',
+      date: 'August 5-10, 2024',
       time: 'TBD',
       location: 'Griffith Observatory',
       description:
@@ -63,7 +63,7 @@ export default function Home() {
     },
     {
       title: 'Quantum for Kids',
-      date: 'TBD',
+      date: 'July 8-13, 2024',
       time: 'TBD',
       location: 'TBD',
       description:
@@ -73,7 +73,7 @@ export default function Home() {
     },
     {
       title: 'Quantum Lab Tours',
-      date: 'TBD',
+      date: 'June 17-22, 2024',
       time: 'TBD',
       location: 'TBD',
       description:
@@ -83,7 +83,7 @@ export default function Home() {
     },
     {
       title: 'Quantum for Seniors',
-      date: 'TBD',
+      date: 'June 3-8, 2024',
       time: 'TBD',
       location: 'TBD',
       description:
@@ -93,7 +93,7 @@ export default function Home() {
     },
     {
       title: 'Quantum for Teachers',
-      date: 'TBD',
+      date: 'July 29-August 3, 2024',
       time: 'TBD',
       location: 'TBD',
       description:
@@ -103,7 +103,7 @@ export default function Home() {
     },
     {
       title: 'Quantum Tech Company Events',
-      date: 'TBD',
+      date: 'June 24-29, 2024',
       time: 'TBD',
       location: 'TBD',
       description:
