@@ -22,6 +22,16 @@ import NeonIsometricMaze from '../neon-isometric-maze'
 export default function Home() {
   const upcomingEvents = [
     {
+      title: 'Quantum for Seniors',
+      date: 'June 3-8, 2024',
+      time: 'TBD',
+      location: 'TBD',
+      description:
+        'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
+      image: '/images/seniors.png?height=300&width=600',
+      icon: <Users className="w-6 h-6" />,
+    },
+    {
       title: 'Public Talks',
       date: 'June 10-15, 2024',
       time: 'TBD',
@@ -30,46 +40,6 @@ export default function Home() {
         'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics — no technical background required.',
       image: '/images/public-talk.png?height=300&width=600',
       icon: <GraduationCap className="w-6 h-6" />,
-    },
-    {
-      title: 'Quantum at the Bar (ħ)',
-      date: 'July 22-27, 2024',
-      time: 'TBD',
-      location: 'Various Locations',
-      description:
-        'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science — drinks encouraged, physics demystified.',
-      image: '/images/h-bar.png?height=300&width=600',
-      icon: <Beer className="w-6 h-6" />,
-    },
-    {
-      title: 'Quantum Games',
-      date: 'July 15-20, 2024',
-      time: 'TBD',
-      location: 'Various Locations',
-      description:
-        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
-      image: '/images/games.png?height=300&width=600',
-      icon: <Gamepad2 className="w-6 h-6" />,
-    },
-    {
-      title: 'Quantum in the Stars',
-      date: 'August 5-10, 2024',
-      time: 'TBD',
-      location: 'Griffith Observatory',
-      description:
-        'An unforgettable night at Griffith Observatory learning about the quantum physics relevant to the existence of the universe.',
-      image: '/images/stars.png?height=300&width=600',
-      icon: <Telescope className="w-6 h-6" />,
-    },
-    {
-      title: 'Quantum for Kids',
-      date: 'July 8-13, 2024',
-      time: 'TBD',
-      location: 'TBD',
-      description:
-        'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
-      image: '/images/kids.png?height=300&width=600',
-      icon: <Atom className="w-6 h-6" />,
     },
     {
       title: 'Quantum Lab Tours',
@@ -82,14 +52,44 @@ export default function Home() {
       icon: <Building2 className="w-6 h-6" />,
     },
     {
-      title: 'Quantum for Seniors',
-      date: 'June 3-8, 2024',
+      title: 'Quantum Tech Company Events',
+      date: 'June 24-29, 2024',
       time: 'TBD',
       location: 'TBD',
       description:
-        'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
-      image: '/images/seniors.png?height=300&width=600',
-      icon: <Users className="w-6 h-6" />,
+        'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
+      image: '/images/companies.png?height=300&width=600',
+      icon: <Sparkles className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum for Kids',
+      date: 'July 8-13, 2024',
+      time: 'TBD',
+      location: 'TBD',
+      description:
+        'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
+      image: '/images/kids.png?height=300&width=600',
+      icon: <Atom className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum Games',
+      date: 'July 15-20, 2024',
+      time: 'TBD',
+      location: 'Various Locations',
+      description:
+        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
+      image: '/images/games.png?height=300&width=600',
+      icon: <Gamepad2 className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum at the Bar (ħ)',
+      date: 'July 22-27, 2024',
+      time: 'TBD',
+      location: 'Various Locations',
+      description:
+        'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science — drinks encouraged, physics demystified.',
+      image: '/images/h-bar.png?height=300&width=600',
+      icon: <Beer className="w-6 h-6" />,
     },
     {
       title: 'Quantum for Teachers',
@@ -102,14 +102,14 @@ export default function Home() {
       icon: <GraduationCap className="w-6 h-6" />,
     },
     {
-      title: 'Quantum Tech Company Events',
-      date: 'June 24-29, 2024',
+      title: 'Quantum in the Stars',
+      date: 'August 5-10, 2024',
       time: 'TBD',
-      location: 'TBD',
+      location: 'Griffith Observatory',
       description:
-        'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
-      image: '/images/companies.png?height=300&width=600',
-      icon: <Sparkles className="w-6 h-6" />,
+        'An unforgettable night at Griffith Observatory learning about the quantum physics relevant to the existence of the universe.',
+      image: '/images/stars.png?height=300&width=600',
+      icon: <Telescope className="w-6 h-6" />,
     },
   ]
 
