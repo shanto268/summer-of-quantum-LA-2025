@@ -188,6 +188,51 @@ export default function Volunteers() {
       institution: 'USC',
       image: '/images/volunteers/placeholder-23.jpg',
     },
+    {
+      name: 'Sacha Greenfield',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-56.jpg',
+    },
+    {
+      name: 'Preksha Naik',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-57.jpg',
+    },
+    {
+      name: 'Peter Connolly',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-58.jpg',
+    },
+    {
+      name: 'Venktesh Bohra',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-59.jpg',
+    },
+    {
+      name: 'Piero Chiappina',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-60.jpg',
+    },
+    {
+      name: 'Yunhan Wang',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-61.jpg',
+    },
+    {
+      name: 'Jiajin Zhang',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-62.jpg',
+    },
+    {
+      name: 'Charis Hall',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-63.jpg',
+    },
+    {
+      name: 'Michael Bregar',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-64.jpg',
+    },
 
     {
       name: 'Robbie King',
@@ -298,16 +343,6 @@ export default function Volunteers() {
       name: 'Abhishek Chakraborty',
       institution: 'Chapman',
       image: '/images/volunteers/placeholder-49.jpg',
-    },
-    {
-      name: 'Bibek Bhandari',
-      institution: 'Chapman',
-      image: '/images/volunteers/placeholder-50.jpg',
-    },
-    {
-      name: 'Alan Alexander',
-      institution: 'Pasadena City College',
-      image: '/images/volunteers/placeholder-51.jpg',
     },
     {
       name: 'Farai Mazhandu',
