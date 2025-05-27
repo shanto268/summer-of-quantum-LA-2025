@@ -123,13 +123,17 @@ export default function Home() {
       external: true,
     },
     {
-      name: 'Volunteer with Us',
-      href: 'https://forms.gle/ZSaeCCjfn7HQjELy5',
-      external: true,
+      name: 'Our Volunteers',
+      href: '/volunteers',
     },
     {
       name: 'Partner with Us',
       href: 'https://forms.gle/DyUdErt8nMdxNmai8',
+      external: true,
+    },
+    {
+      name: 'Volunteer with Us',
+      href: 'https://forms.gle/ZSaeCCjfn7HQjELy5',
       external: true,
     },
   ]
@@ -283,10 +287,25 @@ export default function Home() {
         >
           <div className="absolute inset-0 opacity-5 bg-venice-texture mix-blend-overlay"></div>
           <div className="container mx-auto">
-            <SectionHeading
-              title="Volunteer with Us"
-              subtitle="Help us make quantum science accessible to everyone in LA"
-            />
+            <div className="mb-8 md:mb-12 max-w-3xl text-center mx-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk font-heading">
+                Volunteer with Us
+              </h2>
+              <div className="flex justify-center">
+                <div className="text-base sm:text-lg text-gray-600 font-body max-w-full break-words">
+                  Help us make quantum science accessible to everyone in LA and
+                  join{' '}
+                  <a
+                    href="/volunteers"
+                    className="text-la-coral hover:text-la-sunset underline underline-offset-4 decoration-la-coral/70 hover:decoration-la-sunset/70 transition-all duration-300 relative z-50"
+                    style={{ position: 'relative' }}
+                  >
+                    our great quantum network
+                  </a>
+                  !
+                </div>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-md shadow-la-sand/40">
@@ -707,7 +726,15 @@ export default function Home() {
                       <p className="text-gray-700">
                         Connect with leading scientists, educators, and
                         professionals from USC, Caltech, UCLA, Chapman, our
-                        industry partners and our great volunteers.
+                        industry partners and{' '}
+                        <a
+                          href="/volunteers"
+                          className="text-la-coral hover:text-la-sunset underline underline-offset-4 decoration-la-coral/70 hover:decoration-la-sunset/70 transition-all duration-300 relative z-50"
+                          style={{ position: 'relative' }}
+                        >
+                          our great volunteers
+                        </a>
+                        .
                       </p>
                     </div>
                   </li>

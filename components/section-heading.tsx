@@ -30,9 +30,9 @@ export default function SectionHeading({
       </h2>
       {subtitle && (
         <div className={`flex ${justifyContent[align]}`}>
-          <p className="text-base sm:text-lg text-gray-600 font-body max-w-full break-words">
+          <div className="text-base sm:text-lg text-gray-600 font-body max-w-full break-words">
             {subtitle}
-          </p>
+          </div>
         </div>
       )}
     </div>
