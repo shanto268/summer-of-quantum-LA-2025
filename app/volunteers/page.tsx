@@ -263,6 +263,7 @@ export default function Volunteers() {
       name: 'Taylor Knapp',
       institution: 'Caltech',
       image: '/images/volunteers/placeholder-53.jpg',
+      isLeadership: true,
     },
     {
       name: 'Yincheng Liu',
@@ -313,6 +314,7 @@ export default function Volunteers() {
       name: 'Huma Jafree',
       institution: 'Caltech',
       image: '/images/volunteers/placeholder-43.jpg',
+      isLeadership: true,
     },
     {
       name: 'Kristina Malinowski',
