@@ -144,11 +144,6 @@ export default function Volunteers() {
       image: '/images/volunteers/placeholder-20.jpg',
     },
     {
-      name: 'Phelan Yu',
-      institution: 'USC',
-      image: '/images/volunteers/placeholder-21.jpg',
-    },
-    {
       name: 'Ian Hsiao',
       institution: 'USC',
       image: '/images/volunteers/placeholder-22.jpg',
@@ -258,6 +253,16 @@ export default function Volunteers() {
       name: 'Adelynn Tang',
       institution: 'Caltech',
       image: '/images/volunteers/placeholder-33.jpg',
+    },
+    {
+      name: 'Thomas Zacharias',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-65.jpg',
+    },
+    {
+      name: 'Phelan Yu',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-21.jpg',
     },
     {
       name: 'Taylor Knapp',
