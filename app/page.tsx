@@ -118,6 +118,11 @@ export default function Home() {
     { name: 'Event Overview', href: '#event-overview' },
     { name: 'Upcoming Events', href: '#upcoming-events' },
     {
+      name: 'Join Our Mailing List',
+      href: 'https://forms.gle/2PLx9D6uXgCmodDbA',
+      external: true,
+    },
+    {
       name: 'Volunteer with Us',
       href: 'https://forms.gle/ZSaeCCjfn7HQjELy5',
       external: true,
