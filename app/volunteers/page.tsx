@@ -285,6 +285,11 @@ export default function Volunteers() {
       image: '/images/volunteers/placeholder-47.jpg',
     },
     {
+      name: 'Yuxi Yang',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-55.jpg',
+    },
+    {
       name: 'Leo Zhou',
       institution: 'UCLA',
       image: '/images/volunteers/placeholder-48.jpg',
