@@ -413,7 +413,7 @@ export default function Volunteers() {
     {
       name: 'Ishfaq Majeed Ahanger',
       institution: 'National Institute of Technology Srinagar India',
-      image: '/images/volunteers/ishfaq-majeed-ahanger.jpg',
+      image: '/images/volunteers/placeholder-75.jpg',
     },
     {
       name: 'Elina Sendonaris',
@@ -443,7 +443,7 @@ export default function Volunteers() {
     {
       name: 'Anil Maurya',
       institution: 'University of Camerino',
-      image: '/images/volunteers/anil-maurya.jpg',
+      image: '/images/volunteers/placeholder-81.jpg',
       linkedin: 'https://www.linkedin.com/in/anil-maurya-2860b2206',
     },
     {
