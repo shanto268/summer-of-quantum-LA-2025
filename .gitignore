@@ -33,3 +33,5 @@ plan.md
 *.ipynb
 *.py
 *.txt
+token.json
+credentials.json

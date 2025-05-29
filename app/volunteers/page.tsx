@@ -1,9 +1,13 @@
 'use client'
 
 import { Analytics } from '@vercel/analytics/react'
-import { Building2, Users } from 'lucide-react'
+import { Building2, Globe, Linkedin } from 'lucide-react'
+import { useState } from 'react'
 import Navbar from '../../components/navbar'
 import SectionHeading from '../../components/section-heading'
+
+const PLACEHOLDER_IMG = '/images/volunteers/placeholder.jpg'
+const PAGE_SIZE = 20
 
 export default function Volunteers() {
   const navLinks = [
@@ -32,7 +36,8 @@ export default function Volunteers() {
     {
       name: 'Sadman Ahmed Shanto',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-1.jpg',
+      image: '/images/volunteers/sadman-ahmed-shanto.jpg',
+      website: 'https://sadmanahmedshanto.com',
       isLeadership: true,
     },
     {
@@ -44,13 +49,15 @@ export default function Volunteers() {
     {
       name: 'Madison Howard',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-3.jpg',
+      image: '/images/volunteers/madison-howard.jpg',
+      website: 'https://madisonihoward.com',
       isLeadership: true,
     },
     {
       name: 'Joseph Barreto',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-4.jpg',
+      image: '/images/volunteers/joey-barreto.jpg',
+      linkedin: 'https://www.linkedin.com/in/joey-barreto/',
       isLeadership: true,
     },
     {
@@ -62,7 +69,8 @@ export default function Volunteers() {
     {
       name: 'Nicolas Dirnegger',
       institution: 'UCLA',
-      image: '/images/volunteers/placeholder-6.jpg',
+      image: '/images/volunteers/nicolas-dirnegger.jpg',
+      linkedin: 'http://linkedin.com/in/nicolas-dirnegger-aa8442100',
       isLeadership: true,
     },
     {
@@ -126,7 +134,8 @@ export default function Volunteers() {
     {
       name: 'Yueqian Wang',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-17.jpg',
+      image: '/images/volunteers/yueqian-wang.jpg',
+      linkedin: 'https://www.linkedin.com/in/yueqianwang',
     },
     {
       name: 'Akansha Jaiswal',
@@ -141,7 +150,8 @@ export default function Volunteers() {
     {
       name: 'Anudeep Deekonda',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-20.jpg',
+      image: '/images/volunteers/anudeep-deekonda.jpg',
+      linkedin: 'https://www.linkedin.com/in/anudeep-deekonda/',
     },
     {
       name: 'Ian Hsiao',
@@ -257,7 +267,9 @@ export default function Volunteers() {
     {
       name: 'Thomas Zacharias',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-65.jpg',
+      image: '/images/volunteers/thomas-zacharias.jpg',
+      isLeadership: true,
+      linkedin: 'https://www.linkedin.com/in/thomas-zacharias-899a7210b/',
     },
     {
       name: 'Phelan Yu',
@@ -267,7 +279,8 @@ export default function Volunteers() {
     {
       name: 'Taylor Knapp',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-53.jpg',
+      image: '/images/volunteers/taylor-knapp.jpg',
+      linkedin: 'https://www.linkedin.com/in/tayloraknapp/',
       isLeadership: true,
     },
     {
@@ -356,7 +369,117 @@ export default function Volunteers() {
       institution: 'Colorado School of Mines',
       image: '/images/volunteers/placeholder-52.jpg',
     },
+    {
+      name: 'Hannah Manetsch',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-67.jpg',
+    },
+    {
+      name: 'Lisa Drummond',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-68.jpg',
+    },
+    {
+      name: 'Peter Carney',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-69.jpg',
+    },
+    {
+      name: 'Daniel Grass',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-70.jpg',
+    },
+    {
+      name: 'Jeffrey Wack',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-71.jpg',
+    },
+    {
+      name: 'Sara Vanovac',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-72.jpg',
+    },
+    {
+      name: 'Daniel Ranard',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-73.jpg',
+    },
+    {
+      name: 'Omid Golami',
+      institution: 'Caltech',
+      image: '/images/volunteers/omid-golami.jpg',
+      linkedin: 'https://www.linkedin.com/in/omid-golami-ab2b05a7/',
+    },
+    {
+      name: 'Ishfaq Majeed Ahanger',
+      institution: 'National Institute of Technology Srinagar India',
+      image: '/images/volunteers/ishfaq-majeed-ahanger.jpg',
+    },
+    {
+      name: 'Elina Sendonaris',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-76.jpg',
+    },
+    {
+      name: 'William Munizzi',
+      institution: 'UCLA',
+      image: '/images/volunteers/placeholder-77.jpg',
+    },
+    {
+      name: 'Eli Ullman-Kissel',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-78.jpg',
+    },
+    {
+      name: 'Jonathan Greenfield',
+      institution: 'JPL/Arizona State University',
+      image: '/images/volunteers/placeholder-79.jpg',
+    },
+    {
+      name: 'Durga Pritam Suggisetti',
+      institution: 'New York University',
+      image: '/images/volunteers/placeholder-80.jpg',
+    },
+    {
+      name: 'Anil Maurya',
+      institution: 'University of Camerino',
+      image: '/images/volunteers/anil-maurya.jpg',
+      linkedin: 'https://www.linkedin.com/in/anil-maurya-2860b2206',
+    },
+    {
+      name: 'David McNeary',
+      institution: 'CSUN',
+      image: '/images/volunteers/placeholder-82.jpg',
+    },
+    {
+      name: 'Sephali Giri',
+      institution: 'C.V Raman Global University',
+      image: '/images/volunteers/placeholder-83.jpg',
+    },
+    {
+      name: 'Alan Alexander',
+      institution: 'Pasadena City College',
+      image: '/images/volunteers/alan-alexander.jpg',
+      linkedin: 'linkedin.com/alanalexanderbus',
+    },
   ]
+
+  const [page, setPage] = useState(0)
+
+  // Leadership team (no pagination)
+  const leadershipVolunteers = volunteers.filter(
+    (v) => v.isLeadership && v.name && v.name.trim() !== '',
+  )
+
+  // All volunteers (paginated)
+  const allVolunteers = volunteers.filter(
+    (v) => !v.isLeadership && v.name && v.name.trim() !== '',
+  )
+  const pageCount = Math.ceil(allVolunteers.length / PAGE_SIZE)
+  const paginatedVolunteers = allVolunteers.slice(
+    page * PAGE_SIZE,
+    (page + 1) * PAGE_SIZE,
+  )
 
   return (
     <>
@@ -377,32 +500,72 @@ export default function Volunteers() {
                 Leadership Team
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-                {volunteers
-                  .filter((v) => v.isLeadership)
-                  .map((volunteer, index) => (
+                {leadershipVolunteers.map((volunteer, index) => {
+                  const link = volunteer.website || volunteer.linkedin
+                  const cardContent = (
                     <div
-                      key={index}
-                      className="bg-white rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 overflow-hidden group hover:border-la-sunset/40 transition-all duration-300 transform hover:scale-[1.02]"
+                      className="bg-white rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 overflow-hidden group hover:border-la-sunset/40 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer"
+                      tabIndex={link ? 0 : -1}
+                      aria-label={
+                        link ? `Open ${volunteer.name}'s profile` : undefined
+                      }
                     >
                       <div className="aspect-square relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <Users className="w-16 h-16 text-la-coral opacity-50" />
-                        </div>
+                        <img
+                          src={volunteer.image || PLACEHOLDER_IMG}
+                          alt={`${volunteer.name}'s profile picture`}
+                          onError={(e) => {
+                            e.currentTarget.onerror = null
+                            e.currentTarget.src = PLACEHOLDER_IMG
+                          }}
+                          className="absolute inset-0 w-full h-full object-cover object-center"
+                          loading="lazy"
+                        />
                       </div>
                       <div className="p-6">
                         <h3 className="text-lg font-bold text-gray-900 font-heading mb-1">
                           {volunteer.name}
                         </h3>
-                        <div className="flex items-center gap-2 text-la-coral">
+                        <div className="flex items-center gap-2 text-la-coral mb-2">
                           <Building2 className="w-4 h-4" />
                           <span className="text-sm font-medium">
                             {volunteer.institution}
                           </span>
                         </div>
+                        {volunteer.website ? (
+                          <span className="inline-flex items-center gap-1 text-sm text-la-coral">
+                            <Globe className="w-4 h-4" />
+                            <span>Personal Website</span>
+                          </span>
+                        ) : (
+                          volunteer.linkedin && (
+                            <span className="inline-flex items-center gap-1 text-sm text-la-coral">
+                              <Linkedin className="w-4 h-4" />
+                              <span>LinkedIn Profile</span>
+                            </span>
+                          )
+                        )}
                       </div>
                     </div>
-                  ))}
+                  )
+                  return link ? (
+                    <a
+                      key={index}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      tabIndex={0}
+                      aria-label={`Open ${volunteer.name}'s profile`}
+                      className="focus:outline-none"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      {cardContent}
+                    </a>
+                  ) : (
+                    <div key={index}>{cardContent}</div>
+                  )
+                })}
               </div>
             </div>
 
@@ -412,33 +575,105 @@ export default function Volunteers() {
                 Our Volunteers
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-                {volunteers
-                  .filter((v) => !v.isLeadership)
-                  .map((volunteer, index) => (
+                {paginatedVolunteers.map((volunteer, index) => {
+                  const link = volunteer.website || volunteer.linkedin
+                  const cardContent = (
                     <div
-                      key={index}
-                      className="bg-white rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 overflow-hidden group hover:border-la-sunset/40 transition-all duration-300 transform hover:scale-[1.02]"
+                      className="bg-white rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 overflow-hidden group hover:border-la-sunset/40 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer"
+                      tabIndex={link ? 0 : -1}
+                      aria-label={
+                        link ? `Open ${volunteer.name}'s profile` : undefined
+                      }
                     >
                       <div className="aspect-square relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <Users className="w-16 h-16 text-la-coral opacity-50" />
-                        </div>
+                        <img
+                          src={volunteer.image || PLACEHOLDER_IMG}
+                          alt={`${volunteer.name}'s profile picture`}
+                          onError={(e) => {
+                            e.currentTarget.onerror = null
+                            e.currentTarget.src = PLACEHOLDER_IMG
+                          }}
+                          className="absolute inset-0 w-full h-full object-cover object-center"
+                          loading="lazy"
+                        />
                       </div>
                       <div className="p-6">
                         <h3 className="text-lg font-bold text-gray-900 font-heading mb-1">
                           {volunteer.name}
                         </h3>
-                        <div className="flex items-center gap-2 text-la-coral">
+                        <div className="flex items-center gap-2 text-la-coral mb-2">
                           <Building2 className="w-4 h-4" />
                           <span className="text-sm font-medium">
                             {volunteer.institution}
                           </span>
                         </div>
+                        {volunteer.website ? (
+                          <span className="inline-flex items-center gap-1 text-sm text-la-coral">
+                            <Globe className="w-4 h-4" />
+                            <span>Personal Website</span>
+                          </span>
+                        ) : (
+                          volunteer.linkedin && (
+                            <span className="inline-flex items-center gap-1 text-sm text-la-coral">
+                              <Linkedin className="w-4 h-4" />
+                              <span>LinkedIn Profile</span>
+                            </span>
+                          )
+                        )}
                       </div>
                     </div>
-                  ))}
+                  )
+                  return link ? (
+                    <a
+                      key={index}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      tabIndex={0}
+                      aria-label={`Open ${volunteer.name}'s profile`}
+                      className="focus:outline-none"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      {cardContent}
+                    </a>
+                  ) : (
+                    <div key={index}>{cardContent}</div>
+                  )
+                })}
               </div>
+              {/* Pagination Controls */}
+              {pageCount > 1 && (
+                <div className="flex justify-center items-center gap-4 mt-8">
+                  <button
+                    onClick={() => setPage((p) => Math.max(0, p - 1))}
+                    disabled={page === 0}
+                    className={
+                      `bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 text-sm transition-all hover:opacity-90 hover:scale-105 focus:outline-none` +
+                      (page === 0 ? ' opacity-50 cursor-not-allowed' : '')
+                    }
+                  >
+                    Previous
+                  </button>
+                  <span className="text-gray-700">
+                    Page {page + 1} of {pageCount}
+                  </span>
+                  <button
+                    onClick={() =>
+                      setPage((p) => Math.min(pageCount - 1, p + 1))
+                    }
+                    disabled={page === pageCount - 1}
+                    className={
+                      `bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full px-4 sm:px-6 py-2 sm:py-3 text-sm transition-all hover:opacity-90 hover:scale-105 focus:outline-none` +
+                      (page === pageCount - 1
+                        ? ' opacity-50 cursor-not-allowed'
+                        : '')
+                    }
+                  >
+                    Next
+                  </button>
+                </div>
+              )}
             </div>
 
             <div className="mt-12 bg-gradient-to-r from-la-sky to-la-blush p-5 sm:p-8 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40">
