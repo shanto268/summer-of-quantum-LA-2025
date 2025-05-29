@@ -154,7 +154,7 @@ export default function Volunteers() {
     {
       name: 'Yueqian Wang',
       institution: 'USC',
-      image: '/images/volunteers/yueqian-wang.jpg',
+      image: '/images/volunteers/placeholder-17.jpg',
       linkedin: 'https://www.linkedin.com/in/yueqianwang',
     },
     {
@@ -272,7 +272,8 @@ export default function Volunteers() {
     {
       name: 'Chandler Conn',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-31.jpg',
+      image: '/images/volunteers/chandler-conn.jpg',
+      linkedin: 'www.linkedin.com/in/chandler-conn-96527a2b8',
     },
     {
       name: 'Alice Xiong',
@@ -465,6 +466,9 @@ export default function Volunteers() {
   ]
 
   const [page, setPage] = useState(0)
+  const [institutionFilter, setInstitutionFilter] = useState<string | null>(
+    null,
+  )
 
   // Leadership team (no pagination)
   const leadershipVolunteers = volunteers.filter(
@@ -475,8 +479,22 @@ export default function Volunteers() {
   const allVolunteers = volunteers.filter(
     (v) => !v.isLeadership && v.name && v.name.trim() !== '',
   )
-  const pageCount = Math.ceil(allVolunteers.length / PAGE_SIZE)
-  const paginatedVolunteers = allVolunteers.slice(
+  const preferredOrder = ['USC', 'Caltech', 'UCLA', 'Chapman']
+  const allInstitutionsSet = new Set(
+    allVolunteers.map((v) => v.institution).filter(Boolean),
+  )
+  const otherInstitutions = Array.from(allInstitutionsSet)
+    .filter((inst) => !preferredOrder.includes(inst))
+    .sort()
+  const orderedInstitutions = [
+    ...preferredOrder.filter((inst) => allInstitutionsSet.has(inst)),
+    ...otherInstitutions,
+  ]
+  const filteredVolunteers = institutionFilter
+    ? allVolunteers.filter((v) => v.institution === institutionFilter)
+    : allVolunteers
+  const pageCount = Math.ceil(filteredVolunteers.length / PAGE_SIZE)
+  const paginatedVolunteers = filteredVolunteers.slice(
     page * PAGE_SIZE,
     (page + 1) * PAGE_SIZE,
   )
@@ -582,6 +600,40 @@ export default function Volunteers() {
               <h3 className="text-2xl font-bold mb-6 text-gray-900 font-heading">
                 Our Volunteers
               </h3>
+              {/* Institution Filter UI below heading */}
+              <div className="mb-8 overflow-x-auto pb-2">
+                <div className="flex gap-2 w-max min-w-full">
+                  <button
+                    onClick={() => {
+                      setInstitutionFilter(null)
+                      setPage(0)
+                    }}
+                    className={`px-5 py-2 rounded-full border font-medium transition-colors whitespace-nowrap shadow-sm ${
+                      institutionFilter === null
+                        ? 'bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white border-la-sunset'
+                        : 'bg-white text-la-coral border-la-sunset/30 hover:bg-la-sand'
+                    }`}
+                  >
+                    All Institutions
+                  </button>
+                  {orderedInstitutions.map((inst) => (
+                    <button
+                      key={inst}
+                      onClick={() => {
+                        setInstitutionFilter(inst)
+                        setPage(0)
+                      }}
+                      className={`px-5 py-2 rounded-full border font-medium transition-colors whitespace-nowrap shadow-sm ${
+                        institutionFilter === inst
+                          ? 'bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white border-la-sunset'
+                          : 'bg-white text-la-coral border-la-sunset/30 hover:bg-la-sand'
+                      }`}
+                    >
+                      {inst}
+                    </button>
+                  ))}
+                </div>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                 {paginatedVolunteers.map((volunteer, index) => {
                   const link = volunteer.website || volunteer.linkedin
