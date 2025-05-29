@@ -1,7 +1,7 @@
 'use client'
 
 import { Analytics } from '@vercel/analytics/react'
-import { Building2, Globe, Linkedin } from 'lucide-react'
+import { Building2, Globe, Linkedin, Users } from 'lucide-react'
 import { useState } from 'react'
 import Navbar from '../../components/navbar'
 import SectionHeading from '../../components/section-heading'
@@ -510,18 +510,26 @@ export default function Volunteers() {
                         link ? `Open ${volunteer.name}'s profile` : undefined
                       }
                     >
-                      <div className="aspect-square relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20"></div>
-                        <img
-                          src={volunteer.image || PLACEHOLDER_IMG}
-                          alt={`${volunteer.name}'s profile picture`}
-                          onError={(e) => {
-                            e.currentTarget.onerror = null
-                            e.currentTarget.src = PLACEHOLDER_IMG
-                          }}
-                          className="absolute inset-0 w-full h-full object-cover object-center"
-                          loading="lazy"
-                        />
+                      <div className="aspect-square relative overflow-hidden flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20 pointer-events-none" />
+                        {!volunteer.image ||
+                        volunteer.image.includes('placeholder') ? (
+                          <Users
+                            className="w-20 h-20 text-la-coral opacity-80 z-10"
+                            aria-label="No profile picture"
+                          />
+                        ) : (
+                          <img
+                            src={volunteer.image}
+                            alt={`${volunteer.name}'s profile picture`}
+                            onError={(e) => {
+                              e.currentTarget.onerror = null
+                              e.currentTarget.src = PLACEHOLDER_IMG
+                            }}
+                            className="absolute inset-0 w-full h-full object-cover object-center z-10"
+                            loading="lazy"
+                          />
+                        )}
                       </div>
                       <div className="p-6">
                         <h3 className="text-lg font-bold text-gray-900 font-heading mb-1">
@@ -585,18 +593,26 @@ export default function Volunteers() {
                         link ? `Open ${volunteer.name}'s profile` : undefined
                       }
                     >
-                      <div className="aspect-square relative overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20"></div>
-                        <img
-                          src={volunteer.image || PLACEHOLDER_IMG}
-                          alt={`${volunteer.name}'s profile picture`}
-                          onError={(e) => {
-                            e.currentTarget.onerror = null
-                            e.currentTarget.src = PLACEHOLDER_IMG
-                          }}
-                          className="absolute inset-0 w-full h-full object-cover object-center"
-                          loading="lazy"
-                        />
+                      <div className="aspect-square relative overflow-hidden flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20 pointer-events-none" />
+                        {!volunteer.image ||
+                        volunteer.image.includes('placeholder') ? (
+                          <Users
+                            className="w-20 h-20 text-la-coral opacity-80 z-10"
+                            aria-label="No profile picture"
+                          />
+                        ) : (
+                          <img
+                            src={volunteer.image}
+                            alt={`${volunteer.name}'s profile picture`}
+                            onError={(e) => {
+                              e.currentTarget.onerror = null
+                              e.currentTarget.src = PLACEHOLDER_IMG
+                            }}
+                            className="absolute inset-0 w-full h-full object-cover object-center z-10"
+                            loading="lazy"
+                          />
+                        )}
                       </div>
                       <div className="p-6">
                         <h3 className="text-lg font-bold text-gray-900 font-heading mb-1">
