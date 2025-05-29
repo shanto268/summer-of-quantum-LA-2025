@@ -32,18 +32,12 @@ export default function Volunteers() {
   ]
 
   const volunteers = [
-    // Leadership Team
+    // Leadership Team (ordered)
     {
       name: 'Sadman Ahmed Shanto',
       institution: 'USC',
       image: '/images/volunteers/sadman-ahmed-shanto.jpg',
       website: 'https://sadmanahmedshanto.com',
-      isLeadership: true,
-    },
-    {
-      name: 'Emanuel Dallas',
-      institution: 'USC',
-      image: '/images/volunteers/placeholder-2.jpg',
       isLeadership: true,
     },
     {
@@ -54,10 +48,30 @@ export default function Volunteers() {
       isLeadership: true,
     },
     {
+      name: 'Emanuel Dallas',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-2.jpg',
+      isLeadership: true,
+    },
+    {
       name: 'Joseph Barreto',
       institution: 'USC',
       image: '/images/volunteers/joey-barreto.jpg',
       linkedin: 'https://www.linkedin.com/in/joey-barreto/',
+      isLeadership: true,
+    },
+    {
+      name: 'Nicolas Dirnegger',
+      institution: 'UCLA',
+      image: '/images/volunteers/nicolas-dirnegger.jpg',
+      linkedin: 'http://linkedin.com/in/nicolas-dirnegger-aa8442100',
+      isLeadership: true,
+    },
+    {
+      name: 'Taylor Knapp',
+      institution: 'Caltech',
+      image: '/images/volunteers/taylor-knapp.jpg',
+      linkedin: 'https://www.linkedin.com/in/tayloraknapp/',
       isLeadership: true,
     },
     {
@@ -67,10 +81,16 @@ export default function Volunteers() {
       isLeadership: true,
     },
     {
-      name: 'Nicolas Dirnegger',
-      institution: 'UCLA',
-      image: '/images/volunteers/nicolas-dirnegger.jpg',
-      linkedin: 'http://linkedin.com/in/nicolas-dirnegger-aa8442100',
+      name: 'Huma Jafree',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder-43.jpg',
+      isLeadership: true,
+    },
+    {
+      name: 'Thomas Zacharias',
+      institution: 'Caltech',
+      image: '/images/volunteers/thomas-zacharias.jpg',
+      linkedin: 'https://www.linkedin.com/in/thomas-zacharias-899a7210b/',
       isLeadership: true,
     },
     {
@@ -265,23 +285,9 @@ export default function Volunteers() {
       image: '/images/volunteers/placeholder-33.jpg',
     },
     {
-      name: 'Thomas Zacharias',
-      institution: 'Caltech',
-      image: '/images/volunteers/thomas-zacharias.jpg',
-      isLeadership: true,
-      linkedin: 'https://www.linkedin.com/in/thomas-zacharias-899a7210b/',
-    },
-    {
       name: 'Phelan Yu',
       institution: 'Caltech',
       image: '/images/volunteers/placeholder-21.jpg',
-    },
-    {
-      name: 'Taylor Knapp',
-      institution: 'Caltech',
-      image: '/images/volunteers/taylor-knapp.jpg',
-      linkedin: 'https://www.linkedin.com/in/tayloraknapp/',
-      isLeadership: true,
     },
     {
       name: 'Yincheng Liu',
@@ -327,12 +333,6 @@ export default function Volunteers() {
       name: 'Olivia Pitcl',
       institution: 'Caltech',
       image: '/images/volunteers/placeholder-42.jpg',
-    },
-    {
-      name: 'Huma Jafree',
-      institution: 'Caltech',
-      image: '/images/volunteers/placeholder-43.jpg',
-      isLeadership: true,
     },
     {
       name: 'Kristina Malinowski',
