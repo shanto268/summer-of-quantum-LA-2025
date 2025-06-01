@@ -11,6 +11,9 @@ interface EventCardProps {
   description: string
   image: string
   icon: React.ReactNode
+  link?: string
+  buttonText?: string
+  disabled?: boolean
 }
 
 export default function EventCard({
@@ -21,9 +24,24 @@ export default function EventCard({
   description,
   image,
   icon,
+  link,
+  buttonText,
+  disabled,
 }: EventCardProps) {
+  const isClickable = Boolean(link)
+  const btnText = buttonText || (isClickable ? 'Learn More' : 'Coming Soon')
   return (
-    <Card className="overflow-hidden bg-white border border-gray-200 shadow-md rounded-2xl hover:border-la-coral/70 transition-all duration-300 h-full flex flex-col group transform transition-transform hover:scale-[1.02]">
+    <Card
+      className={`overflow-hidden bg-white border border-gray-200 shadow-md rounded-2xl hover:border-la-coral/70 transition-all duration-300 h-full flex flex-col group transform transition-transform hover:scale-[1.02] ${
+        isClickable ? 'cursor-pointer' : ''
+      }`}
+      {...(isClickable
+        ? { onClick: () => (window.location.href = link!) }
+        : {})}
+      tabIndex={isClickable ? 0 : undefined}
+      role={isClickable ? 'link' : undefined}
+      aria-disabled={disabled}
+    >
       <div className="aspect-video overflow-hidden relative">
         <img
           src={image || '/placeholder.svg'}
@@ -54,9 +72,17 @@ export default function EventCard({
         </p>
       </CardContent>
       <CardFooter>
-        <ClickableButton className="w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-opacity font-medium shadow-sm rounded-full py-2 text-xs px-8">
-          Coming Soon
-        </ClickableButton>
+        {btnText && (
+          <ClickableButton
+            href={link}
+            className={`w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-opacity font-medium shadow-sm rounded-full py-2 text-xs px-8 ${
+              disabled ? 'opacity-60 cursor-not-allowed' : ''
+            }`}
+            disabled={disabled}
+          >
+            {btnText}
+          </ClickableButton>
+        )}
       </CardFooter>
     </Card>
   )

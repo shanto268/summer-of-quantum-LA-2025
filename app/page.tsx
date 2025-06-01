@@ -24,22 +24,26 @@ export default function Home() {
     {
       title: 'Quantum for Seniors',
       date: 'June 3-8, 2025',
-      time: 'TBD',
+      time: 'To be announced',
       location: 'TBD',
       description:
         'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
       image: '/images/seniors.png?height=300&width=600',
       icon: <Users className="w-6 h-6" />,
+      link: '/quantum-for-seniors',
+      buttonText: 'Learn More',
     },
     {
       title: 'Public Talks',
       date: 'June 10-15, 2025',
-      time: 'TBD',
+      time: 'Details on each university page',
       location: 'USC, Caltech, UCLA, Chapman, and more',
       description:
         'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics — no technical background required.',
       image: '/images/public-talk.png?height=300&width=600',
       icon: <GraduationCap className="w-6 h-6" />,
+      link: '/public-talks',
+      buttonText: 'Learn More',
     },
     {
       title: 'Quantum Lab Tours',
@@ -50,6 +54,8 @@ export default function Home() {
         'Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists.',
       image: '/images/labs.png?height=300&width=600',
       icon: <Building2 className="w-6 h-6" />,
+      link: '/quantum-lab-tours',
+      buttonText: 'Learn More',
     },
     {
       title: 'Quantum Tech Company Events',
