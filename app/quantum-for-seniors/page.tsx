@@ -61,7 +61,7 @@ export default function QuantumForSeniors() {
               </p>
               <div className="flex flex-col gap-2 mb-6">
                 <a
-                  href="https://www.laparks.org/scc/griffith-park"
+                  href="https://www.laparks.org/scc/griffith-adult-community"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-la-coral hover:text-la-sunset underline font-medium"
