@@ -49,7 +49,7 @@ export default function Home() {
       title: 'Quantum Lab Tours',
       date: 'June 17-22, 2025',
       time: 'TBD',
-      location: 'TBD',
+      location: 'USC, Caltech, and UCLA',
       description:
         'Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists.',
       image: '/images/labs.png?height=300&width=600',
@@ -71,11 +71,13 @@ export default function Home() {
       title: 'Quantum for Kids',
       date: 'July 8-13, 2025',
       time: 'TBD',
-      location: 'TBD',
+      location: 'Caltech',
       description:
         'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
       image: '/images/kids.png?height=300&width=600',
       icon: <Atom className="w-6 h-6" />,
+      link: '/quantum-for-kids',
+      buttonText: 'Learn More',
     },
     {
       title: 'Quantum Games',
