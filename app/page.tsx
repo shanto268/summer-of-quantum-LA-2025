@@ -58,14 +58,14 @@ export default function Home() {
       buttonText: 'Learn More',
     },
     {
-      title: 'Quantum Tech Company Events',
+      title: 'Quantum Games',
       date: 'June 24-29, 2025',
       time: 'TBD',
-      location: 'TBD',
+      location: 'Various Locations',
       description:
-        'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
-      image: '/images/companies.png?height=300&width=600',
-      icon: <Sparkles className="w-6 h-6" />,
+        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
+      image: '/images/games.png?height=300&width=600',
+      icon: <Gamepad2 className="w-6 h-6" />,
     },
     {
       title: 'Quantum for Kids',
@@ -80,14 +80,16 @@ export default function Home() {
       buttonText: 'Learn More',
     },
     {
-      title: 'Quantum Games',
+      title: 'Quantum Tech Company Events',
       date: 'July 15-20, 2025',
       time: 'TBD',
-      location: 'Various Locations',
+      location: 'USC',
       description:
-        'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
-      image: '/images/games.png?height=300&width=600',
-      icon: <Gamepad2 className="w-6 h-6" />,
+        'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
+      image: '/images/companies.png?height=300&width=600',
+      icon: <Sparkles className="w-6 h-6" />,
+      link: '/quantum-tech-company-events',
+      buttonText: 'Learn More',
     },
     {
       title: 'Quantum at the Bar (ħ)',
@@ -135,8 +137,7 @@ export default function Home() {
     },
     {
       name: 'Partner with Us',
-      href: 'https://forms.gle/DyUdErt8nMdxNmai8',
-      external: true,
+      href: '/sponsorship',
     },
     {
       name: 'Volunteer with Us',
@@ -1011,7 +1012,7 @@ export default function Home() {
 
                 <div className="mt-8 relative z-50">
                   <a
-                    href="https://forms.gle/DyUdErt8nMdxNmai8"
+                    href="/sponsorship"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center relative z-50"
@@ -1135,9 +1136,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                      href="https://forms.gle/DyUdErt8nMdxNmai8"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="/sponsorship"
                       className="text-gray-600 hover:text-la-coral transition-colors"
                     >
                       Partner with Us

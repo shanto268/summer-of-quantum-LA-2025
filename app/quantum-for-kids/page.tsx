@@ -22,8 +22,7 @@ export default function QuantumForKids() {
     { name: 'Our Volunteers', href: '/volunteers' },
     {
       name: 'Partner with Us',
-      href: 'https://forms.gle/DyUdErt8nMdxNmai8',
-      external: true,
+      href: '/sponsorship',
     },
     {
       name: 'Volunteer with Us',

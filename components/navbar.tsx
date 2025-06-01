@@ -39,8 +39,7 @@ export default function Navbar({ navLinks: propNavLinks }: NavbarProps) {
     },
     {
       name: 'Partner with Us',
-      href: 'https://forms.gle/DyUdErt8nMdxNmai8',
-      external: true,
+      href: '/sponsorship',
     },
   ]
 

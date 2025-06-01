@@ -20,8 +20,7 @@ export default function PublicTalks() {
     },
     {
       name: 'Partner with Us',
-      href: 'https://forms.gle/DyUdErt8nMdxNmai8',
-      external: true,
+      href: '/sponsorship',
     },
     {
       name: 'Volunteer with Us',
