@@ -45,13 +45,15 @@ export default function PublicTalks() {
     {
       university: 'Caltech',
       title: 'Quantum for Everyone: A Public Talk at Caltech',
-      date: 'Coming Soon',
-      time: 'TBD',
-      location: 'California Institute of Technology',
+      date: 'June 12, 2025',
+      time: '7:30 PM - 9:15 PM',
+      location:
+        'Feynman Lecture Hall, 2nd floor of East Bridge, Norman Bridge Lab of Physics, Pasadena, CA 91125',
       description:
-        'Stay tuned for details about our upcoming public talk at Caltech!',
-      eventbriteLink: '#',
-      isAvailable: false,
+        "Join us at Caltech for a fun and engaging public talk about quantum mechanics that's open to everyone! Dr. Frank Rice III, a lecturer in physics at Caltech, will take the audience on a journey through some of the most surprising discoveries in the history of science, with clear explanations and hands-on demonstrations. Caltech PhD students will also offer short, accessible talks about the frontiers of quantum research. Whether you're a student, a science enthusiast, or just curious, you'll leave with a clearer understanding of how the quantum world behaves and why it matters. Free and open to the public—no background in physics required!",
+      eventbriteLink:
+        'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-caltech-tickets-1393344684459?aff=oddtdtcreator',
+      isAvailable: true,
     },
     {
       university: 'UCLA',
