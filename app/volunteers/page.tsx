@@ -26,7 +26,7 @@ export default function Volunteers() {
     },
     {
       name: 'Partner with Us',
-      href: 'https://forms.gle/DyUdErt8nMdxNmai8',
+      href: '/sponsorship',
       external: true,
     },
   ]
