@@ -66,6 +66,8 @@ export default function Home() {
         'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
       image: '/images/games.png?height=300&width=600',
       icon: <Gamepad2 className="w-6 h-6" />,
+      link: '/quantum-games',
+      buttonText: 'Learn More',
     },
     {
       title: 'Quantum for Kids',
