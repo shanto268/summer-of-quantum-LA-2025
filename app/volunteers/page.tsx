@@ -288,7 +288,7 @@ export default function Volunteers() {
     {
       name: 'Phelan Yu',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-21.jpg',
+      image: '/images/volunteers/phelan-yu.jpg',
     },
     {
       name: 'Yincheng Liu',
