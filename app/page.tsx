@@ -22,18 +22,6 @@ import NeonIsometricMaze from '../neon-isometric-maze'
 export default function Home() {
   const upcomingEvents = [
     {
-      title: 'Quantum for Seniors',
-      date: 'June 3-8, 2025',
-      time: 'To be announced',
-      location: 'TBD',
-      description:
-        'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
-      image: '/images/seniors.png?height=300&width=600',
-      icon: <Users className="w-6 h-6" />,
-      link: '/quantum-for-seniors',
-      buttonText: 'Learn More',
-    },
-    {
       title: 'Public Talks',
       date: 'June 10-15, 2025',
       time: 'Details on each university page',
@@ -122,6 +110,18 @@ export default function Home() {
         'An unforgettable night at Griffith Observatory learning about the quantum physics relevant to the existence of the universe.',
       image: '/images/stars.png?height=300&width=600',
       icon: <Telescope className="w-6 h-6" />,
+    },
+    {
+      title: 'Quantum for Seniors',
+      date: 'TBD',
+      time: 'To be announced',
+      location: 'TBD',
+      description:
+        'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
+      image: '/images/seniors.png?height=300&width=600',
+      icon: <Users className="w-6 h-6" />,
+      link: '/quantum-for-seniors',
+      buttonText: 'Learn More',
     },
   ]
 
