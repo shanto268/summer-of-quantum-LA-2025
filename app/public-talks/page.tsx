@@ -70,14 +70,15 @@ export default function PublicTalks() {
     },
     {
       university: 'Chapman',
-      title: 'Quantum for Everyone: A Public Talk at Chapman',
-      date: 'Coming Soon',
-      time: 'TBD',
-      location: 'Chapman University',
+      title: 'Quantum for Everyone: A Public Talk at Chapman University',
+      date: 'June 18, 2025',
+      time: '4:30 PM - 6:30 PM',
+      location: '541 North Lemon Street Conference Room A, Orange, CA 92867',
       description:
-        'Stay tuned for details about our upcoming public talk at Chapman!',
-      eventbriteLink: '#',
-      isAvailable: false,
+        "Have you ever been curious about the mysterious world of quantum physics but felt intimidated by its complexity? This is your chance to demystify some of the most mind-bending concepts in modern physics! Join us for an engaging and accessible public talk presented by Chapman University's own Professor Matthew Leifer. Prof. Leifer will guide you through the fundamental ideas of quantum mechanics, explaining why it's so different from the world we experience every day. He'll delve into intriguing topics such as the bizarre rules of the quantum realm, the nature of measurement in quantum mechanics, the revolutionary concept of entanglement, and why quantum mechanics matters for future technologies. No prior knowledge of physics is required – just an open mind and a desire to learn!",
+      eventbriteLink:
+        'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-chapman-university-tickets-1395446009579?aff=oddtdtcreator',
+      isAvailable: true,
     },
   ]
 

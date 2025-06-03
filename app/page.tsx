@@ -23,9 +23,9 @@ export default function Home() {
   const upcomingEvents = [
     {
       title: 'Public Talks',
-      date: 'June 10-15, 2025',
+      date: 'June 11-18, 2025',
       time: 'Details on each university page',
-      location: 'USC, Caltech, UCLA, Chapman, and more',
+      location: 'USC, Caltech, UCLA, and Chapman',
       description:
         'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics — no technical background required.',
       image: '/images/public-talk.png?height=300&width=600',
@@ -35,7 +35,7 @@ export default function Home() {
     },
     {
       title: 'Quantum Lab Tours',
-      date: 'June 17-22, 2025',
+      date: 'June 17-26, 2025',
       time: 'TBD',
       location: 'USC, Caltech, and UCLA',
       description:
