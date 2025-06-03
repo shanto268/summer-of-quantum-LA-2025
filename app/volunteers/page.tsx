@@ -109,7 +109,7 @@ export default function Volunteers() {
     {
       name: 'Sandra Al Hames',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-8.jpg',
+      image: '/images/volunteers/sandra-al-hames.jpg',
     },
     {
       name: 'Pranavi Jain',
@@ -165,7 +165,7 @@ export default function Volunteers() {
     {
       name: 'Vaishnavi Patil',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-19.jpg',
+      image: '/images/volunteers/vaishnavi-patil.jpg',
     },
     {
       name: 'Anudeep Deekonda',
@@ -256,7 +256,7 @@ export default function Volunteers() {
     {
       name: 'Michael Bregar',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-64.jpg',
+      image: '/images/volunteers/michael-bregar.jpg',
     },
 
     {
@@ -368,7 +368,7 @@ export default function Volunteers() {
     {
       name: 'Farai Mazhandu',
       institution: 'Colorado School of Mines',
-      image: '/images/volunteers/placeholder-52.jpg',
+      image: '/images/volunteers/farai-mazhandu.jpg',
     },
     {
       name: 'Hannah Manetsch',
@@ -414,7 +414,7 @@ export default function Volunteers() {
     {
       name: 'Ishfaq Majeed Ahanger',
       institution: 'National Institute of Technology Srinagar India',
-      image: '/images/volunteers/placeholder-75.jpg',
+      image: '/images/volunteers/ishfaq-majeed-ahanger.jpg',
     },
     {
       name: 'Elina Sendonaris',
@@ -424,7 +424,7 @@ export default function Volunteers() {
     {
       name: 'William Munizzi',
       institution: 'UCLA',
-      image: '/images/volunteers/placeholder-77.jpg',
+      image: '/images/volunteers/william-munizzi.jpg',
     },
     {
       name: 'Eli Ullman-Kissel',
@@ -455,7 +455,7 @@ export default function Volunteers() {
     {
       name: 'Sephali Giri',
       institution: 'C.V Raman Global University',
-      image: '/images/volunteers/placeholder-83.jpg',
+      image: '/images/volunteers/sephalii-giri.jpg',
     },
     {
       name: 'Alan Alexander',
