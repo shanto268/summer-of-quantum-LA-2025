@@ -111,6 +111,7 @@ export default function Volunteers() {
       institution: 'USC',
       image: '/images/volunteers/sandra-al-hames.jpg',
       linkedin: 'https://www.linkedin.com/in/sandra-al-hames',
+      isLeadership: true,
     },
     {
       name: 'Pranavi Jain',
