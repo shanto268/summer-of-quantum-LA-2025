@@ -55,7 +55,7 @@ export default function QuantumTechCompanyEvents() {
                   rel="noopener noreferrer"
                   className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
                 >
-                  Register on Eventbrite
+                  Registration Coming Soon
                 </a>
               </div>
               <div className="mb-6">

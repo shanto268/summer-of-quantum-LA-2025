@@ -110,6 +110,7 @@ export default function Volunteers() {
       name: 'Sandra Al Hames',
       institution: 'USC',
       image: '/images/volunteers/sandra-al-hames.jpg',
+      linkedin: 'https://www.linkedin.com/in/sandra-al-hames',
     },
     {
       name: 'Pranavi Jain',
@@ -166,6 +167,7 @@ export default function Volunteers() {
       name: 'Vaishnavi Patil',
       institution: 'USC',
       image: '/images/volunteers/vaishnavi-patil.jpg',
+      linkedin: 'https://www.linkedin.com/in/vaishnavi-patil-4591422b4',
     },
     {
       name: 'Anudeep Deekonda',
@@ -257,6 +259,7 @@ export default function Volunteers() {
       name: 'Michael Bregar',
       institution: 'Caltech',
       image: '/images/volunteers/michael-bregar.jpg',
+      website: 'https://www.pma.caltech.edu/people/michael-bregar',
     },
 
     {
@@ -273,7 +276,7 @@ export default function Volunteers() {
       name: 'Chandler Conn',
       institution: 'Caltech',
       image: '/images/volunteers/chandler-conn.jpg',
-      linkedin: 'www.linkedin.com/in/chandler-conn-96527a2b8',
+      linkedin: 'https://www.linkedin.com/in/chandler-conn-96527a2b8',
     },
     {
       name: 'Alice Xiong',
@@ -289,6 +292,7 @@ export default function Volunteers() {
       name: 'Phelan Yu',
       institution: 'Caltech',
       image: '/images/volunteers/phelan-yu.jpg',
+      website: 'https://www.pma.caltech.edu/people/phelan-yu',
     },
     {
       name: 'Yincheng Liu',
@@ -369,6 +373,7 @@ export default function Volunteers() {
       name: 'Farai Mazhandu',
       institution: 'Colorado School of Mines',
       image: '/images/volunteers/farai-mazhandu.jpg',
+      linkedin: 'https://www.linkedin.com/in/faraimazhandu/',
     },
     {
       name: 'Hannah Manetsch',
@@ -415,6 +420,8 @@ export default function Volunteers() {
       name: 'Ishfaq Majeed Ahanger',
       institution: 'National Institute of Technology Srinagar India',
       image: '/images/volunteers/ishfaq-majeed-ahanger.jpg',
+      linkedin:
+        'https://www.linkedin.com/in/ishfaq-majeed-a-86b983363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
       name: 'Elina Sendonaris',
@@ -425,6 +432,7 @@ export default function Volunteers() {
       name: 'William Munizzi',
       institution: 'UCLA',
       image: '/images/volunteers/william-munizzi.jpg',
+      linkedin: 'https://www.linkedin.com/in/william-munizzi-a62447a4/',
     },
     {
       name: 'Eli Ullman-Kissel',
@@ -435,6 +443,7 @@ export default function Volunteers() {
       name: 'Jonathan Greenfield',
       institution: 'JPL/Arizona State University',
       image: '/images/volunteers/placeholder-79.jpg',
+      linkedin: 'https://www.linkedin.com/in/jonathan-greenfield-2080531a4',
     },
     {
       name: 'Durga Pritam Suggisetti',
@@ -445,7 +454,8 @@ export default function Volunteers() {
       name: 'Anil Maurya',
       institution: 'University of Camerino',
       image: '/images/volunteers/placeholder-81.jpg',
-      linkedin: 'https://www.linkedin.com/in/anil-maurya-2860b2206',
+      linkedin:
+        'https://www.linkedin.com/in/anil-maurya-2860b2206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     },
     {
       name: 'David McNeary',
@@ -456,12 +466,13 @@ export default function Volunteers() {
       name: 'Sephali Giri',
       institution: 'C.V Raman Global University',
       image: '/images/volunteers/sephalii-giri.jpg',
+      linkedin: 'https://www.linkedin.com/in/sephali-giri-288a1b147',
     },
     {
       name: 'Alan Alexander',
       institution: 'Pasadena City College',
       image: '/images/volunteers/alan-alexander.jpg',
-      linkedin: 'linkedin.com/alanalexanderbus',
+      linkedin: 'https://linkedin.com/alanalexanderbus',
     },
   ]
 
