@@ -50,7 +50,7 @@ export default function PublicTalks() {
       location:
         'Feynman Lecture Hall, 2nd floor of East Bridge, Norman Bridge Lab of Physics, Pasadena, CA 91125',
       description:
-        "Join us at Caltech for a fun and engaging public talk about quantum mechanics that's open to everyone! Dr. Frank Rice III, a lecturer in physics at Caltech, will take the audience on a journey through some of the most surprising discoveries in the history of science, with clear explanations and hands-on demonstrations. Caltech PhD students will also offer short, accessible talks about the frontiers of quantum research. Whether you're a student, a science enthusiast, or just curious, you'll leave with a clearer understanding of how the quantum world behaves and why it matters. Free and open to the public—no background in physics required!",
+        "Join us at Caltech for a fun and engaging public talk about quantum mechanics that's open to everyone! Dr. Frank Rice, a lecturer in physics at Caltech, will take the audience on a journey through some of the most surprising discoveries in the history of science, with clear explanations and hands-on demonstrations. Caltech PhD students will also offer short, accessible talks about the frontiers of quantum research. Whether you're a student, a science enthusiast, or just curious, you'll leave with a clearer understanding of how the quantum world behaves and why it matters. Free and open to the public—no background in physics required!",
       eventbriteLink:
         'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-caltech-tickets-1393344684459?aff=oddtdtcreator',
       isAvailable: true,
@@ -58,13 +58,15 @@ export default function PublicTalks() {
     {
       university: 'UCLA',
       title: 'Quantum for Everyone: A Public Talk at UCLA',
-      date: 'Coming Soon',
-      time: 'TBD',
-      location: 'University of California, Los Angeles',
+      date: 'June 16, 2025',
+      time: '6:30 PM - 8:15 PM',
+      location:
+        'Engineering IV, Westwood Plaza Tesla Room, Los Angeles, CA 90095',
       description:
-        'Stay tuned for details about our upcoming public talk at UCLA!',
-      eventbriteLink: '#',
-      isAvailable: false,
+        "Curious about quantum physics but don't know where to start? You're not alone — and this event is for you. Join us for Quantum for Everyone, a free, public lecture at UCLA that breaks down the mind-bending world of quantum science in a way that's clear, fun, and exciting. Led by William Munizzi, a Postdoctoral Scholar at UCLA joining the Narang Lab in the Summer of 2024. His research focuses on the mathematical aspects of quantum information and quantum gravity. No background in physics needed. Just curiosity.",
+      eventbriteLink:
+        'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-ucla-tickets-1395413101149',
+      isAvailable: true,
     },
     {
       university: 'Chapman',
