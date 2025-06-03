@@ -91,6 +91,24 @@ export default function PublicTalks() {
               subtitle="Join us for engaging public lectures on quantum science at universities across Los Angeles"
             />
 
+            {/* Zoom Interest Section */}
+            <div className="mb-10 p-6 bg-gradient-to-r from-la-sky/20 to-la-blush/20 border border-la-sunset/30 rounded-2xl shadow flex flex-col items-center text-center">
+              <p className="text-base sm:text-lg text-gray-800 mb-3">
+                We are working to make some of these public talks available via
+                Zoom for those who can't attend in person. If you're interested
+                in receiving Zoom links for any of the events, please let us
+                know!
+              </p>
+              <a
+                href="https://forms.gle/SbciXXrvqYeUYsSA8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-semibold rounded-full px-6 py-3 shadow hover:opacity-90 hover:scale-105 transition-all text-sm sm:text-base"
+              >
+                Request Zoom Link
+              </a>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {talks.map((talk, index) => (
                 <div
