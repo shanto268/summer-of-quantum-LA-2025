@@ -84,12 +84,14 @@ export default function Home() {
     {
       title: 'Quantum at the Bar (ħ)',
       date: 'July 22-27, 2025',
-      time: 'TBD',
+      time: 'varies',
       location: 'Various Locations',
       description:
         'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science — drinks encouraged, physics demystified.',
       image: '/images/h-bar.png?height=300&width=600',
       icon: <Beer className="w-6 h-6" />,
+      link: '/quantum-at-the-bar',
+      buttonText: 'Learn More',
     },
     {
       title: 'Quantum for Teachers',

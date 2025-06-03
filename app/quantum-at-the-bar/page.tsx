@@ -127,6 +127,41 @@ export default function QuantumAtTheBar() {
                   </div>
                 </div>
               ))}
+
+              {/* Future Events Card */}
+              <div className="bg-gradient-to-br from-white to-la-sky p-8 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 hover:border-la-sunset/40 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0">
+                    <Beer className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 font-heading">
+                    More Events Coming Soon!
+                  </h3>
+                </div>
+
+                <p className="text-gray-600 mb-6">
+                  We're planning more Quantum at the Bar events across Los
+                  Angeles! Join our mailing list to be the first to know about
+                  new events, or check back here for updates. Each event will
+                  feature quantum physicists ready to chat about the fascinating
+                  world of quantum science over drinks.
+                </p>
+
+                <div className="space-y-4">
+                  <a
+                    href="/signup"
+                    className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center"
+                  >
+                    Join Our Mailing List
+                  </a>
+                  <a
+                    href="/"
+                    className="block w-full border-2 border-la-sunset text-la-coral hover:bg-la-sand transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center"
+                  >
+                    Return to Homepage
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
