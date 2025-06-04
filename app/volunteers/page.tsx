@@ -475,6 +475,61 @@ export default function Volunteers() {
       image: '/images/volunteers/alan-alexander.jpg',
       linkedin: 'https://linkedin.com/alanalexanderbus',
     },
+    {
+      name: 'Gunhee Park',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Rachel Tham',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Venktesh',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Micah Shaw',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Dohyeon Kim',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Abhishek Anand',
+      institution: 'Caltech',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Eli Weissler',
+      institution: 'CU Boulder',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'GOSPEL AIGBODEKHEME EGERUAN',
+      institution: 'University of Benin',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Nir Sukenik',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Adithi Ajith',
+      institution: 'Chapman University',
+      image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Maya Lee',
+      institution: 'JPL Intern',
+      image: '/images/volunteers/placeholder.jpg',
+    },
   ]
 
   const [page, setPage] = useState(0)
