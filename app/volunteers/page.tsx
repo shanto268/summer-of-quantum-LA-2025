@@ -102,9 +102,10 @@ export default function Volunteers() {
 
     // All Volunteers
     {
-      name: 'Anshu',
-      institution: 'USC',
-      image: '/images/volunteers/placeholder-7.jpg',
+      name: 'Adithi Ajith',
+      institution: 'Chapman',
+      image: '/images/volunteers/adithi-ajith.jpg',
+      linkedin: 'https://www.linkedin.com/in/adithi-a-860b2122b/',
     },
     {
       name: 'Sandra Al Hames',
@@ -112,11 +113,6 @@ export default function Volunteers() {
       image: '/images/volunteers/sandra-al-hames.jpg',
       linkedin: 'https://www.linkedin.com/in/sandra-al-hames',
       isLeadership: true,
-    },
-    {
-      name: 'Pranavi Jain',
-      institution: 'USC',
-      image: '/images/volunteers/placeholder-9.jpg',
     },
     {
       name: 'Vivek Maurya',
@@ -127,6 +123,12 @@ export default function Volunteers() {
       name: 'Alyssa Chan',
       institution: 'USC',
       image: '/images/volunteers/placeholder-11.jpg',
+    },
+    {
+      name: 'Yueqian Wang',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-17.jpg',
+      linkedin: 'https://www.linkedin.com/in/yueqianwang',
     },
     {
       name: 'Kumar Saurav',
@@ -154,12 +156,6 @@ export default function Volunteers() {
       image: '/images/volunteers/placeholder-16.jpg',
     },
     {
-      name: 'Yueqian Wang',
-      institution: 'USC',
-      image: '/images/volunteers/placeholder-17.jpg',
-      linkedin: 'https://www.linkedin.com/in/yueqianwang',
-    },
-    {
       name: 'Akansha Jaiswal',
       institution: 'USC',
       image: '/images/volunteers/placeholder-18.jpg',
@@ -175,6 +171,11 @@ export default function Volunteers() {
       institution: 'USC',
       image: '/images/volunteers/anudeep-deekonda.jpg',
       linkedin: 'https://www.linkedin.com/in/anudeep-deekonda/',
+    },
+    {
+      name: 'Pranavi Jain',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-9.jpg',
     },
     {
       name: 'Ian Hsiao',
@@ -489,6 +490,12 @@ export default function Volunteers() {
       name: 'Venktesh',
       institution: 'USC',
       image: '/images/volunteers/placeholder.jpg',
+    },
+
+    {
+      name: 'Anshu',
+      institution: 'USC',
+      image: '/images/volunteers/placeholder-7.jpg',
     },
     {
       name: 'Micah Shaw',
