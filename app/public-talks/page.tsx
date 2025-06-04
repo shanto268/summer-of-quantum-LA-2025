@@ -97,10 +97,13 @@ export default function PublicTalks() {
             {/* Zoom Interest Section */}
             <div className="mb-10 p-6 bg-gradient-to-r from-la-sky/20 to-la-blush/20 border border-la-sunset/30 rounded-2xl shadow flex flex-col items-center text-center">
               <p className="text-base sm:text-lg text-gray-800 mb-3">
-                We are working to make some of these public talks available via
-                Zoom for those who can't attend in person. If you're interested
-                in receiving Zoom links for any of the events, please let us
-                know!
+                Interested in attending virtually?{' '}
+                <span className="font-bold">
+                  Please do not use the Eventbrite registration link.
+                </span>{' '}
+                We are working to offer Zoom access for some of these public
+                talks for those unable to join in person. If you would like to
+                receive Zoom links for any event, let us know!
               </p>
               <a
                 href="https://forms.gle/SbciXXrvqYeUYsSA8"
