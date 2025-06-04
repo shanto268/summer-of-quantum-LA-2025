@@ -226,9 +226,9 @@ const NeonIsometricMaze: React.FC<NeonIsometricMazeProps> = ({
           <span className="font-mono text-2xl">ℋ</span>
         </p>
 
-        <div className="mt-8">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center justify-center">
           <a
-            href="#event-overview"
+            href="#upcoming-events"
             className="px-6 py-2 text-sm rounded-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm hover:scale-105 transition-transform inline-block"
           >
             Explore Events <span className="ml-2">✨</span>
