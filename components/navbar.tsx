@@ -55,7 +55,7 @@ export default function Navbar({ navLinks: propNavLinks }: NavbarProps) {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a
-          href="#"
+          href="/"
           className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk font-heading"
         >
           <span className="flex items-center gap-2">
