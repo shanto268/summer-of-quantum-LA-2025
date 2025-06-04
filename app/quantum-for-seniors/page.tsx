@@ -52,7 +52,7 @@ export default function QuantumForSeniors() {
               <p className="text-gray-700 mb-4">
                 Join us for an engaging and accessible introduction to quantum
                 science, tailored for seniors and lifelong learners. No
-                technical background required—just curiosity!
+                technical background required-just curiosity!
               </p>
               <div className="flex flex-col gap-2 mb-6">
                 <a

@@ -27,7 +27,7 @@ export default function Home() {
       time: 'Details on each university page',
       location: 'USC, Caltech, UCLA, and Chapman',
       description:
-        'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics — no technical background required.',
+        'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics - no technical background required.',
       image: '/images/public-talk.png?height=300&width=600',
       icon: <GraduationCap className="w-6 h-6" />,
       link: '/public-talks',
@@ -87,7 +87,7 @@ export default function Home() {
       time: 'varies',
       location: 'Various Locations',
       description:
-        'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science — drinks encouraged, physics demystified.',
+        'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science - drinks encouraged, physics demystified.',
       image: '/images/h-bar.png?height=300&width=600',
       icon: <Beer className="w-6 h-6" />,
       link: '/quantum-at-the-bar',

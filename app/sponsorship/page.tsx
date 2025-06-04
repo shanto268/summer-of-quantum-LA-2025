@@ -36,7 +36,7 @@ export default function Sponsorship() {
               </div>
               <p className="text-gray-700 mb-4">
                 <b>Summer of Quantum in LA</b> is a 10-week, volunteer-led
-                celebration of quantum science—bringing free public talks, lab
+                celebration of quantum science-bringing free public talks, lab
                 tours, demos, and community programming to people across Los
                 Angeles.
               </p>

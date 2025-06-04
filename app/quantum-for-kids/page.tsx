@@ -40,7 +40,7 @@ export default function QuantumForKids() {
           <div className="container mx-auto max-w-3xl">
             <SectionHeading
               title="Quantum for Kids @ Caltech"
-              subtitle="An interactive science day for curious minds — hands-on demos, crafts, coding, and more!"
+              subtitle="An interactive science day for curious minds - hands-on demos, crafts, coding, and more!"
             />
             <div className="bg-white p-8 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 mb-8">
               <div className="flex flex-wrap gap-4 mb-4">
@@ -125,18 +125,18 @@ export default function QuantumForKids() {
               </h3>
               <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
                 <li>
-                  <b>Zone A: Quantum Demos & Science</b> — Probability games and
+                  <b>Zone A: Quantum Demos & Science</b> - Probability games and
                   hands-on experiments.
                 </li>
                 <li>
-                  <b>Zone B: Quantum Crafts</b> — Projects to take home.
+                  <b>Zone B: Quantum Crafts</b> - Projects to take home.
                 </li>
                 <li>
-                  <b>Zone C: Coding & Simulations</b> — Build quantum games and
+                  <b>Zone C: Coding & Simulations</b> - Build quantum games and
                   experiments in Scratch.
                 </li>
                 <li>
-                  <b>Zone D: Ask a Scientist</b> — Q&A with quantum researchers
+                  <b>Zone D: Ask a Scientist</b> - Q&A with quantum researchers
                   and mentors.
                 </li>
               </ul>

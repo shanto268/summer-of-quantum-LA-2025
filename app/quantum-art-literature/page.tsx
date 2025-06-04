@@ -62,7 +62,7 @@ export default function QuantumArtLiterature() {
                   <br />
                   where qubits steer the sails of tech,
                   <br />
-                  and laughter rides the ocean breeze—
+                  and laughter rides the ocean breeze-
                   <br />
                   for a summer of quantum in LA.
                   <br />
@@ -73,7 +73,7 @@ export default function QuantumArtLiterature() {
                   <br />
                   with radars scanning the quantaverse,
                   <br />
-                  charting out the probabilities—
+                  charting out the probabilities-
                   <br />
                   to decode secrets hidden in nature.
                   <br />
@@ -88,7 +88,7 @@ export default function QuantumArtLiterature() {
                   <br />
                   and uncertainty rules the tides."
                 </p>
-                <p className="text-right text-gray-500">— Ajith Aditi</p>
+                <p className="text-right text-gray-500">- Ajith Aditi</p>
               </div>
             </div>
 
