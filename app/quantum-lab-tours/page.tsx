@@ -27,41 +27,47 @@ export default function QuantumLabTours() {
     {
       university: 'USC',
       title: 'Quantum Lab Tour at USC',
-      date: 'Coming Soon',
-      time: 'TBD',
+      date: 'June 20, 2025',
+      time: '12:45 PM - 3:15 PM PDT',
       location: 'University of Southern California',
       description:
-        'Stay tuned for details about our upcoming quantum lab tour at USC!',
-      isAvailable: false,
+        "Join us for an afternoon of guided lab tours across USC's quantum science and engineering labs. Attendees will be split into small groups and guided by trained student volunteers through a curated set of USC research labs doing pioneering work in areas like quantum optics, superconducting circuits, and more.",
+      isAvailable: true,
+      eventbriteLink:
+        'https://www.eventbrite.com/e/1400842671139?aff=oddtdtcreator',
     },
     {
       university: 'Caltech',
       title: 'Quantum Lab Tour at Caltech',
-      date: 'Coming Soon',
-      time: 'TBD',
+      date: 'June 17, 2025',
+      time: '12:45 PM - 3:15 PM PDT',
       location: 'California Institute of Technology',
       description:
-        'Stay tuned for details about our upcoming quantum lab tour at Caltech!',
-      isAvailable: false,
+        "Join us for an afternoon of guided lab tours across Caltech's quantum science and engineering labs. Attendees will be split into small groups and guided by trained student volunteers through a curated set of Caltech research labs doing pioneering work in areas like quantum optics, superconducting circuits, and more.",
+      isAvailable: true,
+      eventbriteLink:
+        'https://www.eventbrite.com/e/1400821056489?aff=oddtdtcreator',
     },
     {
       university: 'UCLA',
       title: 'Quantum Lab Tour at UCLA',
-      date: 'Coming Soon',
-      time: 'TBD',
+      date: 'June 24, 2025',
+      time: '12:45 PM - 3:15 PM PDT',
       location: 'University of California, Los Angeles',
       description:
-        'Stay tuned for details about our upcoming quantum lab tour at UCLA!',
-      isAvailable: false,
+        "Join us for an afternoon of guided lab tours across UCLA's quantum science and engineering labs. Attendees will be split into small groups and guided by trained student volunteers through a curated set of UCLA research labs doing pioneering work in areas like quantum optics, superconducting circuits, and more.",
+      isAvailable: true,
+      eventbriteLink:
+        'https://www.eventbrite.com/e/1400826542899?aff=oddtdtcreator',
     },
     {
-      university: 'Chapman',
-      title: 'Quantum Lab Tour at Chapman',
+      university: 'USC',
+      title: 'Quantum Lab Tour at USC Information Sciences Institute',
       date: 'Coming Soon',
       time: 'TBD',
-      location: 'Chapman University',
+      location: 'USC Information Sciences Institute',
       description:
-        'Stay tuned for details about our upcoming quantum lab tour at Chapman!',
+        'Stay tuned for details about our upcoming quantum lab tour at USC Information Sciences Institute!',
       isAvailable: false,
     },
   ]
@@ -114,21 +120,49 @@ export default function QuantumLabTours() {
 
                   <p className="text-gray-600 mb-6">{lab.description}</p>
 
-                  {/* Embedded Google Map for each university */}
-                  {lab.university === 'USC' && (
-                    <div className="rounded-xl overflow-hidden border border-la-sunset/20 shadow mb-6">
-                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.406278874019!2d-118.28705768478144!3d34.02073018061037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b8e2e2e2e3%3A0x7e2e2e2e2e2e2e2e!2sScience%20Lecture%20Hall%20(SLH)%2C%20USC!5e0!3m2!1sen!2sus!4v1718040000001!5m2!1sen!2sus"
-                        width="100%"
-                        height="220"
-                        style={{ border: 0 }}
-                        allowFullScreen={false}
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title="USC Map"
-                      ></iframe>
+                  {/* In-Person Only Notice */}
+                  {lab.isAvailable && (
+                    <div className="mb-6 p-4 bg-gradient-to-r from-la-sky/20 to-la-blush/20 border border-la-sunset/30 rounded-xl">
+                      <p className="text-sm text-gray-800">
+                        <span className="font-bold">Important:</span> This is an
+                        in-person only event. No virtual attendance options will
+                        be available. Please ensure you can attend in person
+                        before registering.
+                      </p>
                     </div>
                   )}
+
+                  {/* Embedded Google Map for each university */}
+                  {lab.university === 'USC' &&
+                    lab.location === 'USC Information Sciences Institute' && (
+                      <div className="rounded-xl overflow-hidden border border-la-sunset/20 shadow mb-6">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.406278874019!2d-118.45205768478144!3d33.98073018061037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b1d1c1c1c1c1%3A0x7e2e2e2e2e2e2e2e!2s4676%20Admiralty%20Way%20%231001%2C%20Marina%20Del%20Rey%2C%20CA%2090292!5e0!3m2!1sen!2sus!4v1718040000001!5m2!1sen!2sus"
+                          width="100%"
+                          height="220"
+                          style={{ border: 0 }}
+                          allowFullScreen={false}
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title="USC ISI Map"
+                        ></iframe>
+                      </div>
+                    )}
+                  {lab.university === 'USC' &&
+                    lab.location === 'University of Southern California' && (
+                      <div className="rounded-xl overflow-hidden border border-la-sunset/20 shadow mb-6">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.406278874019!2d-118.28705768478144!3d34.02073018061037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b8e2e2e2e3%3A0x7e2e2e2e2e2e2e2e!2sScience%20Lecture%20Hall%20(SLH)%2C%20USC!5e0!3m2!1sen!2sus!4v1718040000001!5m2!1sen!2sus"
+                          width="100%"
+                          height="220"
+                          style={{ border: 0 }}
+                          allowFullScreen={false}
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title="USC Map"
+                        ></iframe>
+                      </div>
+                    )}
                   {lab.university === 'Caltech' && (
                     <div className="rounded-xl overflow-hidden border border-la-sunset/20 shadow mb-6">
                       <iframe
@@ -173,10 +207,19 @@ export default function QuantumLabTours() {
                   )}
 
                   <button
-                    disabled
-                    className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm cursor-not-allowed"
+                    disabled={!lab.isAvailable}
+                    className={`block w-full ${
+                      lab.isAvailable
+                        ? 'bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 hover:scale-105 transition-all'
+                        : 'bg-gray-200 text-gray-500 cursor-not-allowed'
+                    } font-medium shadow-sm rounded-full py-3 text-sm`}
+                    onClick={() => {
+                      if (lab.isAvailable && lab.eventbriteLink) {
+                        window.open(lab.eventbriteLink, '_blank')
+                      }
+                    }}
                   >
-                    Coming Soon
+                    {lab.isAvailable ? 'Register Now' : 'Coming Soon'}
                   </button>
                 </div>
               ))}
