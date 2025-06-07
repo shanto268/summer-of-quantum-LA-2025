@@ -128,25 +128,12 @@ export default function Home() {
   ]
 
   const navLinks = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     { name: 'Upcoming Events', href: '#upcoming-events' },
-    {
-      name: 'Join Our Mailing List',
-      href: '/signup',
-    },
-    {
-      name: 'Our Volunteers',
-      href: '/volunteers',
-    },
-    {
-      name: 'Partner with Us',
-      href: '/sponsorship',
-    },
-    {
-      name: 'Volunteer with Us',
-      href: 'https://forms.gle/ZSaeCCjfn7HQjELy5',
-      external: true,
-    },
+    { name: 'Calendar', href: '/calendar' },
+    { name: 'Join Our Mailing List', href: '/signup' },
+    { name: 'Our Volunteers', href: '/volunteers' },
+    { name: 'Partner with Us', href: '/sponsorship' },
     { name: 'Quantum Art & Literature', href: '/quantum-art-literature' },
   ]
 

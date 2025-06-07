@@ -10,17 +10,10 @@ export default function QuantumForSeniors() {
     { name: 'Home', href: '/' },
     { name: 'Event Overview', href: '/#event-overview' },
     { name: 'Upcoming Events', href: '/#upcoming-events' },
+    { name: 'Calendar', href: '/calendar' },
     { name: 'Join Our Mailing List', href: '/signup' },
     { name: 'Our Volunteers', href: '/volunteers' },
-    {
-      name: 'Partner with Us',
-      href: '/sponsorship',
-    },
-    {
-      name: 'Volunteer with Us',
-      href: 'https://forms.gle/ZSaeCCjfn7HQjELy5',
-      external: true,
-    },
+    { name: 'Partner with Us', href: '/sponsorship' },
   ]
 
   return (

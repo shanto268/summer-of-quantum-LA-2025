@@ -9,23 +9,10 @@ export default function PublicTalks() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Upcoming Events', href: '/#upcoming-events' },
-    {
-      name: 'Join Our Mailing List',
-      href: '/signup',
-    },
-    {
-      name: 'Our Volunteers',
-      href: '/volunteers',
-    },
-    {
-      name: 'Partner with Us',
-      href: '/sponsorship',
-    },
-    {
-      name: 'Volunteer with Us',
-      href: 'https://forms.gle/ZSaeCCjfn7HQjELy5',
-      external: true,
-    },
+    { name: 'Calendar', href: '/calendar' },
+    { name: 'Join Our Mailing List', href: '/signup' },
+    { name: 'Our Volunteers', href: '/volunteers' },
+    { name: 'Partner with Us', href: '/sponsorship' },
     { name: 'Quantum Art & Literature', href: '/quantum-art-literature' },
   ]
 
@@ -75,7 +62,7 @@ export default function PublicTalks() {
       time: '4:30 PM - 6:30 PM',
       location: '541 North Lemon Street Conference Room A, Orange, CA 92867',
       description:
-        'Have you ever been curious about the mysterious world of quantum physics but felt intimidated by its complexity? This is your chance to explore one of its most puzzling features-quantum interference-in an engaging and accessible public talk by Chapman University’s Professor Matthew Leifer. Drawing on Richard Feynman’s famous claim that interference lies at the heart of quantum mystery, Prof. Leifer will explain which aspects of this phenomenon can actually emerge in classical physics and which remain uniquely quantum. No prior physics background is required - just an open mind and a desire to understand the strange logic of the quantum world.',
+        "Have you ever been curious about the mysterious world of quantum physics but felt intimidated by its complexity? This is your chance to explore one of its most puzzling features-quantum interference-in an engaging and accessible public talk by Chapman University's Professor Matthew Leifer. Drawing on Richard Feynman's famous claim that interference lies at the heart of quantum mystery, Prof. Leifer will explain which aspects of this phenomenon can actually emerge in classical physics and which remain uniquely quantum. No prior physics background is required - just an open mind and a desire to understand the strange logic of the quantum world.",
       eventbriteLink:
         'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-chapman-university-tickets-1395446009579?aff=oddtdtcreator',
       isAvailable: true,
