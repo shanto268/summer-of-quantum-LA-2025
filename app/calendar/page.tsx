@@ -24,10 +24,11 @@ interface Event {
   link: string
   description: string
   image: string
+  eventbriteLink?: string
 }
 
-const events: Event[] = [
-  // Quantum Lab Tours
+const allEvents: Event[] = [
+  // Lab Tours (only scheduled ones have eventbriteLink)
   {
     id: 'lab-usc',
     title: 'Quantum Lab Tour at USC',
@@ -39,6 +40,8 @@ const events: Event[] = [
     description:
       "Join us for an afternoon of guided lab tours across USC's quantum science and engineering labs.",
     image: '/images/labs.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/1400842671139?aff=oddtdtcreator',
   },
   {
     id: 'lab-caltech',
@@ -51,6 +54,8 @@ const events: Event[] = [
     description:
       "Join us for an afternoon of guided lab tours across Caltech's quantum science and engineering labs.",
     image: '/images/labs.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/1400821056489?aff=oddtdtcreator',
   },
   {
     id: 'lab-ucla',
@@ -63,8 +68,23 @@ const events: Event[] = [
     description:
       "Join us for an afternoon of guided lab tours across UCLA's quantum science and engineering labs.",
     image: '/images/labs.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/1400826542899?aff=oddtdtcreator',
   },
-  // Public Talks
+  // Unscheduled Lab Tours (use main page date range)
+  {
+    id: 'lab-unscheduled',
+    title: 'Quantum Lab Tours',
+    date: 'June 17-26, 2025',
+    time: 'TBD',
+    location: 'USC, Caltech, and UCLA',
+    category: 'Education',
+    link: '/quantum-lab-tours',
+    description:
+      'Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists.',
+    image: '/images/labs.png?height=300&width=600',
+  },
+  // Public Talks (only scheduled ones have eventbriteLink)
   {
     id: 'talk-usc',
     title: 'Quantum for Everyone: A Public Talk at USC',
@@ -76,6 +96,8 @@ const events: Event[] = [
     description:
       'Join us for a fun and engaging public talk on quantum physics at USC!',
     image: '/images/public-talk.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-usc-tickets-1391569575059?aff=oddtdtcreator',
   },
   {
     id: 'talk-caltech',
@@ -88,6 +110,8 @@ const events: Event[] = [
     description:
       'Join us at Caltech for a fun and engaging public talk about quantum mechanics!',
     image: '/images/public-talk.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-caltech-tickets-1393344684459?aff=oddtdtcreator',
   },
   {
     id: 'talk-ucla',
@@ -100,6 +124,8 @@ const events: Event[] = [
     description:
       'Curious about quantum physics? Join us for Quantum for Everyone at UCLA!',
     image: '/images/public-talk.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-ucla-tickets-1395413101149',
   },
   {
     id: 'talk-chapman',
@@ -112,8 +138,23 @@ const events: Event[] = [
     description:
       "Explore quantum interference in an engaging and accessible public talk by Chapman University's Professor Matthew Leifer.",
     image: '/images/public-talk.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-chapman-university-tickets-1395446009579?aff=oddtdtcreator',
   },
-  // Quantum at the Bar (add more as they are scheduled)
+  // Unscheduled Public Talks (use main page date range)
+  {
+    id: 'talks-unscheduled',
+    title: 'Public Talks',
+    date: 'June 11-18, 2025',
+    time: 'Details on each university page',
+    location: 'USC, Caltech, UCLA, and Chapman',
+    category: 'Education',
+    link: '/public-talks',
+    description:
+      'Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics - no technical background required.',
+    image: '/images/public-talk.png?height=300&width=600',
+  },
+  // Quantum at the Bar (always included)
   {
     id: 'bar-chapman-crafted',
     title: 'Quantum Beer Night at Chapman Crafted',
@@ -126,141 +167,57 @@ const events: Event[] = [
       'Join quantum physicists from Chapman University for an evening of quantum discussions over craft beer!',
     image: '/images/h-bar.png?height=300&width=600',
   },
-  // Quantum Games (split into board, video, online)
+  // Quantum Games (unscheduled)
   {
-    id: 'games-board',
-    title: 'Quantum Board Games Night',
-    date: 'June 25, 2025',
-    time: '6:00 PM - 9:00 PM',
-    location: 'Odyssey Games, Pasadena',
-    category: 'Entertainment',
-    link: '/quantum-games',
-    description:
-      'Join us for an evening of quantum-themed board games at Odyssey Games in Pasadena.',
-    image: '/images/games.png?height=300&width=600',
-  },
-  {
-    id: 'games-video',
-    title: 'Quantum Video Games Showcase',
-    date: 'June 26, 2025',
-    time: '6:00 PM - 9:00 PM',
-    location: 'TBD',
-    category: 'Entertainment',
-    link: '/quantum-games',
-    description:
-      'Showcase of quantum-themed video games from QuantumRealmGames.',
-    image: '/images/games.png?height=300&width=600',
-  },
-  {
-    id: 'games-online',
-    title: 'Online Quantum Games',
-    date: 'June 27, 2025',
+    id: 'games-unscheduled',
+    title: 'Quantum Games',
+    date: 'June 24-29, 2025',
     time: 'TBD',
-    location: 'Online',
+    location: 'Various Locations',
     category: 'Entertainment',
     link: '/quantum-games',
     description:
-      'Experience quantum concepts through open-source online games. Dedicated game servers for interactive experiences.',
+      'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
     image: '/images/games.png?height=300&width=600',
   },
-  // Quantum for Kids (July 8–13, 2025, one event per day)
+  // Quantum for Kids (unscheduled)
   {
-    id: 'kids-1',
-    title: 'Quantum for Kids @ Caltech',
-    date: 'July 8, 2025',
-    time: '~2.5–3 hours',
-    location: 'Caltech Campus',
-    category: 'Education',
-    link: '/quantum-for-kids',
-    description:
-      'Interactive science day for curious minds - hands-on demos, crafts, coding, and more!',
-    image: '/images/kids.png?height=300&width=600',
-  },
-  {
-    id: 'kids-2',
-    title: 'Quantum for Kids @ Caltech',
-    date: 'July 9, 2025',
-    time: '~2.5–3 hours',
-    location: 'Caltech Campus',
-    category: 'Education',
-    link: '/quantum-for-kids',
-    description:
-      'Interactive science day for curious minds - hands-on demos, crafts, coding, and more!',
-    image: '/images/kids.png?height=300&width=600',
-  },
-  {
-    id: 'kids-3',
-    title: 'Quantum for Kids @ Caltech',
-    date: 'July 10, 2025',
-    time: '~2.5–3 hours',
-    location: 'Caltech Campus',
-    category: 'Education',
-    link: '/quantum-for-kids',
-    description:
-      'Interactive science day for curious minds - hands-on demos, crafts, coding, and more!',
-    image: '/images/kids.png?height=300&width=600',
-  },
-  {
-    id: 'kids-4',
-    title: 'Quantum for Kids @ Caltech',
-    date: 'July 11, 2025',
-    time: '~2.5–3 hours',
-    location: 'Caltech Campus',
-    category: 'Education',
-    link: '/quantum-for-kids',
-    description:
-      'Interactive science day for curious minds - hands-on demos, crafts, coding, and more!',
-    image: '/images/kids.png?height=300&width=600',
-  },
-  {
-    id: 'kids-5',
-    title: 'Quantum for Kids @ Caltech',
-    date: 'July 12, 2025',
-    time: '~2.5–3 hours',
-    location: 'Caltech Campus',
-    category: 'Education',
-    link: '/quantum-for-kids',
-    description:
-      'Interactive science day for curious minds - hands-on demos, crafts, coding, and more!',
-    image: '/images/kids.png?height=300&width=600',
-  },
-  {
-    id: 'kids-6',
-    title: 'Quantum for Kids @ Caltech',
-    date: 'July 13, 2025',
-    time: '~2.5–3 hours',
-    location: 'Caltech Campus',
-    category: 'Education',
-    link: '/quantum-for-kids',
-    description:
-      'Interactive science day for curious minds - hands-on demos, crafts, coding, and more!',
-    image: '/images/kids.png?height=300&width=600',
-  },
-  // Quantum for Seniors
-  {
-    id: 'seniors-gpacc',
-    title: 'Quantum for Seniors',
-    date: 'TBD',
+    id: 'kids-unscheduled',
+    title: 'Quantum for Kids',
+    date: 'July 8-13, 2025',
     time: 'TBD',
-    location: 'Griffith Park Adult Community Center',
+    location: 'Caltech',
     category: 'Education',
-    link: '/quantum-for-seniors',
+    link: '/quantum-for-kids',
     description:
-      'An engaging and accessible introduction to quantum science, tailored for seniors and lifelong learners.',
-    image: '/images/seniors.png?height=300&width=600',
+      'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
+    image: '/images/kids.png?height=300&width=600',
   },
-  // Quantum Tech Company Events
+  // Quantum Tech Company Events (unscheduled)
   {
-    id: 'tech-company-events',
+    id: 'tech-unscheduled',
     title: 'Quantum Tech Company Events',
-    date: 'July 15, 2025',
+    date: 'July 15-20, 2025',
     time: 'TBD',
     location: 'USC',
     category: 'Education',
     link: '/quantum-tech-company-events',
     description:
-      'Panels, showcases, and networking with the leading quantum companies in LA.',
+      'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
     image: '/images/companies.png?height=300&width=600',
+  },
+  // Quantum for Seniors (unscheduled)
+  {
+    id: 'seniors-unscheduled',
+    title: 'Quantum for Seniors',
+    date: 'TBD',
+    time: 'To be announced',
+    location: 'TBD',
+    category: 'Education',
+    link: '/quantum-for-seniors',
+    description:
+      'Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners.',
+    image: '/images/seniors.png?height=300&width=600',
   },
 ]
 
@@ -274,6 +231,31 @@ const navLinks = [
   { name: 'Partner with Us', href: '/sponsorship' },
   { name: 'Quantum Art & Literature', href: '/quantum-art-literature' },
 ]
+
+// Helper to parse date ranges like 'June 24-29, 2025' or 'July 8-13, 2025'
+function parseDateRange(dateStr: string): { start: Date; end: Date } | null {
+  // e.g. 'June 24-29, 2025' or 'July 8-13, 2025'
+  const rangeMatch = dateStr.match(/([A-Za-z]+) (\d{1,2})-(\d{1,2}), (\d{4})/)
+  if (rangeMatch) {
+    const [_, month, startDay, endDay, year] = rangeMatch
+    const monthIdx = new Date(`${month} 1, 2000`).getMonth()
+    return {
+      start: new Date(Number(year), monthIdx, Number(startDay)),
+      end: new Date(Number(year), monthIdx, Number(endDay)),
+    }
+  }
+  // e.g. 'TBD' or 'June 17, 2025'
+  const singleMatch = dateStr.match(/([A-Za-z]+) (\d{1,2}), (\d{4})/)
+  if (singleMatch) {
+    const [_, month, day, year] = singleMatch
+    const monthIdx = new Date(`${month} 1, 2000`).getMonth()
+    return {
+      start: new Date(Number(year), monthIdx, Number(day)),
+      end: new Date(Number(year), monthIdx, Number(day)),
+    }
+  }
+  return null
+}
 
 export default function CalendarPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -299,8 +281,13 @@ export default function CalendarPage() {
     return parseInt(match[1], 10)
   }
 
+  // Only include scheduled events and 'bar-' events in both views
+  const scheduledAndBarEvents = allEvents.filter(
+    (event) => event.eventbriteLink || event.id.startsWith('bar-'),
+  )
+
   // Filter and sort events for the current month
-  const filteredEvents = events
+  const filteredEvents = scheduledAndBarEvents
     .filter((event) => {
       const { month, year } = getEventMonthYear(event)
       return (
@@ -324,12 +311,32 @@ export default function CalendarPage() {
   ).getDay()
   const calendarDays = Array.from({ length: daysInMonth }, (_, i) => i + 1)
 
-  // Map days to events
-  const eventsByDay: { [day: number]: Event[] } = {}
-  filteredEvents.forEach((event) => {
-    const day = getEventStartDay(event)
-    if (!eventsByDay[day]) eventsByDay[day] = []
-    eventsByDay[day].push(event)
+  // For the calendar grid, show only scheduled and bar events, spanning multi-day events
+  const eventsByDay: {
+    [day: number]: { event: Event; scheduled: boolean }[]
+  } = {}
+  scheduledAndBarEvents.forEach((event) => {
+    if (selectedCategory !== 'All' && event.category !== selectedCategory) {
+      return
+    }
+    const range = parseDateRange(event.date)
+    if (!range) return
+    const { start, end } = range
+    if (
+      start.getMonth() === currentMonth.getMonth() &&
+      start.getFullYear() === currentMonth.getFullYear()
+    ) {
+      const scheduled = Boolean(
+        event.eventbriteLink || event.id.startsWith('bar-'),
+      )
+      const startDay = start.getDate()
+      const endDay =
+        end.getMonth() === currentMonth.getMonth() ? end.getDate() : daysInMonth
+      for (let day = startDay; day <= endDay; day++) {
+        if (!eventsByDay[day]) eventsByDay[day] = []
+        eventsByDay[day].push({ event, scheduled })
+      }
+    }
   })
 
   const nextMonth = () => {
@@ -354,6 +361,29 @@ export default function CalendarPage() {
               title="Event Calendar"
               subtitle="Explore all our quantum programming events across Los Angeles"
             />
+            {/* Info message about upcoming events and mailing list */}
+            <div className="mb-6 p-4 bg-gradient-to-r from-la-sky/30 to-la-sunset/10 border border-la-sunset/30 rounded-xl text-center text-base text-gray-800 shadow">
+              Many more events are currently being planned and will be updated
+              on this calendar as soon as they are finalized.
+              <a
+                href="/upcoming-events"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-la-coral underline font-medium hover:text-la-sunset mx-1"
+              >
+                See upcoming events
+              </a>
+              and
+              <a
+                href="/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-la-coral underline font-medium hover:text-la-sunset mx-1"
+              >
+                sign up for our mailing list
+              </a>
+              to get notified as soon as new events are announced!
+            </div>
             <div className="flex justify-end mb-6">
               <button
                 className={`px-4 py-2 rounded-l-full border border-la-sunset/40 font-medium transition-colors ${
@@ -423,121 +453,127 @@ export default function CalendarPage() {
               <div className="lg:col-span-3">
                 {view === 'list' ? (
                   <div className="grid gap-6">
-                    {filteredEvents.length === 0 ? (
-                      <div className="text-center text-gray-500 py-12 text-lg">
-                        No events this month. Check back soon!
-                      </div>
-                    ) : (
-                      filteredEvents.map((event) => (
-                        <motion.div
-                          key={event.id}
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.3 }}
+                    {filteredEvents.map((event) => (
+                      <motion.div
+                        key={event.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <Card
+                          className={`bg-white/80 backdrop-blur-sm border border-la-sunset/20 shadow-md shadow-la-sand/40 hover:border-la-coral/70 transition-all duration-300 ${
+                            !event.eventbriteLink &&
+                            !event.id.startsWith('bar-')
+                              ? 'opacity-60 grayscale'
+                              : ''
+                          }`}
                         >
-                          <Card className="bg-white/80 backdrop-blur-sm border border-la-sunset/20 shadow-md shadow-la-sand/40 hover:border-la-coral/70 transition-all duration-300">
-                            <CardContent className="p-6">
-                              <div className="flex flex-col md:flex-row gap-6">
-                                <div className="md:w-1/3 aspect-video overflow-hidden rounded-xl">
-                                  <img
-                                    src={event.image}
-                                    alt={event.title}
-                                    className="w-full h-full object-cover"
-                                  />
-                                </div>
-                                <div className="md:w-2/3">
-                                  <div className="flex flex-wrap items-center gap-2 text-la-sunset mb-2">
-                                    <Calendar className="h-4 w-4" />
-                                    <span className="text-sm">
-                                      {event.date}
-                                    </span>
-                                    <Clock className="h-4 w-4 ml-2" />
-                                    <span className="text-sm">
-                                      {event.time}
-                                    </span>
-                                  </div>
-                                  <div className="flex items-center gap-2 text-la-dusk mb-4">
-                                    <MapPin className="h-4 w-4" />
-                                    <span className="text-sm">
-                                      {event.location}
-                                    </span>
-                                  </div>
-                                  <h3 className="text-xl font-bold mb-2 text-gray-900 font-heading">
-                                    {event.title}
-                                  </h3>
-                                  <p className="text-gray-600 mb-4 font-body">
-                                    {event.description}
-                                  </p>
-                                  <ClickableButton
-                                    href={event.link}
-                                    className="bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-opacity font-medium shadow-sm rounded-full py-2 px-8"
-                                  >
-                                    Learn More
-                                  </ClickableButton>
-                                </div>
+                          <CardContent className="p-6">
+                            <div className="flex flex-col md:flex-row gap-6">
+                              <div className="md:w-1/3 aspect-video overflow-hidden rounded-xl">
+                                <img
+                                  src={event.image}
+                                  alt={event.title}
+                                  className="w-full h-full object-cover"
+                                />
                               </div>
-                            </CardContent>
-                          </Card>
-                        </motion.div>
-                      ))
-                    )}
+                              <div className="md:w-2/3">
+                                <div className="flex flex-wrap items-center gap-2 text-la-sunset mb-2">
+                                  <Calendar className="h-4 w-4" />
+                                  <span className="text-sm">{event.date}</span>
+                                  <Clock className="h-4 w-4 ml-2" />
+                                  <span className="text-sm">{event.time}</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-la-dusk mb-4">
+                                  <MapPin className="h-4 w-4" />
+                                  <span className="text-sm">
+                                    {event.location}
+                                  </span>
+                                </div>
+                                <h3 className="text-xl font-bold mb-2 text-gray-900 font-heading">
+                                  {event.title}
+                                </h3>
+                                <p className="text-gray-600 mb-4 font-body">
+                                  {event.description}
+                                </p>
+                                <ClickableButton
+                                  href={event.link}
+                                  className={`bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-opacity font-medium shadow-sm rounded-full py-2 px-8 ${
+                                    !event.eventbriteLink &&
+                                    !event.id.startsWith('bar-')
+                                      ? 'opacity-70 grayscale'
+                                      : ''
+                                  }`}
+                                >
+                                  Learn More
+                                </ClickableButton>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
+                    ))}
                   </div>
                 ) : (
-                  <div className="bg-white/80 rounded-2xl p-4 shadow-md border border-la-sunset/20">
-                    <div className="grid grid-cols-7 gap-2 text-center text-gray-500 mb-2">
-                      {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(
-                        (d) => (
+                  <>
+                    <div className="bg-white/80 rounded-2xl p-4 shadow-md border border-la-sunset/20 mb-6">
+                      {/* Removed floating unscheduled events at the top */}
+                      <div className="grid grid-cols-7 gap-2 text-center text-gray-500 mb-2">
+                        {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(
+                          (d) => (
+                            <div
+                              key={d}
+                              className="font-semibold text-xs py-1"
+                            >
+                              {d}
+                            </div>
+                          ),
+                        )}
+                      </div>
+                      <div className="grid grid-cols-7 gap-2">
+                        {/* Empty cells for first day of month */}
+                        {Array.from({ length: firstDayOfWeek }).map((_, i) => (
+                          <div key={`empty-${i}`} />
+                        ))}
+                        {/* Days of month with events (scheduled and unscheduled) */}
+                        {calendarDays.map((day) => (
                           <div
-                            key={d}
-                            className="font-semibold text-xs py-1"
+                            key={day}
+                            className="relative group"
                           >
-                            {d}
-                          </div>
-                        ),
-                      )}
-                    </div>
-                    <div className="grid grid-cols-7 gap-2">
-                      {/* Empty cells for first day of month */}
-                      {Array.from({ length: firstDayOfWeek }).map((_, i) => (
-                        <div key={`empty-${i}`} />
-                      ))}
-                      {/* Days of month */}
-                      {calendarDays.map((day) => (
-                        <div
-                          key={day}
-                          className="relative group"
-                        >
-                          <div
-                            className={`w-full aspect-square rounded-lg flex flex-col items-center justify-center border border-la-sunset/10 ${
-                              eventsByDay[day]
-                                ? 'bg-gradient-to-br from-la-coral/10 to-la-sunset/10 border-la-coral/40'
-                                : 'bg-white'
-                            }`}
-                          >
-                            <span className="font-semibold text-gray-900 text-sm mb-1">
-                              {day}
-                            </span>
-                            {eventsByDay[day] && (
-                              <div className="flex flex-col gap-1 w-full items-center">
-                                {eventsByDay[day].map((event) => (
+                            <div
+                              className={`w-full aspect-square rounded-lg flex flex-col items-center justify-center border border-la-sunset/10 ${
+                                eventsByDay[day]
+                                  ? 'bg-gradient-to-br from-la-coral/10 to-la-sunset/10 border-la-coral/40'
+                                  : 'bg-white'
+                              }`}
+                            >
+                              <span className="font-semibold text-gray-900 text-sm mb-1">
+                                {day}
+                              </span>
+                              {eventsByDay[day] &&
+                                eventsByDay[day].map(({ event, scheduled }) => (
                                   <button
                                     key={event.id}
-                                    className="w-3/4 text-xs text-white bg-gradient-to-r from-la-coral to-la-sunset rounded-full py-1 px-2 mt-1 hover:opacity-90 truncate"
+                                    className={`w-3/4 text-xs rounded-full py-1 px-2 mt-1 hover:opacity-90 truncate transition-colors ${
+                                      scheduled
+                                        ? 'text-white bg-gradient-to-r from-la-coral to-la-sunset'
+                                        : 'text-gray-400 bg-gray-200'
+                                    }`}
                                     title={event.title}
-                                    onClick={() =>
-                                      (window.location.href = event.link)
-                                    }
+                                    onClick={() => {
+                                      window.location.href = event.link
+                                    }}
                                   >
                                     {event.title}
                                   </button>
                                 ))}
-                              </div>
-                            )}
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  </>
                 )}
               </div>
             </div>
