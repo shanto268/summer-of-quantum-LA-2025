@@ -53,16 +53,6 @@ export default function QuantumLabTours() {
       eventbriteLink:
         'https://www.eventbrite.com/e/1400826542899?aff=oddtdtcreator',
     },
-    {
-      university: 'USC',
-      title: 'Quantum Lab Tour at USC Information Sciences Institute',
-      date: 'Coming Soon',
-      time: 'TBD',
-      location: 'USC Information Sciences Institute',
-      description:
-        'Stay tuned for details about our upcoming quantum lab tour at USC Information Sciences Institute!',
-      isAvailable: false,
-    },
   ]
 
   return (
