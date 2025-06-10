@@ -167,17 +167,17 @@ const allEvents: Event[] = [
       'Join quantum physicists from Chapman University for an evening of quantum discussions over craft beer!',
     image: '/images/h-bar.png?height=300&width=600',
   },
-  // Quantum Games (unscheduled)
+  // Quantum Games (scheduled)
   {
-    id: 'games-unscheduled',
-    title: 'Quantum Games',
-    date: 'June 24-29, 2025',
-    time: 'TBD',
-    location: 'Various Locations',
+    id: 'games-board-night',
+    title: 'Quantum Board Games Night',
+    date: 'June 25, 2025',
+    time: '7:30 PM - 9:30 PM',
+    location: 'Odyssey Games (1795 E Colorado Blvd, Pasadena, CA 91106)',
     category: 'Entertainment',
     link: '/quantum-games',
     description:
-      'An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics.',
+      'Join us for an evening of quantum-themed board games at Odyssey Games in Pasadena. Learn about quantum concepts while having fun with friends and fellow enthusiasts.',
     image: '/images/games.png?height=300&width=600',
   },
   // Quantum for Kids (unscheduled)
@@ -298,6 +298,7 @@ export default function CalendarPage() {
     (event) =>
       event.eventbriteLink ||
       event.id.startsWith('bar-') ||
+      event.id === 'games-board-night' ||
       (event.date.includes('July') && event.date.includes('2025')),
   )
 
