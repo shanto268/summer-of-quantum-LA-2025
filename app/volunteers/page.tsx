@@ -112,6 +112,7 @@ export default function Volunteers() {
       name: 'Alyssa Chan',
       institution: 'USC',
       image: '/images/volunteers/placeholder-11.jpg',
+      linkedin: 'www.linkedin.com/in/alyssa-chan-fishschool',
     },
     {
       name: 'Yueqian Wang',
@@ -272,7 +273,8 @@ export default function Volunteers() {
     {
       name: 'Alice Xiong',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-32.jpg',
+      image: '/images/volunteers/alice-xiong.jpg',
+      website: 'https://www.alicexiong.space'
     },
     {
       name: 'Adelynn Tang',
@@ -312,7 +314,7 @@ export default function Volunteers() {
     },
     {
       name: 'Nicholas Ezzell',
-      institution: 'Caltech',
+      institution: 'USC',
       image: '/images/volunteers/placeholder-39.jpg',
     },
     {
