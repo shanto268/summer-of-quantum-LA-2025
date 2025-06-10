@@ -274,7 +274,7 @@ export default function Volunteers() {
       name: 'Alice Xiong',
       institution: 'Caltech',
       image: '/images/volunteers/alice-xiong.jpg',
-      website: 'https://www.alicexiong.space'
+      website: 'https://www.alicexiong.space',
     },
     {
       name: 'Adelynn Tang',
@@ -527,6 +527,12 @@ export default function Volunteers() {
       name: 'Maya Lee',
       institution: 'JPL Intern',
       image: '/images/volunteers/placeholder.jpg',
+    },
+    {
+      name: 'Hanah Rahman',
+      institution: 'UIUC',
+      image: '/images/volunteers/hanah-rahman.jpg',
+      linkedin: 'https://www.linkedin.com/in/hanah-rahman-35bb73212',
     },
   ]
 
