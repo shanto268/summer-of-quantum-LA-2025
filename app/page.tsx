@@ -36,7 +36,7 @@ export default function Home() {
     {
       title: 'Quantum Lab Tours',
       date: 'June 17-26, 2025',
-      time: 'TBD',
+      time: 'Details on each university page',
       location: 'USC, Caltech, and UCLA',
       description:
         'Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists.',
@@ -72,7 +72,7 @@ export default function Home() {
     {
       title: 'Quantum Tech Company Events',
       date: 'July 15-20, 2025',
-      time: 'TBD',
+      time: 'multiple',
       location: 'USC',
       description:
         'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
@@ -84,7 +84,7 @@ export default function Home() {
     {
       title: 'Quantum at the Bar (ħ)',
       date: 'July 22-27, 2025',
-      time: 'varies',
+      time: 'multiple',
       location: 'Various Locations',
       description:
         'A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science - drinks encouraged, physics demystified.',

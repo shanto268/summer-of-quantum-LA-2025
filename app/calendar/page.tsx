@@ -197,13 +197,25 @@ const allEvents: Event[] = [
   {
     id: 'tech-unscheduled',
     title: 'Quantum Tech Company Events',
-    date: 'July 15-20, 2025',
-    time: 'TBD',
-    location: 'USC',
+    date: 'July 15, 2025',
+    time: '11 AM - 2 PM',
+    location: 'USC (with Caltech/UCLA/Chapman partners)',
     category: 'Education',
     link: '/quantum-tech-company-events',
     description:
       'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
+    image: '/images/companies.png?height=300&width=600',
+  },
+  {
+    id: 'd-wave-tour',
+    title: 'D-Wave Facilities Tour',
+    date: 'July 17, 2025',
+    time: 'TBD',
+    location: 'USC Information Sciences Institute',
+    category: 'Education',
+    link: '/quantum-tech-company-events',
+    description:
+      'Tour of the D-Wave facilities at USC Information Sciences Institute. Details to be announced.',
     image: '/images/companies.png?height=300&width=600',
   },
   // Quantum for Seniors (unscheduled)
@@ -283,7 +295,10 @@ export default function CalendarPage() {
 
   // Only include scheduled events and 'bar-' events in both views
   const scheduledAndBarEvents = allEvents.filter(
-    (event) => event.eventbriteLink || event.id.startsWith('bar-'),
+    (event) =>
+      event.eventbriteLink ||
+      event.id.startsWith('bar-') ||
+      (event.date.includes('July') && event.date.includes('2025')),
   )
 
   // Filter and sort events for the current month
