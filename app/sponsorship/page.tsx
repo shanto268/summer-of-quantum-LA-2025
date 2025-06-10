@@ -10,7 +10,9 @@ export default function Sponsorship() {
     { name: 'Home', href: '/' },
     { name: 'Event Overview', href: '/#event-overview' },
     { name: 'Upcoming Events', href: '/#upcoming-events' },
+    { name: 'Calendar', href: '/calendar' },
     { name: 'Join Our Mailing List', href: '/signup' },
+    { name: 'Partner with Us', href: '/sponsorship' },
     { name: 'Our Volunteers', href: '/volunteers' },
     {
       name: 'Quantum Tech Company Events',

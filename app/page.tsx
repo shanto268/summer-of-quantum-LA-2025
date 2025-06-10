@@ -128,13 +128,12 @@ export default function Home() {
   ]
 
   const navLinks = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '#' },
+    { name: 'Event Overview', href: '#event-overview' },
     { name: 'Upcoming Events', href: '#upcoming-events' },
     { name: 'Calendar', href: '/calendar' },
     { name: 'Join Our Mailing List', href: '/signup' },
-    { name: 'Our Volunteers', href: '/volunteers' },
     { name: 'Partner with Us', href: '/sponsorship' },
-    { name: 'Quantum Art & Literature', href: '/quantum-art-literature' },
   ]
 
   return (

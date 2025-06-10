@@ -33,7 +33,7 @@ export default function QuantumTechCompanyEvents() {
     { name: 'Calendar', href: '/calendar' },
     { name: 'Join Our Mailing List', href: '/signup' },
     { name: 'Our Volunteers', href: '/volunteers' },
-    { name: 'Partner with Us', href: '/partner-with-us', external: true },
+    { name: 'Partner with Us', href: '/sponsorship' },
   ]
 
   const events: Event[] = [
