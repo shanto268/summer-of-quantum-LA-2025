@@ -171,7 +171,7 @@ const allEvents: Event[] = [
   {
     id: 'games-board-night',
     title: 'Quantum Board Games Night',
-    date: 'June 25, 2025',
+    date: 'June 26, 2025',
     time: '7:30 PM - 9:30 PM',
     location: 'Odyssey Games (1795 E Colorado Blvd, Pasadena, CA 91106)',
     category: 'Entertainment',
@@ -179,6 +179,8 @@ const allEvents: Event[] = [
     description:
       'Join us for an evening of quantum-themed board games at Odyssey Games in Pasadena. Learn about quantum concepts while having fun with friends and fellow enthusiasts.',
     image: '/images/games.png?height=300&width=600',
+    eventbriteLink:
+      'https://www.eventbrite.com/e/quantum-board-games-night-tickets-1409558329909?aff=oddtdtcreator',
   },
   // Quantum for Kids (unscheduled)
   {

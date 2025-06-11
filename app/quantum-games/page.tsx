@@ -98,15 +98,15 @@ export default function QuantumGames() {
                   </p>
                   <div className="bg-la-sand/20 p-4 rounded-lg mb-4">
                     <p className="text-gray-700">
-                      <strong>Date:</strong> June 25th, 2024
+                      <strong>Date:</strong> June 26th, 2025
                       <br />
                       <strong>Time:</strong> 7:30 PM - 9:30 PM
                       <br />
                       <strong>Location:</strong> Odyssey Games (1795 E Colorado
                       Blvd, Pasadena, CA 91106)
                       <br />
-                      <strong>Registration:</strong> Eventbrite registration
-                      coming soon
+                      <strong>Registration:</strong> Free tickets available on
+                      Eventbrite
                     </p>
                   </div>
                   <div className="rounded-xl overflow-hidden border border-la-sunset/20 shadow mb-4">
@@ -121,12 +121,14 @@ export default function QuantumGames() {
                       title="Odyssey Games Map"
                     ></iframe>
                   </div>
-                  <button
-                    disabled
-                    className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm cursor-not-allowed"
+                  <a
+                    href="https://www.eventbrite.com/e/quantum-board-games-night-tickets-1409558329909?aff=oddtdtcreator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-la-coral text-white font-medium shadow-sm rounded-full py-3 text-sm hover:bg-la-coral/90 transition-colors text-center"
                   >
-                    Registration Coming Soon
-                  </button>
+                    Register on Eventbrite
+                  </a>
                 </div>
 
                 {/* Video Games Section */}
