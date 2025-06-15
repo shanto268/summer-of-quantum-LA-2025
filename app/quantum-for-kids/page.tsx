@@ -66,10 +66,12 @@ export default function QuantumForKids() {
               </p>
               <div className="mb-6">
                 <a
-                  href="#register"
+                  href="https://www.eventbrite.com/e/quantum-for-kids-caltech-tickets-1414320343219?aff=oddtdtcreator"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
                 >
-                  Register on Eventbrite (Coming Soon)
+                  Register on Eventbrite
                 </a>
               </div>
               <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 mt-8 flex items-center gap-2">
