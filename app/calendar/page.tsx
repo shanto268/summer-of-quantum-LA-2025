@@ -271,6 +271,13 @@ function parseDateRange(dateStr: string): { start: Date; end: Date } | null {
   return null
 }
 
+// Helper to check if an event is in the past
+function isEventInPast(event: Event): boolean {
+  const today = new Date()
+  const eventDate = new Date(event.date)
+  return eventDate < today
+}
+
 export default function CalendarPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [currentMonth, setCurrentMonth] = useState(new Date())
@@ -574,7 +581,9 @@ export default function CalendarPage() {
                                   <button
                                     key={event.id}
                                     className={`w-3/4 text-xs rounded-full py-1 px-2 mt-1 hover:opacity-90 truncate transition-colors ${
-                                      scheduled
+                                      isEventInPast(event)
+                                        ? 'text-white bg-gradient-to-r from-la-dusk to-la-dusk/80'
+                                        : scheduled
                                         ? 'text-white bg-gradient-to-r from-la-coral to-la-sunset'
                                         : 'text-gray-400 bg-gray-200'
                                     }`}

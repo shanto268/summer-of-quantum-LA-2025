@@ -58,6 +58,16 @@ export default function QuantumGames() {
       buyLink: 'https://store.steampowered.com/app/453870/Quantum_Chess/',
       learnMoreLink: 'https://quantumrealmgames.com/',
     },
+    {
+      name: '|Hop> Quantum Game',
+      description:
+        'A competitive card game that makes quantum physics concepts accessible and fun through strategic gameplay.',
+      productName: '|Hop> Quantum Game',
+      productDescription:
+        'Move electrons between electrodes in this engaging card game while learning about quantum mechanics. Perfect for both beginners and experts.',
+      buyLink: 'https://www.hopquantumgame.com/shop/',
+      learnMoreLink: 'https://www.hopquantumgame.com/rules/',
+    },
   ]
 
   return (
@@ -88,13 +98,15 @@ export default function QuantumGames() {
                   <div className="flex items-center gap-2 mb-4 text-la-coral">
                     <Gamepad2 className="w-6 h-6" />
                     <span className="font-bold text-lg">
-                      Quantum Board Games Night
+                      Quantum Games Night
                     </span>
                   </div>
                   <p className="text-gray-700 mb-4">
-                    Join us for an evening of quantum-themed board games at
-                    Odyssey Games in Pasadena. Learn about quantum concepts
-                    while having fun with friends and fellow enthusiasts.
+                    Join us for an evening of quantum-themed board games and
+                    video games at Odyssey Games in Pasadena. Learn about
+                    quantum concepts while having fun with friends and fellow
+                    enthusiasts. We'll have a variety of games available, from
+                    physical board games to digital experiences.
                   </p>
                   <div className="bg-la-sand/20 p-4 rounded-lg mb-4">
                     <p className="text-gray-700">
@@ -129,35 +141,6 @@ export default function QuantumGames() {
                   >
                     Register on Eventbrite
                   </a>
-                </div>
-
-                {/* Video Games Section */}
-                <div className="bg-white p-8 rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40">
-                  <div className="flex items-center gap-2 mb-4 text-la-coral">
-                    <Gamepad2 className="w-6 h-6" />
-                    <span className="font-bold text-lg">
-                      Quantum Video Games
-                    </span>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    Join us for an exciting showcase of quantum-themed video
-                    games from QuantumRealmGames. Experience quantum mechanics
-                    through immersive gameplay and interactive demonstrations.
-                  </p>
-                  <div className="bg-la-sand/20 p-4 rounded-lg mb-4">
-                    <p className="text-gray-700">
-                      <strong>Location:</strong> TBD
-                      <br />
-                      <strong>Registration:</strong> Eventbrite registration
-                      coming soon
-                    </p>
-                  </div>
-                  <button
-                    disabled
-                    className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm cursor-not-allowed"
-                  >
-                    Registration Coming Soon
-                  </button>
                 </div>
 
                 {/* Online Games Section */}
