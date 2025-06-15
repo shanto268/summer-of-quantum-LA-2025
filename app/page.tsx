@@ -59,9 +59,9 @@ export default function Home() {
     },
     {
       title: 'Quantum for Kids',
-      date: 'July 8-13, 2025',
-      time: 'TBD',
-      location: 'Caltech',
+      date: 'July 12th, 2025',
+      time: '10:00 AM – 2:00 PM',
+      location: 'Caltech Campus',
       description:
         'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
       image: '/images/kids.png?height=300&width=600',

@@ -186,9 +186,9 @@ const allEvents: Event[] = [
   {
     id: 'kids-unscheduled',
     title: 'Quantum for Kids',
-    date: 'July 8-13, 2025',
-    time: 'TBD',
-    location: 'Caltech',
+    date: 'July 12, 2025',
+    time: '10:00 AM – 2:00 PM',
+    location: 'Caltech Campus',
     category: 'Education',
     link: '/quantum-for-kids',
     description:
@@ -206,6 +206,30 @@ const allEvents: Event[] = [
     link: '/quantum-tech-company-events',
     description:
       'Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation.',
+    image: '/images/companies.png?height=300&width=600',
+  },
+  {
+    id: 'd-wave-workshop',
+    title: 'D-Wave Workshop',
+    date: 'June 16, 2025',
+    time: 'TBD',
+    location: 'USC Campus',
+    category: 'Education',
+    link: '/quantum-tech-company-events',
+    description:
+      'Join us for an in-depth workshop exploring practical business applications of quantum computing, with a special focus on optimization problems.',
+    image: '/images/companies.png?height=300&width=600',
+  },
+  {
+    id: 'd-wave-workshop-july',
+    title: 'D-Wave Workshop',
+    date: 'July 16, 2025',
+    time: 'TBD',
+    location: 'USC Campus',
+    category: 'Education',
+    link: '/quantum-tech-company-events',
+    description:
+      'Join us for an in-depth workshop exploring practical business applications of quantum computing, with a special focus on optimization problems.',
     image: '/images/companies.png?height=300&width=600',
   },
   {

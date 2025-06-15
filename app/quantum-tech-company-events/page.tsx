@@ -15,6 +15,7 @@ interface Event {
   isAvailable: boolean
   showSponsorship?: boolean
   registrationUrl?: string
+  registrationStatus?: string
   details: {
     industryPanel?: string
     expoBooths?: string[]
@@ -56,6 +57,19 @@ export default function QuantumTechCompanyEvents() {
           'Connect with industry professionals and explore career opportunities in quantum technology.',
         ],
       },
+      registrationStatus: 'Registration coming soon',
+    },
+    {
+      title: 'D-Wave Workshop',
+      date: 'July 16th',
+      time: 'TBD',
+      location: 'USC Campus',
+      description:
+        'Join us for an in-depth workshop exploring practical business applications of quantum computing, with a special focus on optimization problems.',
+      isAvailable: false,
+      showSponsorship: false,
+      registrationUrl: '/registration/d-wave-workshop-july',
+      registrationStatus: 'Registration coming soon',
     },
     {
       title: 'D-Wave Facilities Tour',
@@ -67,6 +81,7 @@ export default function QuantumTechCompanyEvents() {
       isAvailable: true,
       showSponsorship: false,
       registrationUrl: '/registration/d-wave-tour',
+      registrationStatus: 'Registration coming soon',
     },
     {
       title: 'qBraid Workshop',
@@ -78,6 +93,7 @@ export default function QuantumTechCompanyEvents() {
       isAvailable: true,
       showSponsorship: false,
       registrationUrl: '/registration/qbraid-workshop',
+      registrationStatus: 'Registration coming soon',
     },
   ]
 
@@ -142,24 +158,22 @@ export default function QuantumTechCompanyEvents() {
                       </div>
                     </div>
 
-                    {event.isAvailable && (
-                      <>
-                        <div className="mb-6">
-                          <div className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm text-center cursor-not-allowed">
-                            Registration Coming Soon
-                          </div>
+                    {event.registrationStatus && (
+                      <div className="mb-6">
+                        <div className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm text-center cursor-not-allowed">
+                          {event.registrationStatus}
                         </div>
-                        {event.showSponsorship && (
-                          <div className="mb-6">
-                            <a
-                              href="/sponsorship"
-                              className="block w-full bg-gradient-to-r from-la-dusk via-la-sunset to-la-coral text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
-                            >
-                              Sponsorship & Partnership Form
-                            </a>
-                          </div>
-                        )}
-                      </>
+                      </div>
+                    )}
+                    {event.showSponsorship && (
+                      <div className="mb-6">
+                        <a
+                          href="/sponsorship"
+                          className="block w-full bg-gradient-to-r from-la-dusk via-la-sunset to-la-coral text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
+                        >
+                          Sponsorship & Partnership Form
+                        </a>
+                      </div>
                     )}
 
                     {event.description && (

@@ -46,15 +46,15 @@ export default function QuantumForKids() {
                 </div>
                 <div className="flex items-center gap-2 text-la-coral">
                   <Calendar className="w-5 h-5" />
-                  <span className="font-medium">Date: July 8-13, 2025</span>
+                  <span className="font-medium">Date: July 12th, 2025</span>
                 </div>
                 <div className="flex items-center gap-2 text-la-coral">
                   <Clock className="w-5 h-5" />
-                  <span className="font-medium">Duration: ~2.5–3 hours</span>
+                  <span className="font-medium">Time: 10:00 AM – 2:00 PM</span>
                 </div>
                 <div className="flex items-center gap-2 text-la-coral">
                   <MapPin className="w-5 h-5" />
-                  <span className="font-medium">Caltech Campus</span>
+                  <span className="font-medium">Location: Caltech Campus</span>
                 </div>
               </div>
               <p className="text-gray-700 mb-6">
