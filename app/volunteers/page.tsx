@@ -39,7 +39,7 @@ export default function Volunteers() {
     {
       name: 'Emanuel Dallas',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-2.jpg',
+      image: '/images/volunteers/manny-dallas.jpg',
       isLeadership: true,
     },
     {
@@ -64,15 +64,10 @@ export default function Volunteers() {
       isLeadership: true,
     },
     {
-      name: 'Cody Fan',
-      institution: 'UCLA',
-      image: '/images/volunteers/placeholder-5.jpg',
-      isLeadership: true,
-    },
-    {
       name: 'Huma Jafree',
       institution: 'Caltech',
-      image: '/images/volunteers/placeholder-43.jpg',
+      image: '/images/volunteers/huma-jafree-01.jpg',
+      linkedin: 'https://www.linkedin.com/in/huma-jafree-05983b1a1/',
       isLeadership: true,
     },
     {
@@ -83,9 +78,10 @@ export default function Volunteers() {
       isLeadership: true,
     },
     {
-      name: 'Bibek Bhandari',
-      institution: 'Chapman',
-      image: '/images/volunteers/placeholder-7.jpg',
+      name: 'Sandra Al Hames',
+      institution: 'USC',
+      image: '/images/volunteers/sandra-al-hames.jpg',
+      linkedin: 'https://www.linkedin.com/in/sandra-al-hames',
       isLeadership: true,
     },
 
@@ -95,12 +91,20 @@ export default function Volunteers() {
       institution: 'Chapman',
       image: '/images/volunteers/adithi-ajith.jpg',
       linkedin: 'https://www.linkedin.com/in/adithi-a-860b2122b/',
+      isLeadership: true,
     },
+
     {
-      name: 'Sandra Al Hames',
-      institution: 'USC',
-      image: '/images/volunteers/sandra-al-hames.jpg',
-      linkedin: 'https://www.linkedin.com/in/sandra-al-hames',
+      name: 'Bibek Bhandari',
+      institution: 'Chapman',
+      image: '/images/volunteers/placeholder-7.jpg',
+      isLeadership: true,
+    },
+
+    {
+      name: 'Cody Fan',
+      institution: 'UCLA',
+      image: '/images/volunteers/placeholder-5.jpg',
       isLeadership: true,
     },
     {
@@ -111,8 +115,8 @@ export default function Volunteers() {
     {
       name: 'Alyssa Chan',
       institution: 'USC',
-      image: '/images/volunteers/placeholder-11.jpg',
-      linkedin: 'www.linkedin.com/in/alyssa-chan-fishschool',
+      image: '/images/volunteers/alyssa-chan.jpg',
+      linkedin: 'https://www.linkedin.com/in/alyssa-chan-fishschool',
     },
     {
       name: 'Yueqian Wang',
