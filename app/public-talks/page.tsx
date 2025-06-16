@@ -26,8 +26,6 @@ export default function PublicTalks() {
       location: 'Science Lecture Hall (SLH), University of Southern California',
       description:
         "Join us for a fun and engaging public talk on quantum physics - it's for everyone, no matter your background! Led by Dr. Aaron Wirthwein, a theoretical physicist specializing in quantum systems.",
-      eventbriteLink:
-        'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-usc-tickets-1391569575059?aff=oddtdtcreator',
       isAvailable: true,
     },
     {
@@ -39,8 +37,6 @@ export default function PublicTalks() {
         'Feynman Lecture Hall, 2nd floor of East Bridge, Norman Bridge Lab of Physics, Pasadena, CA 91125',
       description:
         "Join us at Caltech for a fun and engaging public talk about quantum mechanics that's open to everyone! Dr. Frank Rice, a lecturer in physics at Caltech, will take the audience on a journey through some of the most surprising discoveries in the history of science, with clear explanations and hands-on demonstrations. Caltech PhD students will also offer short, accessible talks about the frontiers of quantum research. Whether you're a student, a science enthusiast, or just curious, you'll leave with a clearer understanding of how the quantum world behaves and why it matters. Free and open to the public-no background in physics required!",
-      eventbriteLink:
-        'https://www.eventbrite.com/e/quantum-for-everyone-a-public-talk-at-caltech-tickets-1393344684459?aff=oddtdtcreator',
       isAvailable: true,
     },
     {
@@ -198,14 +194,23 @@ export default function PublicTalks() {
                   )}
 
                   {talk.isAvailable ? (
-                    <a
-                      href={talk.eventbriteLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center"
-                    >
-                      Register on Eventbrite
-                    </a>
+                    talk.eventbriteLink ? (
+                      <a
+                        href={talk.eventbriteLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center"
+                      >
+                        Register on Eventbrite
+                      </a>
+                    ) : (
+                      <button
+                        disabled
+                        className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm cursor-not-allowed"
+                      >
+                        Event Concluded
+                      </button>
+                    )
                   ) : (
                     <button
                       disabled

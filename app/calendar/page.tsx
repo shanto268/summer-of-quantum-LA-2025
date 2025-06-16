@@ -512,12 +512,15 @@ export default function CalendarPage() {
                         transition={{ duration: 0.3 }}
                       >
                         <Card
-                          className={`bg-white/80 backdrop-blur-sm border border-la-sunset/20 shadow-md shadow-la-sand/40 hover:border-la-coral/70 transition-all duration-300 ${
-                            !event.eventbriteLink &&
-                            !event.id.startsWith('bar-')
-                              ? 'opacity-60 grayscale'
-                              : ''
-                          }`}
+                          className={`bg-white/80 backdrop-blur-sm border border-la-sunset/20 shadow-md shadow-la-sand/40 hover:border-la-coral/70 transition-all duration-300
+                            ${
+                              isEventInPast(event)
+                                ? 'opacity-60 grayscale'
+                                : !event.eventbriteLink &&
+                                  !event.id.startsWith('bar-')
+                                ? 'bg-gradient-to-r from-la-dusk/60 to-la-dusk/40 text-white font-bold'
+                                : ''
+                            }`}
                         >
                           <CardContent className="p-6">
                             <div className="flex flex-col md:flex-row gap-6">
@@ -608,10 +611,10 @@ export default function CalendarPage() {
                                     key={event.id}
                                     className={`w-3/4 text-xs rounded-full py-1 px-2 mt-1 hover:opacity-90 truncate transition-colors ${
                                       isEventInPast(event)
-                                        ? 'text-white bg-gradient-to-r from-la-dusk to-la-dusk/80'
+                                        ? 'text-gray-400 bg-gray-200'
                                         : scheduled
                                         ? 'text-white bg-gradient-to-r from-la-coral to-la-sunset'
-                                        : 'text-gray-400 bg-gray-200'
+                                        : 'text-white font-bold bg-gradient-to-r from-la-dusk/60 to-la-dusk/40'
                                     }`}
                                     title={event.title}
                                     onClick={() => {
