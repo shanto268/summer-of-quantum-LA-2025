@@ -2,6 +2,7 @@
 
 import { Analytics } from '@vercel/analytics/react'
 import {
+  AlertCircle,
   Calendar,
   Clock,
   Gamepad2,
@@ -64,16 +65,6 @@ export default function QuantumForKids() {
                 "Quantum Explorer Passport," and discover the wonders of the
                 quantum world with real scientists and educators.
               </p>
-              <div className="mb-6">
-                <a
-                  href="https://www.eventbrite.com/e/quantum-for-kids-caltech-tickets-1414320343219?aff=oddtdtcreator"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
-                >
-                  Register on Eventbrite
-                </a>
-              </div>
               <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 mt-8 flex items-center gap-2">
                 <Lightbulb className="w-5 h-5 text-la-coral" /> Event Highlights
               </h3>
@@ -101,10 +92,6 @@ export default function QuantumForKids() {
                 <li>
                   <b>Quantum Q&A Corner:</b> Ask real scientists your biggest
                   questions about quantum and science careers.
-                </li>
-                <li>
-                  <b>Mini Stage Shows:</b> Fun talks, magic tricks, and live
-                  demos every hour. Stickers for participants!
                 </li>
                 <li>
                   <b>Scavenger Hunt:</b> Complete clue-based tasks around campus
@@ -160,17 +147,41 @@ export default function QuantumForKids() {
                   title="Caltech Map"
                 ></iframe>
               </div>
+
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 mb-6">
+                <div className="flex items-start gap-3">
+                  <AlertCircle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-medium text-gray-900 mb-1">
+                      Getting "Your payment was declined" Error from Eventbrite?
+                    </h4>
+                    <p className="text-gray-700 text-sm">
+                      We are not sure why some guests are getting this error.
+                      Please{' '}
+                      <a
+                        href="mailto:summerofquantumla@gmail.com?subject=Quantum for Kids @ Caltech"
+                        className="text-la-coral hover:underline"
+                      >
+                        send an email to summerofquantumla@gmail.com
+                      </a>{' '}
+                      with your name, contact email address and the number of
+                      tickets you would like to reserve.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <div
                 id="register"
                 className="mt-8"
               >
                 <a
-                  href="#"
+                  href="https://www.eventbrite.com/e/quantum-for-kids-caltech-tickets-1419950673689?aff=oddtdtcreator"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
-                  aria-disabled="true"
-                  tabIndex={-1}
                 >
-                  Registration Coming Soon
+                  Register on Eventbrite
                 </a>
               </div>
             </div>

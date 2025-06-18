@@ -192,7 +192,7 @@ const allEvents: Event[] = [
     category: 'Education',
     link: '/quantum-for-kids',
     eventbriteLink:
-      'https://www.eventbrite.com/e/quantum-for-kids-caltech-tickets-1414320343219?aff=oddtdtcreator',
+      'https://www.eventbrite.com/e/quantum-for-kids-caltech-tickets-1419950673689?aff=oddtdtcreator',
     description:
       'Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners.',
     image: '/images/kids.png?height=300&width=600',
