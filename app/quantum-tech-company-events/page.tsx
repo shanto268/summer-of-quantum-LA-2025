@@ -3,6 +3,7 @@
 import { Analytics } from '@vercel/analytics/react'
 import { Briefcase, Calendar, Clock, MapPin, Mic, Users } from 'lucide-react'
 import { useState } from 'react'
+import ClickableButton from '../../components/clickable-button'
 import Navbar from '../../components/navbar'
 import SectionHeading from '../../components/section-heading'
 
@@ -16,7 +17,7 @@ interface Event {
   showSponsorship?: boolean
   registrationUrl?: string
   registrationStatus?: string
-  details: {
+  details?: {
     industryPanel?: string
     expoBooths?: string[]
     resumeDrop?: string[]
@@ -39,13 +40,14 @@ export default function QuantumTechCompanyEvents() {
 
   const events: Event[] = [
     {
-      title: 'Quantum Tech Company Events',
+      title: 'Quantum Tech Company Panel',
       date: 'July 15th',
       time: '11 AM - 2 PM',
-      location: 'USC (with Caltech/UCLA/Chapman partners)',
+      location: 'USC Michelson Center for Convergent Bioscience (MCB)',
       isAvailable: true,
       showSponsorship: true,
-      registrationUrl: '/registration/quantum-tech-company-events',
+      registrationUrl:
+        'https://docs.google.com/forms/d/e/1FAIpQLSdasRFkjSw2fIpvWughEq4ZyzA9mcI2T65EKcDw0ELLjyA_3A/viewform?usp=sharing&ouid=109764518158939977685',
       details: {
         industryPanel:
           'Hear from 5-6 leaders in quantum hardware, software, and startups about career paths, industry trends, and the future of quantum technology.',
@@ -57,31 +59,33 @@ export default function QuantumTechCompanyEvents() {
           'Connect with industry professionals and explore career opportunities in quantum technology.',
         ],
       },
-      registrationStatus: 'Registration coming soon',
+      registrationStatus: 'Register Now',
     },
     {
       title: 'D-Wave Workshop',
       date: 'July 16th',
-      time: 'TBD',
-      location: 'USC Campus',
+      time: '11 AM - 1 PM',
+      location: 'USC Michelson Center for Convergent Bioscience (MCB)',
       description:
         'Join us for an in-depth workshop exploring practical business applications of quantum computing, with a special focus on optimization problems.',
-      isAvailable: false,
+      isAvailable: true,
       showSponsorship: false,
-      registrationUrl: '/registration/d-wave-workshop-july',
-      registrationStatus: 'Registration coming soon',
+      registrationUrl:
+        'https://docs.google.com/forms/d/e/1FAIpQLSdsMVR-CZOWFsraVz4MddZERr18X-LN4lU1C9QxDZh5R8ZECA/viewform?usp=sharing&ouid=109764518158939977685',
+      registrationStatus: 'RSVP',
     },
     {
       title: 'D-Wave Facilities Tour',
       date: 'July 17th',
-      time: 'TBD',
-      location: 'USC Information Sciences Institute',
+      time: '1 - 3pm PDT',
+      location: '4676 Admiralty Way #1001, Marina del Rey, CA 90292',
       description:
-        'Tour of the D-Wave facilities at USC Information Sciences Institute. Details to be announced.',
+        "Curious about cutting-edge quantum technology? Join us for an exclusive tour of D-Wave's facilities and get a behind-the-scenes look at one of the world's leading quantum computing companies. No technical background is required. Just bring your curiosity.",
       isAvailable: true,
       showSponsorship: false,
-      registrationUrl: '/registration/d-wave-tour',
-      registrationStatus: 'Registration coming soon',
+      registrationUrl:
+        'https://www.eventbrite.com/e/d-wave-facilities-tour-tickets-1431929522749?aff=oddtdtcreator',
+      registrationStatus: 'Get Tickets',
     },
     {
       title: 'qBraid Workshop',
@@ -158,13 +162,23 @@ export default function QuantumTechCompanyEvents() {
                       </div>
                     </div>
 
-                    {event.registrationStatus && (
+                    {event.registrationUrl && event.registrationStatus ? (
+                      <div className="mb-6">
+                        <ClickableButton
+                          href={event.registrationUrl}
+                          external={event.registrationUrl.startsWith('http')}
+                          className="block w-full bg-gradient-to-r from-la-dusk via-la-sunset to-la-coral text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
+                        >
+                          {event.registrationStatus}
+                        </ClickableButton>
+                      </div>
+                    ) : event.registrationStatus ? (
                       <div className="mb-6">
                         <div className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm text-center cursor-not-allowed">
                           {event.registrationStatus}
                         </div>
                       </div>
-                    )}
+                    ) : null}
                     {event.showSponsorship && (
                       <div className="mb-6">
                         <a
