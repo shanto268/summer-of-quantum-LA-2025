@@ -24,6 +24,7 @@ export default function Home() {
     {
       title: 'Public Talks',
       date: 'June 11-18, 2025',
+      startDate: '2025-06-11',
       time: 'Details on each university page',
       location: 'USC, Caltech, UCLA, and Chapman',
       description:
@@ -36,6 +37,7 @@ export default function Home() {
     {
       title: 'Quantum Lab Tours',
       date: 'June 17-26, 2025',
+      startDate: '2025-06-17',
       time: 'Details on each university page',
       location: 'USC, Caltech, and UCLA',
       description:
@@ -48,6 +50,7 @@ export default function Home() {
     {
       title: 'Quantum Games',
       date: 'June 24-29, 2025',
+      startDate: '2025-06-26',
       time: 'TBD',
       location: 'Various Locations',
       description:
@@ -60,6 +63,7 @@ export default function Home() {
     {
       title: 'Quantum for Kids',
       date: 'July 12th, 2025',
+      startDate: '2025-07-12',
       time: '10:00 AM – 2:00 PM',
       location: 'Caltech Campus',
       description:
@@ -72,6 +76,7 @@ export default function Home() {
     {
       title: 'Quantum Tech Company Events',
       date: 'July 15-20, 2025',
+      startDate: '2025-07-15',
       time: 'multiple',
       location: 'USC',
       description:
@@ -84,6 +89,7 @@ export default function Home() {
     {
       title: 'Quantum at the Bar (ħ)',
       date: 'July 22-27, 2025',
+      startDate: '2025-07-22',
       time: 'multiple',
       location: 'Various Locations',
       description:
@@ -96,6 +102,7 @@ export default function Home() {
     {
       title: 'Quantum for Teachers',
       date: 'July 29-August 3, 2025',
+      startDate: '2025-07-29',
       time: 'TBD',
       location: 'TBD',
       description:
@@ -106,6 +113,7 @@ export default function Home() {
     {
       title: 'Quantum in the Stars',
       date: 'August 5-10, 2025',
+      startDate: '2025-08-05',
       time: 'TBD',
       location: 'Griffith Observatory',
       description:
@@ -116,6 +124,7 @@ export default function Home() {
     {
       title: 'Quantum for Seniors',
       date: 'TBD',
+      startDate: '9999-12-31',
       time: 'To be announced',
       location: 'TBD',
       description:
@@ -126,6 +135,33 @@ export default function Home() {
       buttonText: 'Learn More',
     },
   ]
+
+  const sortEvents = (events: any[]) => {
+    const now = new Date()
+    now.setHours(0, 0, 0, 0)
+
+    const upcoming = events.filter((event) => {
+      const eventDate = new Date(event.startDate)
+      return eventDate >= now
+    })
+
+    const past = events.filter((event) => {
+      const eventDate = new Date(event.startDate)
+      return eventDate < now
+    })
+
+    const tbd = upcoming.filter((event) => event.date === 'TBD')
+    const datedUpcoming = upcoming.filter((event) => event.date !== 'TBD')
+
+    datedUpcoming.sort(
+      (a, b) =>
+        new Date(a.startDate).getTime() - new Date(b.startDate).getTime(),
+    )
+
+    return [...datedUpcoming, ...tbd, ...past]
+  }
+
+  const sortedEvents = sortEvents(upcomingEvents)
 
   const navLinks = [
     { name: 'Home', href: '#' },
@@ -255,20 +291,26 @@ export default function Home() {
         {/* Upcoming Events Section */}
         <section
           id="upcoming-events"
-          className="py-12 sm:py-20 px-4 bg-la-sky relative"
+          className="py-12 sm:py-20 px-4 bg-la-sand"
         >
-          <div className="absolute inset-0 opacity-40 bg-venice-texture mix-blend-overlay"></div>
           <div className="container mx-auto">
             <SectionHeading
               title="Upcoming Events"
-              subtitle="Join us for these exciting quantum events happening across Los Angeles"
+              subtitle="Join us for a summer of quantum discovery! Our free 10-week program has something for everyone."
             />
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-4">
-              {upcomingEvents.map((event, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {sortedEvents.map((event, index) => (
                 <EventCard
                   key={index}
-                  {...event}
+                  title={event.title}
+                  date={event.date}
+                  time={event.time}
+                  location={event.location}
+                  description={event.description}
+                  image={event.image}
+                  icon={event.icon}
+                  link={event.link}
+                  buttonText={event.buttonText}
                 />
               ))}
             </div>
