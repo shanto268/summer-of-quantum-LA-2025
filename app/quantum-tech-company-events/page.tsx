@@ -45,7 +45,7 @@ export default function QuantumTechCompanyEvents() {
       time: '11 AM - 2 PM',
       location: 'USC Michelson Center for Convergent Bioscience (MCB)',
       isAvailable: true,
-      showSponsorship: true,
+      showSponsorship: false,
       registrationUrl:
         'https://docs.google.com/forms/d/e/1FAIpQLSdasRFkjSw2fIpvWughEq4ZyzA9mcI2T65EKcDw0ELLjyA_3A/viewform?usp=sharing&ouid=109764518158939977685',
       details: {
