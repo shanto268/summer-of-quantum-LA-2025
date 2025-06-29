@@ -75,6 +75,18 @@ export default function QuantumTechCompanyEvents() {
       registrationStatus: 'RSVP',
     },
     {
+      title: 'qBraid Workshop',
+      date: 'July 16th',
+      time: '4 PM PT',
+      location: 'Online / Zoom',
+      description:
+        'Curious about quantum computing? Want to submit a calculation to a real quantum device? Come join us to learn about quantum computing, the state of the quantum industry, and see how you can use qBraid to get started in this field. All experience levels are welcome!',
+      isAvailable: true,
+      showSponsorship: false,
+      registrationUrl: 'https://lu.ma/icz8poym',
+      registrationStatus: 'Register',
+    },
+    {
       title: 'D-Wave Facilities Tour',
       date: 'July 17th',
       time: '1 - 3pm PDT',
@@ -86,18 +98,6 @@ export default function QuantumTechCompanyEvents() {
       registrationUrl:
         'https://www.eventbrite.com/e/d-wave-facilities-tour-tickets-1431929522749?aff=oddtdtcreator',
       registrationStatus: 'Get Tickets',
-    },
-    {
-      title: 'qBraid Workshop',
-      date: 'TBD',
-      time: 'TBD',
-      location: 'TBD',
-      description:
-        'Workshop on learning how to use qBraid to run programs on real quantum hardware.',
-      isAvailable: true,
-      showSponsorship: false,
-      registrationUrl: '/registration/qbraid-workshop',
-      registrationStatus: 'Registration coming soon',
     },
   ]
 
