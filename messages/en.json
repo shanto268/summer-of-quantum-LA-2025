@@ -1,0 +1,202 @@
+{
+  "home": "Home",
+  "eventOverview": "Event Overview",
+  "eventOverviewSubtitle1": "A 10-week celebration of quantum science across LA, part of the",
+  "eventOverviewSubtitle2": "International Year of Quantum",
+  "eventOverviewSubtitle3": "initiative.",
+  "series_desc": " A 10-week summer event series to make quantum science engaging, accessible, and impactful for a diverse audience across LA, in collaboration with USC, Caltech, UCLA, Chapman and industry partners.",
+  
+  "eventOverviewDesc": [
+    {
+      "title": "Increase awareness of quantum science",
+      "description": "Bringing quantum concepts to the public through engaging events and accessible explanations."
+    },
+    {
+      "title": "Engage families, students, and professionals",
+      "description": "Creating inclusive events for all ages and expertise levels throughout Los Angeles."
+    },
+    {
+      "title": "Collaborate with academia and industry",
+      "description": "Partnering with USC, Caltech, UCLA, Chapman, industry leaders to bring expert knowledge to the public."
+    },
+    {
+      "title": "Make quantum science fun and accessible",
+      "description": "Transforming complex concepts into enjoyable, interactive experiences for everyone."
+    }
+  ],
+  "quantumartandlit": "Quantum Art & Literature",
+  
+  "joinSummerTitle": "Join us for a summer of quantum discovery!",
+  "joinSummerDesc": "From public lectures and quantum lab tours to quantum games and \"Quantum at the Bar\" events, our free 10-week program offers something for everyone. Join our mailing list to stay updated on all the exciting quantum events happening across Los Angeles!",
+  "joinMailingList": "Join Mailing List",
+  "learnMoreAboutIYQ": "Learn More About IYQ 2025",
+  "contact": "Contact",
+  "quick_links": "Quick Links",
+  "learn_more": "Learn More",
+  "quantumTechCompanyEvents": "Quantum Tech Company Events",
+  "upcomingEvents": "Upcoming Events",
+  "upcomingEventsSubtitle": "Join us for a summer of quantum discovery! Our free 10-week program has something for everyone.",
+  "volunteer": "Volunteer with Us",
+  "partner": "Partner with Us",
+  "apply": "Apply to Volunteer",
+  "calendar": "Calendar",
+  "ourVolunteers": "Our Volunteers",
+  "eventDescription": "Event Description",
+  "TBD": "TBD",
+  "To_be_announced": "To be announced",
+  "multiple": "Multiple",
+  "summer_of_quantum_in_LA": "Summer of Quantum in LA",
+  "quantum_in_LA": "Quantum in LA",
+  
+  "events": {
+    "publicTalks": {
+      "title": "Public Talks",
+      "description": "Public-friendly talks by quantum scientists at local universities, covering the motivations, history, myths, and real-world applications of quantum mechanics - no technical background required."
+    },
+    "labTours": {
+      "title": "Quantum Lab Tours",
+      "description": "Exclusive behind-the-scenes tours of cutting-edge university labs, offering a firsthand look at quantum research in action and conversations with working scientists."
+    },
+    "quantumGames": {
+      "title": "Quantum Games",
+      "description": "An evening of playing board games and video games that teach, explore, or are inspired by quantum mechanics."
+    },
+    "kids": {
+      "title": "Quantum for Kids",
+      "description": "Hands-on demos and interactive activities designed to make the strange world of quantum mechanics fun and accessible for young learners."
+    },
+    "companies": {
+      "title": "Quantum Tech Company Events",
+      "description": "Panels and showcases featuring local quantum technology companies, offering behind-the-scenes insights into the future of quantum innovation."
+    },
+    "bar": {
+      "title": "Quantum at the Bar (ħ)",
+      "description": "A citywide outreach where graduate students, postdocs, and professors deploy to local LA bars to spark casual, lively conversations about quantum science - drinks encouraged, physics demystified."
+    },
+    "teachers": {
+      "title": "Quantum for Teachers",
+      "description": "Workshops and resources for educators to integrate quantum concepts into their classrooms, empowering the next generation of science learners."
+    },
+    "stars": {
+      "title": "Quantum in the Stars",
+      "description": "An unforgettable night at Griffith Observatory learning about the quantum physics relevant to the existence of the universe."
+    },
+    "seniors": {
+      "title": "Quantum for Seniors",
+      "description": "Bringing quantum science to retirement communities with engaging, accessible presentations and discussions tailored for lifelong learners."
+    }
+  },
+  
+  "volunteer_header": "Volunteer with Us",
+  "volunteer_intro": {
+    "text": "Help us make quantum science accessible to everyone in LA and join",
+    "text2": "our great quantum network"
+  },
+  "opportunitiesTitle": "Volunteer Opportunities",
+  "whyTitle": "Why Volunteer With Us?",
+  "cta": "Apply to Volunteer",
+  
+  "roles": [
+    {
+      "title": "Social Media",
+      "desc": "Help manage our social media presence and create engaging content."
+    },
+    {
+      "title": "Eventbrite",
+      "desc": "Assist with event setup and management on our Eventbrite platform."
+    },
+    {
+      "title": "Mailing Lists",
+      "desc": "Help manage and grow our mailing lists to keep our community informed."
+    },
+    {
+      "title": "Promotions",
+      "desc": "Promote our events to all communities in LA."
+    },
+    {
+      "title": "Contacting Partners",
+      "desc": "Reach out to potential partners and sponsors."
+    },
+    {
+      "title": "Website Maintenance",
+      "desc": "Help keep our website updated with the latest events and information."
+    },
+    {
+      "title": "Emcees",
+      "desc": "Welcome attendees and help facilitate our events as an emcee."
+    },
+    {
+      "title": "Event Assistants",
+      "desc": "Assist with setup, teardown, and various tasks during our events."
+    },
+    {
+      "title": "Photography",
+      "desc": "Document our events to share them with the community."
+    },
+    {
+      "title": "Graphic Design",
+      "desc": "Create promotional materials for events, social media, and website graphics."
+    }
+  ],
+  
+  "why": [
+    {
+      "title": "We Need You!",
+      "desc": "Summer of Quantum is entirely volunteer-led. We need enthusiastic people from all backgrounds to make these free quantum science events possible across LA."
+    },
+    {
+      "title": "Make an Impact",
+      "desc": "Help make quantum science accessible to diverse communities across Los Angeles and inspire the next generation of scientists."
+    },
+    {
+      "title": "Build Your Network",
+      "desc": "Connect with leading scientists, educators, and professionals from USC, Caltech, UCLA, Chapman, our industry partners and",
+      "desc2": "our great volunteers"
+    },
+    {
+      "title": "Gain Experience",
+      "desc": "Develop valuable skills in event management, science communication, and community outreach that will enhance your resume."
+    }
+  ],
+  
+  "partnerWithUs": "Partner with Us",
+  "partnerWithUsSubtitle": "Join our mission to make quantum science accessible and engaging for everyone in LA",
+  
+  "partnerWithUsWhyTitle": "Why Partner With Us?",
+  "partnerWithUsWhyPoints": [
+    {
+      "title0": "community_impact",
+      "community_impact": "Reach diverse audiences across Los Angeles and contribute to scientific literacy."
+    },
+    {
+      "title1": "networking",
+      "networking": "Connect with leading institutions like USC, Caltech, UCLA, Chapman and industry innovators."
+    },
+    {
+      "title2": "visibility",
+      "visibility": "Showcase your organization's commitment to science education and innovation."
+    },
+    {
+      "title3": "talent_pipeline",
+      "talent_pipeline": "Connect with the next generation of quantum scientists and engineers."
+    }
+  ],
+  
+  "partnerWithUsOppTitle": "Partnership Opportunities",
+  "partnerWithUsOpportunities": [
+    {
+      "title": "Financial Sponsorship",
+      "desc": "Support our events and programs with financial contributions at various levels."
+    },
+    {
+      "title": "Venue Hosting",
+      "desc": "Provide space for workshops, lectures, or exhibitions at your facility."
+    },
+    {
+      "title": "Expert Speakers",
+      "desc": "Share your expertise by providing speakers for our events and workshops."
+    }
+  ],
+  
+  "partnerWithUsCTA": "Become a Partner"
+}

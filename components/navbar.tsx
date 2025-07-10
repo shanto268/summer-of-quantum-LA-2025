@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu, TreePalmIcon as PalmTree, SunIcon } from 'lucide-react'
 
 import { useEffect, useState } from 'react'
-
+import LanguageSwitcher from '@/components/language-switch-button'
 interface NavLink {
   name: string
   href: string
@@ -83,6 +83,7 @@ export default function Navbar({ navLinks: propNavLinks }: NavbarProps) {
               {link.name}
             </a>
           ))}
+          <LanguageSwitcher />
         </div>
 
         <Sheet>
