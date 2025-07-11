@@ -1058,7 +1058,7 @@ useEffect(() => {
             </div>
           </div>
         </section>
-        </section> */}
+    
 
         {/* Sponsors Section */}
         <SponsorsSection />
