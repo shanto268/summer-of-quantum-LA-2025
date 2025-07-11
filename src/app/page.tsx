@@ -832,6 +832,7 @@ useEffect(() => {
         </section>
 
         {/* Partner with Us Section */}
+{/*
         <section
           id="partner"
           className="py-12 sm:py-20 px-4 relative bg-la-sand"
@@ -1057,8 +1058,8 @@ useEffect(() => {
               </div>
             </div>
           </div>
-        </section>
-    
+        </section> 
+    */}
 
         {/* Sponsors Section */}
         <SponsorsSection />
