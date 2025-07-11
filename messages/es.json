@@ -1,0 +1,192 @@
+{
+  "home": "Inicio",
+  "eventOverview": "Resumen del Evento",
+  "series_desc": "Una serie de eventos de verano de 10 semanas para hacer que la ciencia cuántica sea atractiva, accesible e impactante para una audiencia diversa en Los Ángeles, en colaboración con USC, Caltech, UCLA, Chapman y socios de la industria.",
+  "eventOverviewSubtitle1": "Una celebración de 10 semanas de la ciencia cuántica en LA, parte de la",
+  "eventOverviewSubtitle2": "Año Internacional de la Cuántica",
+  "eventOverviewSubtitle3": "iniciativa.",
+  "quantumartandlit": "Arte y Literatura Cuántica",
+  "quantumTechCompanyEvents": "Eventos de Empresas de Tecnología Cuántica",
+  "eventOverviewDesc": [
+    {
+      "title": "Incrementar la conciencia sobre la ciencia cuántica",
+      "description": "Llevando conceptos cuánticos al público mediante eventos atractivos y explicaciones accesibles."
+    },
+    {
+      "title": "Involucrar a familias, estudiantes y profesionales",
+      "description": "Creando eventos inclusivos para todas las edades y niveles de experiencia en todo Los Ángeles."
+    },
+    {
+      "title": "Colaborar con la academia y la industria",
+      "description": "Asociándonos con USC, Caltech, UCLA, Chapman y líderes industriales para llevar conocimiento experto al público."
+    },
+    {
+      "title": "Hacer que la ciencia cuántica sea divertida y accesible",
+      "description": "Transformando conceptos complejos en experiencias agradables e interactivas para todos."
+    }
+  ],
+  "joinSummerTitle": "¡Únete a un verano de descubrimiento cuántico!",
+  "joinSummerDesc": "Desde conferencias públicas y recorridos por laboratorios cuánticos hasta juegos cuánticos y eventos \"Cuántica en el Bar\", nuestro programa gratuito de 10 semanas ofrece algo para todos. ¡Únete a nuestra lista de correo para mantenerte informado sobre todos los emocionantes eventos cuánticos en Los Ángeles!",
+  "joinMailingList": "Únete a la lista de correo",
+  "learnMoreAboutIYQ": "Más información sobre IYQ 2025",
+  "upcomingEvents": "Próximos Eventos",
+  "upcomingEventsSubtitle": "¡Únete a nosotros para un verano de descubrimiento cuántico! Nuestro programa gratuito de 10 semanas tiene algo para todos.",
+  "volunteer": "Voluntariado",
+  "partner": "Asóciate con Nosotros",
+  "calendar": "Calendario",
+  "ourVolunteers": "Nuestros Voluntarios",
+  "eventDescription": "Descripción del Evento",
+  "TBD": "Por determinar",
+  "To_be_announced": "Por anunciar",
+  "multiple": "Múltiples",
+  "summer_of_quantum_in_LA": "Verano de la Cuántica en LA (Summer of Quantum in LA)",
+  "quantum_in_LA": "Cuántica en LA (Quantum in LA)",
+  "apply": "Aplica para ser voluntario",
+  "events": {
+    "publicTalks": {
+      "title": "Charlas Públicas",
+      "description": "Charlas accesibles por científicos cuánticos en universidades locales, que cubren motivaciones, historia, mitos y aplicaciones reales de la mecánica cuántica, sin necesidad de conocimientos técnicos."
+    },
+    "labTours": {
+      "title": "Recorridos por Laboratorios Cuánticos",
+      "description": "Recorridos exclusivos por laboratorios universitarios de vanguardia, con una visión directa de la investigación cuántica en acción y conversaciones con científicos."
+    },
+    "quantumGames": {
+      "title": "Juegos Cuánticos",
+      "description": "Una noche para jugar juegos de mesa y videojuegos que enseñan, exploran o se inspiran en la mecánica cuántica."
+    },
+    "kids": {
+      "title": "Cuántica para Niños",
+      "description": "Demostraciones prácticas y actividades interactivas diseñadas para hacer del mundo cuántico algo divertido y accesible para los más jóvenes."
+    },
+    "companies": {
+      "title": "Eventos de Empresas Cuánticas",
+      "description": "Paneles y exposiciones con empresas locales de tecnología cuántica, ofreciendo una mirada al futuro de la innovación cuántica."
+    },
+    "bar": {
+      "title": "Cuántica en el Bar (ħ)",
+      "description": "Un evento en bares locales donde estudiantes de posgrado, postdocs y profesores conversan sobre ciencia cuántica en un ambiente relajado. ¡Física desmitificada con bebidas!"
+    },
+    "teachers": {
+      "title": "Cuántica para Profesores",
+      "description": "Talleres y recursos para que los educadores integren conceptos cuánticos en sus clases, empoderando a la próxima generación de estudiantes."
+    },
+    "stars": {
+      "title": "Cuántica en las Estrellas",
+      "description": "Una noche inolvidable en el Observatorio Griffith para aprender sobre la física cuántica que hace posible nuestro universo."
+    },
+    "seniors": {
+      "title": "Cuántica para Personas Mayores",
+      "description": "Charlas accesibles y participativas en comunidades de retiro para llevar la ciencia cuántica a aprendices de toda la vida."
+    }
+  },
+  "volunteer_header": "Sé voluntario con nosotros",
+  "volunteer_intro": {
+    "text": "Ayúdanos a hacer que la ciencia cuántica sea accesible para todos en LA y únete a",
+    "text2": "nuestra gran red cuántica"
+  },
+  "opportunitiesTitle": "Oportunidades de Voluntariado",
+  "whyTitle": "¿Por qué ser voluntario con nosotros?",
+  "cta": "Postúlate para ser voluntario",
+  "roles": [
+    {
+      "title": "Redes Sociales",
+      "desc": "Ayuda a gestionar nuestras redes sociales y crear contenido atractivo."
+    },
+    {
+      "title": "Eventbrite",
+      "desc": "Apoya con la configuración y gestión de eventos en nuestra plataforma Eventbrite."
+    },
+    {
+      "title": "Listas de Correo",
+      "desc": "Ayuda a gestionar y expandir nuestras listas de correo para mantener informada a la comunidad."
+    },
+    {
+      "title": "Promociones",
+      "desc": "Promociona nuestros eventos en todas las comunidades de Los Ángeles."
+    },
+    {
+      "title": "Contacto con Socios",
+      "desc": "Contacta a socios y patrocinadores potenciales."
+    },
+    {
+      "title": "Mantenimiento del Sitio Web",
+      "desc": "Ayuda a mantener nuestro sitio web actualizado con los últimos eventos e información."
+    },
+    {
+      "title": "Maestros de Ceremonia",
+      "desc": "Da la bienvenida a los asistentes y ayuda a facilitar los eventos como maestro de ceremonias."
+    },
+    {
+      "title": "Asistentes de Eventos",
+      "desc": "Ayuda con la preparación, desmontaje y otras tareas durante nuestros eventos."
+    },
+    {
+      "title": "Fotografía",
+      "desc": "Documenta nuestros eventos para compartirlos con la comunidad."
+    },
+    {
+      "title": "Diseño Gráfico",
+      "desc": "Crea materiales promocionales para eventos, redes sociales y gráficos del sitio web."
+    }
+  ],
+  "why": [
+    {
+      "title": "¡Te necesitamos!",
+      "desc": "Summer of Quantum es dirigido completamente por voluntarios. Necesitamos personas entusiastas de todos los orígenes para hacer posibles estos eventos gratuitos de ciencia cuántica en toda LA."
+    },
+    {
+      "title": "Marca la Diferencia",
+      "desc": "Ayuda a hacer que la ciencia cuántica sea accesible a comunidades diversas en Los Ángeles e inspira a la próxima generación de científicos."
+    },
+    {
+      "title": "Construye tu Red",
+      "desc": "Conéctate con científicos, educadores y profesionales destacados de USC, Caltech, UCLA, Chapman, nuestros socios de la industria y nuestros grandes voluntarios.",
+      "desc2": "nuestros grandes voluntarios"
+    },
+    {
+      "title": "Gana Experiencia",
+      "desc": "Desarrolla habilidades valiosas en gestión de eventos, comunicación científica y divulgación comunitaria que mejorarán tu currículum."
+    }
+  ],
+  "partnerWithUs": "Asóciate con Nosotros",
+  "partnerWithUsSubtitle": "Únete a nuestra misión de hacer que la ciencia cuántica sea accesible y atractiva para todos en Los Ángeles",
+  "contact": "Contacto",
+  "quick_links": "Enlaces Rápidos",
+  "learn_more": "Más Información",
+  "partnerWithUsWhyTitle": "¿Por Qué Asociarse con Nosotros?",
+  "partnerWithUsWhyPoints": [
+    {
+      "title0": "community_impact",
+      "community_impact": "Impacto Comunitario: Llega a audiencias diversas en Los Ángeles y contribuye a la alfabetización científica."
+    },
+    {
+      "title1": "networking",
+      "networking": "Redes: Conéctate con instituciones líderes como USC, Caltech, UCLA, Chapman y líderes de la industria."
+    },
+    {
+      "title2": "visibility",
+      "visibility": "Visibilidad: Muestra el compromiso de tu organización con la educación científica e innovación."
+    },
+    {
+      "title3": "talent_pipeline",
+      "talent_pipeline": "Conexión con Talento: Conéctate con la próxima generación de científicos e ingenieros cuánticos."
+    }
+  ],
+  "partnerWithUsOppTitle": "Oportunidades de Asociación",
+  "partnerWithUsOpportunities": [
+    {
+      "title": "Patrocinio Financiero",
+      "desc": "Apoya nuestros eventos y programas con contribuciones económicas a distintos niveles."
+    },
+    {
+      "title": "Sedes para Eventos",
+      "desc": "Ofrece espacios para talleres, conferencias o exposiciones en tus instalaciones."
+    },
+    {
+      "title": "Conferencistas Expertos",
+      "desc": "Comparte tu experiencia proporcionando ponentes para nuestros eventos y talleres."
+    }
+  ],
+  "partnerWithUsCTA": "Hazte Socio"
+}
