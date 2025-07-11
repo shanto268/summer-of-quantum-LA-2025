@@ -222,11 +222,27 @@ export default function QuantumTechCompanyEvents() {
                       </div>
                       <div className="flex items-center gap-2 text-la-coral">
                         <MapPin className="w-5 h-5" />
-                        <span className="font-medium">{event.location}</span>
+                        <span className="font-medium">
+                          {event.title === 'Quantum Tech Company Panel' ? (
+                            <>
+                              <a
+                                href="https://www.google.com/maps/dir//USC+Michelson+Center+for+Convergent+Bioscience+(MCB),+Childs+Way,+Los+Angeles,+CA/@34.0218817,-118.3309438,13z/data=!3m1!5s0x80c2c4a8713508c3:0x5dfe01b2a79c3dda!4m8!4m7!1m0!1m5!1m1!1s0x80c2c7fb6b8556d7:0xa71ef36ad43d35c0!2m2!1d-118.2897442!2d34.0218886?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-la-coral hover:underline"
+                              >
+                                {event.location}
+                              </a>{' '}
+                              Rooms 101 and 102
+                            </>
+                          ) : (
+                            event.location
+                          )}
+                        </span>
                       </div>
                     </div>
 
-                    {event.registrationUrl && event.registrationStatus ? (
+                    {event.title !== 'Quantum Tech Company Panel' && event.registrationUrl && event.registrationStatus ? (
                       <div className="mb-6">
                         <ClickableButton
                           href={event.registrationUrl}
@@ -236,7 +252,7 @@ export default function QuantumTechCompanyEvents() {
                           {event.registrationStatus}
                         </ClickableButton>
                       </div>
-                    ) : event.registrationStatus ? (
+                    ) : event.registrationStatus && event.title !== 'Quantum Tech Company Panel' ? (
                       <div className="mb-6">
                         <div className="block w-full bg-gray-200 text-gray-500 font-medium shadow-sm rounded-full py-3 text-sm text-center cursor-not-allowed">
                           {event.registrationStatus}

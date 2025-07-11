@@ -18,6 +18,7 @@ import EventCard from '../../components/event-card'
 import Navbar from '../../components/navbar'
 import SectionHeading from '../../components/section-heading'
 import NeonIsometricMaze from '../../neon-isometric-maze'
+import SponsorsSection from '../../components/sponsors-section'
 import es from '@/messages/es.json';
 import en from '@/messages/en.json';
 import { useEffect, useState } from 'react';
@@ -341,7 +342,7 @@ useEffect(() => {
         </section>
 
         {/* Volunteer with Us Section */}
-        <section
+        {/* <section
           id="volunteer"
           className="py-12 sm:py-20 px-4 bg-la-blush relative"
         >
@@ -1057,6 +1058,10 @@ useEffect(() => {
             </div>
           </div>
         </section>
+        </section> */}
+
+        {/* Sponsors Section */}
+        <SponsorsSection />
 
         {/* Footer */}
         <footer className="py-12 px-4 bg-white border-t border-la-sunset/20">
@@ -1205,14 +1210,30 @@ useEffect(() => {
                     </svg>
                     <span>shanto@usc.edu</span>
                   </li>
+                  <li className="flex items-center gap-2 text-gray-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <path d="m22 6-10 7L2 6" />
+                    </svg>
+                    <span>summerofquantumla@gmail.com</span>
+                  </li>
                 </ul>
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-la-sunset/20 text-center text-gray-500 text-sm">
+            <div className="mt-12 pt-8 border-t border-la-sunset/20 text-center text-sm text-gray-500">
               <p>
-                © {new Date().getFullYear()} Sadman Ahmed Shanto. All rights
-                reserved.
+                © {new Date().getFullYear()} Summer of Quantum LA. All rights reserved.
               </p>
             </div>
           </div>
