@@ -42,3 +42,6 @@ event1-usc.xlsx
 public/images/volunteers/huma-jafree.pdf
 public/images/volunteers/manny-dallas.avif
 events2-caltech.xlsx
+sponsor-mockup.html
+.gitignore
+.claude/settings.local.json

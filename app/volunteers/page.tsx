@@ -97,14 +97,14 @@ export default function Volunteers() {
     {
       name: 'Bibek Bhandari',
       institution: 'Chapman',
-      image: '/images/volunteers/placeholder-7.jpg',
+      image: '/images/volunteers/bibek-bhandari.jpg',
       isLeadership: true,
     },
 
     {
       name: 'Cody Fan',
       institution: 'UCLA',
-      image: '/images/volunteers/placeholder-5.jpg',
+      image: '/images/volunteers/cody-fan.jpeg',
       isLeadership: true,
     },
     {
@@ -413,13 +413,7 @@ export default function Volunteers() {
       image: '/images/volunteers/omid-golami.jpg',
       linkedin: 'https://www.linkedin.com/in/omid-golami-ab2b05a7/',
     },
-    {
-      name: 'Ishfaq Majeed Ahanger',
-      institution: 'National Institute of Technology Srinagar India',
-      image: '/images/volunteers/ishfaq-majeed-ahanger.jpg',
-      linkedin:
-        'https://www.linkedin.com/in/ishfaq-majeed-a-86b983363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    },
+
     {
       name: 'Elina Sendonaris',
       institution: 'Caltech',
@@ -592,23 +586,45 @@ export default function Volunteers() {
               <h3 className="text-2xl font-bold mb-6 text-gray-900 font-heading">
                 Leadership Team
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 relative">
                 {leadershipVolunteers.map((volunteer, index) => {
                   const link = volunteer.website || volunteer.linkedin
+                  const isFounder = volunteer.name === 'Sadman Ahmed Shanto'
+
                   const cardContent = (
                     <div
-                      className="bg-white rounded-2xl border border-la-sunset/20 shadow-md shadow-la-sand/40 overflow-hidden group hover:border-la-sunset/40 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer"
+                      className={`relative rounded-2xl border overflow-hidden group transition-all duration-500 transform cursor-pointer ${
+                        isFounder
+                          ? 'bg-gradient-to-br from-white via-la-sand/5 to-la-sunset/5 border-2 border-la-sunset/50 shadow-xl shadow-la-sunset/15 hover:border-la-sunset/70 hover:shadow-2xl hover:shadow-la-sunset/20 hover:scale-[1.08] hover:-translate-y-1'
+                          : 'bg-white border border-la-sunset/20 shadow-md shadow-la-sand/40 hover:border-la-sunset/40 hover:scale-[1.02]'
+                      }`}
                       tabIndex={link ? 0 : -1}
                       aria-label={
                         link ? `Open ${volunteer.name}'s profile` : undefined
                       }
                     >
-                      <div className="aspect-square relative overflow-hidden flex items-center justify-center">
-                        <div className="absolute inset-0 bg-gradient-to-br from-la-sky to-la-blush opacity-20 pointer-events-none" />
+                      {isFounder && (
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk opacity-20 blur-sm group-hover:opacity-30 transition-opacity duration-500 -z-10"></div>
+                      )}
+                      <div
+                        className={`aspect-square relative overflow-hidden flex items-center justify-center ${
+                          isFounder ? 'ring-2 ring-inset ring-gradient-to-br from-la-sunset/30 to-la-coral/30' : ''
+                        }`}
+                      >
+                        {isFounder && (
+                          <div className="absolute inset-0 bg-gradient-to-br from-la-coral/10 via-transparent to-la-dusk/10 animate-pulse"></div>
+                        )}
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-br ${
+                            isFounder
+                              ? 'from-la-coral via-la-sunset to-la-dusk opacity-15'
+                              : 'from-la-sky to-la-blush opacity-20'
+                          } pointer-events-none`}
+                        />
                         {!volunteer.image ||
                         volunteer.image.includes('placeholder') ? (
                           <Users
-                            className="w-20 h-20 text-la-coral opacity-80 z-10"
+                            className={`${isFounder ? 'w-24 h-24' : 'w-20 h-20'} text-la-coral opacity-80 z-10`}
                             aria-label="No profile picture"
                           />
                         ) : (
@@ -619,29 +635,61 @@ export default function Volunteers() {
                               e.currentTarget.onerror = null
                               e.currentTarget.src = PLACEHOLDER_IMG
                             }}
-                            className="absolute inset-0 w-full h-full object-cover object-center z-10"
-                            loading="lazy"
+                            className={`absolute inset-0 w-full h-full object-cover object-center z-10 ${
+                              isFounder ? 'scale-105' : ''
+                            }`}
+                            loading={isFounder ? 'eager' : 'lazy'}
                           />
                         )}
+                        {isFounder && (
+                          <>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent z-20"></div>
+                            <div className="absolute top-2 right-2 w-2 h-2 bg-la-sunset rounded-full animate-pulse z-30"></div>
+                          </>
+                        )}
                       </div>
-                      <div className="p-6">
-                        <h3 className="text-lg font-bold text-gray-900 font-heading mb-1">
+                      <div
+                        className={`p-6 ${
+                          isFounder
+                            ? 'bg-gradient-to-br from-white via-white to-la-sand/10'
+                            : ''
+                        }`}
+                      >
+                        <h3
+                          className={`font-bold text-gray-900 font-heading ${
+                            isFounder ? 'text-xl mb-1' : 'text-lg mb-1'
+                          }`}
+                        >
                           {volunteer.name}
                         </h3>
-                        <div className="flex items-center gap-2 text-la-coral mb-2">
+                        <div
+                          className={`flex items-center gap-2 mb-2 ${
+                            isFounder ? 'text-la-sunset font-medium' : 'text-la-coral'
+                          }`}
+                        >
                           <Building2 className="w-4 h-4" />
                           <span className="text-sm font-medium">
                             {volunteer.institution}
                           </span>
                         </div>
                         {volunteer.website ? (
-                          <span className="inline-flex items-center gap-1 text-sm text-la-coral">
-                            <Globe className="w-4 h-4" />
-                            <span>Personal Website</span>
+                          <span className="inline-flex items-center gap-1 text-sm">
+                            <Globe className={`w-4 h-4 ${
+                              isFounder ? 'text-la-sunset' : 'text-la-coral'
+                            }`} />
+                            <span className={`${
+                              isFounder
+                                ? 'text-transparent bg-clip-text bg-gradient-to-r from-la-coral to-la-sunset font-medium'
+                                : 'text-la-coral'
+                            }`}>Personal Website</span>
                           </span>
                         ) : (
                           volunteer.linkedin && (
-                            <span className="inline-flex items-center gap-1 text-sm text-la-coral">
+                            <span
+                              className={`inline-flex items-center gap-1 text-sm ${
+                                isFounder ? 'text-la-sunset' : 'text-la-coral'
+                              }`}
+                            >
                               <Linkedin className="w-4 h-4" />
                               <span>LinkedIn Profile</span>
                             </span>
@@ -658,13 +706,25 @@ export default function Volunteers() {
                       rel="noopener noreferrer"
                       tabIndex={0}
                       aria-label={`Open ${volunteer.name}'s profile`}
-                      className="focus:outline-none"
-                      style={{ textDecoration: 'none', color: 'inherit' }}
+                      className={`focus:outline-none ${
+                        isFounder ? 'order-first animate-fade-in-up' : ''
+                      }`}
+                      style={{ 
+                        textDecoration: 'none', 
+                        color: 'inherit',
+                        ...(isFounder ? { animationDelay: '0.2s' } : {})
+                      }}
                     >
                       {cardContent}
                     </a>
                   ) : (
-                    <div key={index}>{cardContent}</div>
+                    <div
+                      key={index}
+                      className={isFounder ? 'order-first animate-fade-in-up' : ''}
+                      style={isFounder ? { animationDelay: '0.2s' } : {}}
+                    >
+                      {cardContent}
+                    </div>
                   )
                 })}
               </div>
@@ -752,9 +812,9 @@ export default function Volunteers() {
                           </span>
                         </div>
                         {volunteer.website ? (
-                          <span className="inline-flex items-center gap-1 text-sm text-la-coral">
-                            <Globe className="w-4 h-4" />
-                            <span>Personal Website</span>
+                          <span className="inline-flex items-center gap-1 text-sm">
+                            <Globe className="w-4 h-4 text-la-coral" />
+                            <span className="text-la-coral">Personal Website</span>
                           </span>
                         ) : (
                           volunteer.linkedin && (

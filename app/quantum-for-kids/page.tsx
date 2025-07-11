@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import Navbar from '../../components/navbar'
 import SectionHeading from '../../components/section-heading'
+import SponsorsSection from '../../components/sponsors-section'
 
 export default function QuantumForKids() {
   const navLinks = [
@@ -51,7 +52,7 @@ export default function QuantumForKids() {
                 </div>
                 <div className="flex items-center gap-2 text-la-coral">
                   <Clock className="w-5 h-5" />
-                  <span className="font-medium">Time: 10:00 AM – 2:00 PM</span>
+                  <span className="font-medium">Time: 10:30 AM – 2:00 PM</span>
                 </div>
                 <div className="flex items-center gap-2 text-la-coral">
                   <MapPin className="w-5 h-5" />
@@ -66,75 +67,47 @@ export default function QuantumForKids() {
                 quantum world with real scientists and educators.
               </p>
               <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 mt-8 flex items-center gap-2">
-                <Lightbulb className="w-5 h-5 text-la-coral" /> Event Highlights
+                <Lightbulb className="w-5 h-5 text-la-coral" /> Event Agenda
               </h3>
               <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
                 <li>
-                  <b>Welcome & Orientation:</b> Get your event map, "Quantum
-                  Explorer Passport," and meet the team!
+                  <b>10:30 AM:</b> Check-in opens outside the{' '}
+                  <a
+                    href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOTIHCAMQABiPAjIHCAQQABiPAjIGCAUQRRg8MgYIBhBFGDwyBggHEC4YQNIBCDE0MzRqMGoxqAIAsAIA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Kc900XSoxMKAMaun2aCo3TEw&daddr=Winnett+Student+Center,+1200+E+California+Blvd,+Pasadena,+CA+91125"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-la-coral hover:underline"
+                  >
+                    Red Door Cafe
+                  </a>{' '}
+                  on Caltech Campus
                 </li>
                 <li>
-                  <b>Activity Zones:</b> Explore hands-on science demos, quantum
-                  crafts, coding workshops, and more at your own pace.
-                </li>
-                <li>
-                  <b>Quantum Demos & Hands-On Science:</b> Try the double-slit
-                  experiment, superposition spin wheel, and entanglement games.
-                </li>
-                <li>
-                  <b>Quantum Crafts:</b> Make qubit bracelets, atom models, and
-                  "uncertainty" watercolor art.
-                </li>
-                <li>
-                  <b>Experiment & Simulation Workshop:</b> Build quantum games
-                  and simulations using Scratch and simple circuits.
-                </li>
-                <li>
-                  <b>Quantum Q&A Corner:</b> Ask real scientists your biggest
-                  questions about quantum and science careers.
-                </li>
-                <li>
-                  <b>Scavenger Hunt:</b> Complete clue-based tasks around campus
-                  and earn prizes!
-                </li>
-                <li>
-                  <b>Wrap-Up:</b> Turn in your stamped passport for a sticker
-                  and group photo.
+                  <b>11:00 AM:</b> Event officially begins
                 </li>
               </ul>
               <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 mt-8 flex items-center gap-2">
                 <Gamepad2 className="w-5 h-5 text-la-coral" /> Activity Zones
               </h3>
-              <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-                <li>
-                  <b>Zone A: Quantum Demos & Science</b> - Probability games and
-                  hands-on experiments.
-                </li>
-                <li>
-                  <b>Zone B: Quantum Crafts</b> - Projects to take home.
-                </li>
-                <li>
-                  <b>Zone C: Coding & Simulations</b> - Build quantum games and
-                  experiments in Scratch.
-                </li>
-                <li>
-                  <b>Zone D: Ask a Scientist</b> - Q&A with quantum researchers
-                  and mentors.
-                </li>
-              </ul>
-              <h3 className="text-lg font-bold text-gray-900 font-heading mb-2 mt-8 flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-la-coral" /> Why Attend?
-              </h3>
-              <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-                <li>Fun, hands-on learning for all ages and backgrounds</li>
-                <li>Meet real scientists and explore Caltech's campus</li>
-                <li>Earn prizes and take home your own quantum creations</li>
-                <li>Parents welcome and encouraged to participate</li>
-                <li>
-                  All activities are free and open to the public (registration
-                  required)
-                </li>
-              </ul>
+              <div className="mb-6">
+                <h4 className="font-medium text-gray-900 mb-2">Demo + Arts & Crafts Room</h4>
+                <ul className="list-disc pl-6 text-gray-700 space-y-1">
+                  <li>Open from 11:00 AM to 2:00 PM</li>
+                  <li>Hands-on demos and creative activities running continuously</li>
+                </ul>
+                
+                <h4 className="font-medium text-gray-900 mb-2 mt-4">Workshop & Special Programming Room</h4>
+                <ul className="list-disc pl-6 text-gray-700 space-y-1">
+                  <li><b>11:00 AM – 12:15 PM:</b> Quantum-themed board Games</li>
+                  <li><b>12:30 PM – 1:15 PM:</b> Scratch Coding Workshop</li>
+                  <li><b>1:30 PM – 2:00 PM:</b> Ask a Scientist Q&A session</li>
+                </ul>
+                
+                <h4 className="font-medium text-gray-900 mb-2 mt-4">Scavenger Hunt</h4>
+                <ul className="list-disc pl-6 text-gray-700 space-y-1">
+                  <li>Self-guided and can be completed at any time during the event</li>
+                </ul>
+              </div>
               <div className="rounded-xl overflow-hidden border border-la-sunset/20 shadow mb-6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.964282019994!2d-118.1252696847817!3d34.1376571805907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c2e2e2e2e2e3%3A0x7e2e2e2e2e2e2e2e!2sCalifornia%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1718040000002!5m2!1sen!2sus"
@@ -153,40 +126,28 @@ export default function QuantumForKids() {
                   <AlertCircle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">
-                      Getting "Your payment was declined" Error from Eventbrite?
+                      Day of Event Questions?
                     </h4>
                     <p className="text-gray-700 text-sm">
-                      We are not sure why some guests are getting this error.
-                      Please{' '}
+                      If you have any questions during the event, please ask any of our volunteers or staff members.
+                      You can also{' '}
                       <a
-                        href="mailto:summerofquantumla@gmail.com?subject=Quantum for Kids @ Caltech"
+                        href="mailto:summerofquantumla@gmail.com?subject=Quantum for Kids @ Caltech - Day of Event"
                         className="text-la-coral hover:underline"
                       >
-                        send an email to summerofquantumla@gmail.com
+                        email us at summerofquantumla@gmail.com
                       </a>{' '}
-                      with your name, contact email address and the number of
-                      tickets you would like to reserve.
+                      or call/text us at the number provided at check-in.
                     </p>
                   </div>
                 </div>
               </div>
-
-              <div
-                id="register"
-                className="mt-8"
-              >
-                <a
-                  href="https://www.eventbrite.com/e/quantum-for-kids-caltech-tickets-1419950673689?aff=oddtdtcreator"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white font-medium shadow-sm rounded-full py-3 text-sm text-center hover:opacity-90 hover:scale-105 transition-all"
-                >
-                  Register on Eventbrite
-                </a>
-              </div>
             </div>
           </div>
         </section>
+        
+        {/* Sponsors Section */}
+        <SponsorsSection />
       </main>
       <Analytics />
     </>

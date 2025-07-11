@@ -17,6 +17,7 @@ import {
 import EventCard from '../components/event-card'
 import Navbar from '../components/navbar'
 import SectionHeading from '../components/section-heading'
+import SponsorsSection from '../components/sponsors-section'
 import NeonIsometricMaze from '../neon-isometric-maze'
 
 export default function Home() {
@@ -318,7 +319,7 @@ export default function Home() {
         </section>
 
         {/* Volunteer with Us Section */}
-        <section
+        {/* <section
           id="volunteer"
           className="py-12 sm:py-20 px-4 bg-la-blush relative"
         >
@@ -821,241 +822,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Partner with Us Section */}
-        <section
-          id="partner"
-          className="py-12 sm:py-20 px-4 relative bg-la-sand"
-        >
-          <div className="absolute inset-0 bg-la-skyline bg-no-repeat bg-bottom opacity-10"></div>
-          <div className="container mx-auto">
-            <SectionHeading
-              title="Partner with Us"
-              subtitle="Join our mission to make quantum science accessible and engaging for everyone in LA"
-            />
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 font-heading">
-                  Why Partner With Us?
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-bold text-gray-900 font-heading">
-                        Community Impact:
-                      </span>{' '}
-                      Reach diverse audiences across Los Angeles and contribute
-                      to scientific literacy.
-                    </p>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-bold text-gray-900 font-heading">
-                        Networking:
-                      </span>{' '}
-                      Connect with leading institutions like USC, Caltech, UCLA,
-                      Chapman and industry innovators.
-                    </p>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-bold text-gray-900 font-heading">
-                        Visibility:
-                      </span>{' '}
-                      Showcase your organization's commitment to science
-                      education and innovation.
-                    </p>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M20 6 9 17l-5-5" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700">
-                      <span className="font-bold text-gray-900 font-heading">
-                        Talent Pipeline:
-                      </span>{' '}
-                      Connect with the next generation of quantum scientists and
-                      engineers.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-md shadow-la-sand/40">
-                <h3 className="text-xl font-bold mb-4 text-gray-900 font-heading">
-                  Partnership Opportunities
-                </h3>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-la-coral to-la-sunset flex items-center justify-center flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 font-heading">
-                        Financial Sponsorship
-                      </h4>
-                      <p className="text-gray-600">
-                        Support our events and programs with financial
-                        contributions at various levels.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-la-sunset to-la-coral flex items-center justify-center flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                        <circle
-                          cx="9"
-                          cy="7"
-                          r="4"
-                        />
-                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 font-heading">
-                        Venue Hosting
-                      </h4>
-                      <p className="text-gray-600">
-                        Provide space for workshops, lectures, or exhibitions at
-                        your facility.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-la-dusk to-la-coral flex items-center justify-center flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 font-heading">
-                        Expert Speakers
-                      </h4>
-                      <p className="text-gray-600">
-                        Share your expertise by providing speakers for our
-                        events and workshops.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 relative z-50">
-                  <a
-                    href="/sponsorship"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-gradient-to-r from-la-coral via-la-sunset to-la-dusk text-white hover:opacity-90 transition-all font-medium shadow-sm rounded-full py-3 text-sm hover:scale-105 text-center relative z-50"
-                  >
-                    Become a Partner{' '}
-                    <Sun className="inline-block ml-2 h-4 w-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Sponsors Section */}
+        <SponsorsSection />
 
         {/* Footer */}
         <footer className="py-12 px-4 bg-white border-t border-la-sunset/20">
@@ -1206,14 +976,30 @@ export default function Home() {
                     </svg>
                     <span>shanto@usc.edu</span>
                   </li>
+                  <li className="flex items-center gap-2 text-gray-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <path d="m22 6-10 7L2 6" />
+                    </svg>
+                    <span>summerofquantumla@gmail.com</span>
+                  </li>
                 </ul>
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-la-sunset/20 text-center text-gray-500 text-sm">
+            <div className="mt-12 pt-8 border-t border-la-sunset/20 text-center text-sm text-gray-500">
               <p>
-                © {new Date().getFullYear()} Sadman Ahmed Shanto. All rights
-                reserved.
+                © {new Date().getFullYear()} Summer of Quantum LA. All rights reserved.
               </p>
             </div>
           </div>
